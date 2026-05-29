@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "assorteddiscoveries:polished_calcite",
+  "result": {
+    "id": "assorteddiscoveries:chiseled_calcite_bricks",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_calcite_bricks"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_polished_calcite"
+        }
+      ]
+    }
+  ]
+}

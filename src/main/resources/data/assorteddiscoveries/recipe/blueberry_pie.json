@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    "WWW"
+  ],
+  "key": {
+    "B": "assorteddiscoveries:blueberries",
+    "W": "minecraft:wheat"
+  },
+  "result": {
+    "id": "assorteddiscoveries:blueberry_pie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_blueberries"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_blueberry_pie"
+        }
+      ]
+    }
+  ]
+}

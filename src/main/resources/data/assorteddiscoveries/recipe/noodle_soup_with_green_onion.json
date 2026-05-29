@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "assorteddiscoveries:noodles",
+    "assorteddiscoveries:green_onion"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:noodle_soup"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_green_onions"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_noodle_soup"
+        }
+      ]
+    }
+  ]
+}

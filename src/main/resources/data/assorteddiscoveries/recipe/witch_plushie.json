@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:black_wool",
+    "W": "minecraft:white_terracotta",
+    "O": "minecraft:orange_terracotta",
+    "P": "minecraft:purple_wool",
+    "G": "minecraft:glass_bottle"
+  },
+  "pattern": [
+    "BBB",
+    "WOW",
+    "PGP"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:witch_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_witch_plushie"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    "LML",
+    "BBB"
+  ],
+  "key": {
+    "M": "minecraft:phantom_membrane",
+    "B": "minecraft:blue_wool",
+    "L": "minecraft:lime_wool"
+  },
+  "result": {
+    "id": "assorteddiscoveries:phantom_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_phantom_plushie"
+    }
+  ]
+}

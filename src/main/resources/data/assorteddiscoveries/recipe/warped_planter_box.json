@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "planter_boxes",
+  "key": {
+    "#": "minecraft:warped_slab",
+    "S": "#minecraft:soul_fire_base_blocks"
+  },
+  "pattern": [
+    "# #",
+    "#S#",
+    "###"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:warped_planter_box"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_planter_boxes"
+    }
+  ]
+}

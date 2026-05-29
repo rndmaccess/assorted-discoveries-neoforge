@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:rooted_dirt"
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:rooted_dirt_slab",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_dirt_slabs"
+    }
+  ]
+}

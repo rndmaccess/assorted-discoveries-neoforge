@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "assorteddiscoveries:smoky_quartz_bricks"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:smoky_quartz_brick_wall",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_smoky_quartz_blocks"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_smoky_quartz_bricks"
+        }
+      ]
+    }
+  ]
+}

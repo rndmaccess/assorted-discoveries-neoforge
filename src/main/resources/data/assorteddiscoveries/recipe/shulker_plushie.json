@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": "minecraft:purple_wool",
+    "B": "minecraft:black_wool",
+    "I": "minecraft:shulker_shell"
+  },
+  "pattern": [
+    "PPP",
+    "BIB",
+    "PPP"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:shulker_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_shulker_plushie"
+    }
+  ]
+}

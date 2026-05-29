@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "assorteddiscoveries:calcite_bricks",
+  "result": {
+    "id": "assorteddiscoveries:calcite_brick_slab",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_calcite_bricks"
+    }
+  ]
+}

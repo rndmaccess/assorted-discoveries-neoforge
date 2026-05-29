@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cat_plushies",
+  "pattern": [
+    "YYY",
+    "BFB",
+    "YYY"
+  ],
+  "key": {
+    "Y": "minecraft:yellow_wool",
+    "B": "minecraft:black_wool",
+    "F": "#minecraft:cat_food"
+  },
+  "result": {
+    "id": "assorteddiscoveries:persian_cat_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cat_plushies"
+    }
+  ]
+}

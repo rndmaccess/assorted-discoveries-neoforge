@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": "minecraft:red_wool",
+    "B": "minecraft:black_wool",
+    "L": "minecraft:lava_bucket"
+  },
+  "pattern": [
+    "RRR",
+    "BLB",
+    "RRR"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:strider_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_strider_plushies"
+    }
+  ]
+}

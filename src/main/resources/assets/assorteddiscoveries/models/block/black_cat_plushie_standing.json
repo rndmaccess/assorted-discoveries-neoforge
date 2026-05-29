@@ -1,0 +1,7 @@
+{
+  "parent": "assorteddiscoveries:block/template_cat_plushie_standing",
+  "textures": {
+    "atlas": "assorteddiscoveries:block/black_cat_plushie",
+    "particle": "block/black_wool"
+  }
+}

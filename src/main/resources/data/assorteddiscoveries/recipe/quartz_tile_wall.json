@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:quartz_tiles"
+  },
+  "result": {
+    "id": "assorteddiscoveries:quartz_tile_wall",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_quartz_tiles"
+    }
+  ]
+}

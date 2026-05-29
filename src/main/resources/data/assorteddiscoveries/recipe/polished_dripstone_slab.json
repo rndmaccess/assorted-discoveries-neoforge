@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:polished_dripstone"
+  },
+  "result": {
+    "id": "assorteddiscoveries:polished_dripstone_slab",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_polished_dripstone"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "illager_plushies",
+  "key": {
+    "H": "minecraft:cyan_terracotta",
+    "G": "minecraft:gray_wool",
+    "B": "minecraft:black_wool",
+    "E": "minecraft:emerald"
+  },
+  "pattern": [
+    "HHH",
+    "BEB",
+    "GGG"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:vindicator_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_illager_plushies"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    "bIb",
+    "BBB"
+  ],
+  "key": {
+    "B": "minecraft:brown_wool",
+    "b": "minecraft:black_wool",
+    "I": "minecraft:beef"
+  },
+  "result": {
+    "id": "assorteddiscoveries:temperate_cow_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cow_plushies"
+    }
+  ]
+}

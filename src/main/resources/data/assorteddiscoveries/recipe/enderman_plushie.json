@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WWW",
+    "MPM",
+    "WGW"
+  ],
+  "key": {
+    "W": "minecraft:black_wool",
+	"M": "minecraft:magenta_wool",
+    "P": "minecraft:ender_pearl",
+    "G": "minecraft:grass_block"
+  },
+  "result": {
+    "id": "assorteddiscoveries:enderman_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_enderman_plushie"
+    }
+  ]
+}

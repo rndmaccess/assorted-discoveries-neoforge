@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "CGC",
+    " C "
+  ],
+  "key": {
+    "C": "assorteddiscoveries:cindersnap_berries",
+    "G": "minecraft:glass_bottle"
+  },
+  "result": {
+    "id": "assorteddiscoveries:cindersnap_berry_juice"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_cindersnap_berries"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_cindersnap_berry_juice"
+        }
+      ]
+    }
+  ]
+}

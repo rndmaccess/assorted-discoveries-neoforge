@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:dried_blood_kelp"
+  },
+  "result": {
+    "id": "assorteddiscoveries:dried_blood_kelp_block"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_blood_kelp"
+    }
+  ]
+}

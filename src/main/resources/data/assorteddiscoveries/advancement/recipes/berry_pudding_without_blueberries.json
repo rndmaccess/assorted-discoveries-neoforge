@@ -1,0 +1,50 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "assorteddiscoveries:berry_pudding_without_blueberries"
+    ]
+  },
+  "criteria": {
+    "has_pudding": {
+      "conditions": {
+        "items": [
+          {
+            "items": "assorteddiscoveries:pudding"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "assorteddiscoveries:berry_pudding_without_blueberries"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_pudding",
+      "has_the_recipe"
+    ]
+  ],
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "neoforge:not",
+          "value": {
+            "condition": "assorteddiscoveries:config_entry_enabled",
+            "value": "enable_blueberries"
+          }
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_pudding"
+        }
+      ]
+    }
+  ]
+}

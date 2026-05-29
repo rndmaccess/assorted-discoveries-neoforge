@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": "minecraft:purple_wool",
+    "B": "minecraft:black_wool",
+    "W": "minecraft:water_bucket"
+  },
+  "pattern": [
+    "PPP",
+    "BWB",
+    "PPP"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:shivering_strider_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_strider_plushies"
+    }
+  ]
+}

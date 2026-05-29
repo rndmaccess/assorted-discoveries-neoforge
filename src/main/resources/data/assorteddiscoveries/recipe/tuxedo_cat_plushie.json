@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cat_plushies",
+  "key": {
+    "B": "minecraft:black_wool",
+    "G": "minecraft:green_wool",
+    "F": "#minecraft:cat_food"
+  },
+  "pattern": [
+    "BBB",
+    "GFG",
+    "BBB"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:tuxedo_cat_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cat_plushies"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "blocks",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:snow_block"
+  },
+  "result": {
+    "id": "assorteddiscoveries:packed_snow",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_packed_snow"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": [
+      "assorteddiscoveries:chiseled_smoky_quartz_block",
+      "assorteddiscoveries:smoky_quartz_block",
+      "assorteddiscoveries:smoky_quartz_pillar"
+    ]
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:smoky_quartz_slab",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_smoky_quartz_blocks"
+    }
+  ]
+}

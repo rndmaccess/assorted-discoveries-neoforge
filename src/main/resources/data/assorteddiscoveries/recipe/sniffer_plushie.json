@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": "minecraft:red_wool",
+    "Y": "minecraft:yellow_wool",
+    "B": "minecraft:black_wool",
+    "I": "#minecraft:sniffer_food"
+  },
+  "pattern": [
+    "RRR",
+    "BIB",
+    "YYY"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:sniffer_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_sniffer_plushie"
+    }
+  ]
+}

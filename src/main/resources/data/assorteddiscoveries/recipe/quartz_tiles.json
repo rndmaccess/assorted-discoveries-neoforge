@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "blocks",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:quartz_bricks"
+  },
+  "result": {
+    "id": "assorteddiscoveries:quartz_tiles",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_quartz_tiles"
+    }
+  ]
+}

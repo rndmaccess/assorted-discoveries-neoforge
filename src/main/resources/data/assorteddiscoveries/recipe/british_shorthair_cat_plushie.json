@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cat_plushies",
+  "pattern": [
+    "GGG",
+    "YFY",
+    "GGG"
+  ],
+  "key": {
+    "G": "minecraft:light_gray_wool",
+    "Y": "minecraft:yellow_wool",
+    "F": "#minecraft:cat_food"
+  },
+  "result": {
+    "id": "assorteddiscoveries:british_shorthair_cat_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cat_plushies"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": "minecraft:lime_wool",
+    "G": "minecraft:green_wool",
+    "S": "minecraft:slime_ball"
+  },
+  "pattern": [
+    "LLL",
+    "GSG",
+    "LLL"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:slime_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_slime_plushie"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dyed_campfires",
+  "ingredients": [
+    "minecraft:red_dye",
+    "minecraft:campfire"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:red_campfire"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_dyed_campfires"
+    }
+  ]
+}

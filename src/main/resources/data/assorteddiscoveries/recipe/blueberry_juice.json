@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "CGC",
+    " C "
+  ],
+  "key": {
+    "C": "assorteddiscoveries:blueberries",
+    "G": "minecraft:glass_bottle"
+  },
+  "result": {
+    "id": "assorteddiscoveries:blueberry_juice"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_blueberries"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_blueberry_juice"
+        }
+      ]
+    }
+  ]
+}

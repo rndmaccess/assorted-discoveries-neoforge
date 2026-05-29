@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "assorteddiscoveries:temperate_chicken_plushie"
+    ]
+  },
+  "criteria": {
+    "has_chicken": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:chicken"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "assorteddiscoveries:temperate_chicken_plushie"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_chicken",
+      "has_the_recipe"
+    ]
+  ],
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_chicken_plushies"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "blocks",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:polished_blackstone_bricks"
+  },
+  "result": {
+    "id": "assorteddiscoveries:blackstone_tiles",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_blackstone_tiles"
+    }
+  ]
+}

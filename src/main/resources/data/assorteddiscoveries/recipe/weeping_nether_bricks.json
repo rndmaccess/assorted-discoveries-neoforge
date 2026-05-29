@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "blocks",
+  "ingredients": [
+    "minecraft:nether_bricks",
+    "#c:crimson_vegetation"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:weeping_nether_bricks"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_weeping_nether_bricks"
+    }
+  ]
+}

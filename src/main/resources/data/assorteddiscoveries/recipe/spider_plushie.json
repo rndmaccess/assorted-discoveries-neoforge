@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:black_wool",
+    "R": "minecraft:red_wool",
+    "S": "minecraft:string"
+  },
+  "pattern": [
+    "BBB",
+    "RSR",
+    "BBB"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:spider_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_spider_plushie"
+    }
+  ]
+}

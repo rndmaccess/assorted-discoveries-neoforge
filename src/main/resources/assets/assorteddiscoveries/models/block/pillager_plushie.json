@@ -1,0 +1,7 @@
+{
+  "parent": "assorteddiscoveries:block/template_illager_plushie",
+  "textures": {
+    "particle": "minecraft:block/red_wool",
+    "atlas": "assorteddiscoveries:block/pillager_plushie"
+  }
+}

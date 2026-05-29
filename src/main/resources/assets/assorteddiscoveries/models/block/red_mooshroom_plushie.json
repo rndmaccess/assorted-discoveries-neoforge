@@ -1,0 +1,7 @@
+{
+  "parent": "assorteddiscoveries:block/template_mooshroom_plushie",
+  "textures": {
+    "particle": "minecraft:block/red_wool",
+    "atlas": "assorteddiscoveries:block/red_mooshroom_plushie"
+  }
+}

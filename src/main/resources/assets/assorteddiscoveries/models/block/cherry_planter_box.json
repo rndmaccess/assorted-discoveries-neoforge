@@ -1,0 +1,9 @@
+{
+  "parent": "assorteddiscoveries:block/template_planter_box",
+  "textures": {
+    "side": "assorteddiscoveries:block/cherry_planter_box_side",
+    "top": "assorteddiscoveries:block/cherry_planter_box_top",
+    "bottom": "minecraft:block/cherry_planks",
+    "soil": "minecraft:block/farmland_moist"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": "#c:eggs",
+  "result": {
+    "id": "assorteddiscoveries:fried_egg"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_fried_egg"
+    }
+  ]
+}

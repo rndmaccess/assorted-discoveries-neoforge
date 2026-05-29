@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": "assorteddiscoveries:stone_tiles",
+  "result": {
+    "id": "assorteddiscoveries:cracked_stone_tiles"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_stone_tiles"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_cracked_stone_tiles"
+        }
+      ]
+    }
+  ]
+}

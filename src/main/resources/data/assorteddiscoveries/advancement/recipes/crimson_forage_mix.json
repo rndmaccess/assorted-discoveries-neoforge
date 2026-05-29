@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "assorteddiscoveries:crimson_forage_mix"
+    ]
+  },
+  "criteria": {
+    "has_cindersnap_berries": {
+      "conditions": {
+        "items": [
+          {
+            "items": "assorteddiscoveries:cindersnap_berries"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "assorteddiscoveries:crimson_forage_mix"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cindersnap_berries",
+      "has_the_recipe"
+    ]
+  ],
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_cindersnap_berries"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_crimson_forage_mix"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cat_plushies",
+  "pattern": [
+    "BWO",
+    "YFL",
+    "WWW"
+  ],
+  "key": {
+    "O": "minecraft:orange_wool",
+    "B": "minecraft:black_wool",
+    "W": "minecraft:white_wool",
+    "L": "minecraft:light_blue_wool",
+    "Y": "minecraft:yellow_wool",
+    "F": "#minecraft:cat_food"
+  },
+  "result": {
+    "id": "assorteddiscoveries:calico_cat_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cat_plushies"
+    }
+  ]
+}

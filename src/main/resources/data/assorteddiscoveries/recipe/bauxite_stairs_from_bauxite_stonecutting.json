@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "assorteddiscoveries:bauxite",
+  "result": {
+    "count": 1,
+    "id": "assorteddiscoveries:bauxite_stairs"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_bauxite"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "blocks",
+  "ingredients": [
+    "#c:warped_vegetation",
+    "minecraft:blackstone"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:twisted_blackstone"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_twisted_blackstone"
+    }
+  ]
+}

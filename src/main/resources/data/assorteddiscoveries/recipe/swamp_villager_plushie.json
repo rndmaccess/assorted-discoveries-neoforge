@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "villager_plushies",
+  "key": {
+    "H": "minecraft:terracotta",
+    "C": "minecraft:purple_wool",
+    "E": "minecraft:emerald",
+    "I": "minecraft:lily_pad"
+  },
+  "pattern": [
+    "HHH",
+    "HEH",
+    "CIC"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:swamp_villager_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_villager_plushies"
+    }
+  ]
+}

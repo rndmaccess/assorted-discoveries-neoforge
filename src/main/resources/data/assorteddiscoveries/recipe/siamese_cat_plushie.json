@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cat_plushies",
+  "category": "misc",
+  "key": {
+    "b": "minecraft:black_wool",
+    "B": "minecraft:brown_wool",
+    "W": "minecraft:white_wool",
+    "F": "#minecraft:cat_food"
+  },
+  "pattern": [
+    "BBB",
+    "bFb",
+    "WWW"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:siamese_cat_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cat_plushies"
+    }
+  ]
+}

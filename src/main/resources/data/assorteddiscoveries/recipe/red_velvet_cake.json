@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:milk_bucket",
+    "B": "minecraft:sugar",
+    "C": "minecraft:cocoa_beans",
+    "E": "#c:eggs",
+    "D": "minecraft:red_dye"
+  },
+  "pattern": [
+    "AAA",
+    "BEB",
+    "CDC"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:red_velvet_cake"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_red_velvet_cake"
+    }
+  ]
+}

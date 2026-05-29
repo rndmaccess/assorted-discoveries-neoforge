@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_walls",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "#c:natural_dark_oak_logs"
+  },
+  "result": {
+    "id": "assorteddiscoveries:dark_oak_wall",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_wooden_walls"
+    }
+  ]
+}

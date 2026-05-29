@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sheep_plushies",
+  "pattern": [
+    "LLL",
+    "BIB",
+    "LLL"
+  ],
+  "key": {
+    "L": "minecraft:lime_wool",
+    "B": "minecraft:black_wool",
+    "I": "minecraft:mutton"
+  },
+  "result": {
+    "id": "assorteddiscoveries:lime_sheep_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_sheep_plushies"
+    }
+  ]
+}

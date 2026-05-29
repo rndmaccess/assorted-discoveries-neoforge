@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sheep_plushies",
+  "pattern": [
+    "PPP",
+    "BIB",
+    "PPP"
+  ],
+  "key": {
+    "P": "minecraft:pink_wool",
+    "B": "minecraft:black_wool",
+    "I": "minecraft:mutton"
+  },
+  "result": {
+    "id": "assorteddiscoveries:pink_sheep_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_sheep_plushies"
+    }
+  ]
+}

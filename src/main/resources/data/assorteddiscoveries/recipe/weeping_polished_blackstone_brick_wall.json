@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:weeping_polished_blackstone_bricks"
+  },
+  "result": {
+    "id": "assorteddiscoveries:weeping_polished_blackstone_brick_wall",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_weeping_polished_blackstone_bricks"
+    }
+  ]
+}

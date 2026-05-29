@@ -1,0 +1,65 @@
+{
+	"__comment": "Designed by rndmaccess with Cubik Studio - https://cubik.studio",
+	"parent": "block/block",
+	"textures": {
+		"particle": "assorteddiscoveries:block/bog_blossom",
+		"flower": "assorteddiscoveries:block/bog_blossom",
+		"base": "assorteddiscoveries:block/bog_blossom_base"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Element",
+			"from": [ 1, 0.4, 1 ],
+			"to": [ 15, 0.401, 15 ],
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 1, 1, 15, 15 ], "texture": "#base" },
+				"up": { "uv": [ 1, 1, 15, 15 ], "texture": "#base" }
+			}
+		},
+		{
+			"__comment": "Element",
+			"from": [ 7.625, 0.2, 0 ],
+			"to": [ 23.625, 0.201, 16 ],
+			"rotation": { "origin": [ 7.625, 0.5, 0 ], "axis": "z", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 16, 16, 0 ], "texture": "#flower", "rotation": 270 },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#flower", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "Element",
+			"from": [ -5.3879, 0.7992, 0 ],
+			"to": [ 10.6121, 0.8002, 16 ],
+			"rotation": { "origin": [ 8.375, 6.5, 0 ], "axis": "z", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 16, 16, 0 ], "texture": "#flower", "rotation": 90 },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#flower", "rotation": 270 }
+			}
+		},
+		{
+			"__comment": "Element",
+			"from": [ 0, 0.8311, 8.1061 ],
+			"to": [ 16, 0.8321, 24.1061 ],
+			"rotation": { "origin": [ 0, 0.875, 8 ], "axis": "x", "angle": -22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 16, 0, 0, 16 ], "texture": "#flower" },
+				"up": { "uv": [ 16, 16, 0, 0 ], "texture": "#flower" }
+			}
+		},
+		{
+			"__comment": "Element",
+			"from": [ 0, 0.7992, -5.6379 ],
+			"to": [ 16, 0.8002, 10.3621 ],
+			"rotation": { "origin": [ 0, 6.5, 8.125 ], "axis": "x", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"down": { "uv": [ 0, 16, 16, 0 ], "texture": "#flower" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#flower" }
+			}
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "mooshroom_plushies",
+  "pattern": [
+    "BBB",
+    "bMb",
+    "BBB"
+  ],
+  "key": {
+    "B": "minecraft:brown_wool",
+    "b": "minecraft:black_wool",
+    "M": "minecraft:brown_mushroom"
+  },
+  "result": {
+    "id": "assorteddiscoveries:brown_mooshroom_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_mooshroom_plushies"
+    }
+  ]
+}

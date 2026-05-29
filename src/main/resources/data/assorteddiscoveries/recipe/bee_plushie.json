@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": "minecraft:white_wool",
+    "Y": "minecraft:yellow_wool",
+    "B": "minecraft:black_wool",
+    "I": "minecraft:honeycomb"
+  },
+  "pattern": [
+    "W W",
+    "BBB",
+    "YIY"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:bee_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_bee_plushie"
+    }
+  ]
+}

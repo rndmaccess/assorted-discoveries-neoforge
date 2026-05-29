@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "assorteddiscoveries:bauxite_bricks",
+  "result": {
+    "count": 1,
+    "id": "assorteddiscoveries:bauxite_brick_stairs"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_bauxite_bricks"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_bauxite"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_walls",
+  "category": "misc",
+  "key": {
+    "#": "#c:natural_warped_stems"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:warped_wall",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_wooden_walls"
+    }
+  ]
+}

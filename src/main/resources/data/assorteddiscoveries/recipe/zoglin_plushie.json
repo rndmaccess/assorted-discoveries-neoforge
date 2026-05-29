@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": "minecraft:white_wool",
+    "P": "minecraft:pink_wool",
+    "B": "minecraft:black_wool",
+    "I": "minecraft:porkchop"
+  },
+  "pattern": [
+    "WWW",
+    "BIB",
+    "PPP"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:zoglin_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_hoglin_plushies"
+    }
+  ]
+}

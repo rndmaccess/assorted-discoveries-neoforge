@@ -1,0 +1,41 @@
+{
+	"__comment": "Designed by rndm_access with Cubik Studio - https://cubik.studio",
+	"parent": "block/block",
+	"textures": {
+		"particle": "#side",
+		"soil": "#soil",
+		"side": "#side",
+		"bottom": "#bottom",
+		"top": "#top"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box2",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 3, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#bottom", "cullface": "down" }
+			}
+		},
+		{
+			"__comment": "Box4",
+			"from": [ 0, 0, 13 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"up": { "uv": [ 0, 13, 16, 16 ], "texture": "#top", "cullface": "up" },
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#side" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#side", "cullface": "south" },
+				"west": { "uv": [ 13, 0, 16, 16 ], "texture": "#side", "cullface": "west" },
+				"east": { "uv": [ 0, 0, 3, 16 ], "texture": "#side", "cullface": "east" }
+			}
+		},
+		{
+			"__comment": "Box10",
+			"from": [ 0, 2, 0 ],
+			"to": [ 16, 15, 13 ],
+			"faces": {
+				"up": { "uv": [ 0, 0, 16, 13 ], "texture": "#soil" }
+			}
+		}
+	]
+}

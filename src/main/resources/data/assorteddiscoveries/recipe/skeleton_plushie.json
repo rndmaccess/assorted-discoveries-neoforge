@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": "minecraft:white_wool",
+    "B": "minecraft:black_wool",
+    "I": "minecraft:arrow"
+  },
+  "pattern": [
+    "WWW",
+    "BIB",
+    "WWW"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:skeleton_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_skeleton_plushie"
+    }
+  ]
+}

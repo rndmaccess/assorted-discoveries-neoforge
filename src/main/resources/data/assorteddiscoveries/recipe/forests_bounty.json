@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:sweet_berries",
+    "assorteddiscoveries:spruce_cone"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:forests_bounty"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_forests_bounty"
+    }
+  ]
+}

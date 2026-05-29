@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "rope_ladders",
+  "pattern": [
+    "X X",
+    "###",
+    "X X"
+  ],
+  "key": {
+    "X": "minecraft:string",
+    "#": "minecraft:dark_oak_planks"
+  },
+  "result": {
+    "id": "assorteddiscoveries:dark_oak_rope_ladder",
+    "count": 3
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_rope_ladders"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "rope_ladders",
+  "pattern": [
+    "X X",
+    "###",
+    "X X"
+  ],
+  "key": {
+    "X": "minecraft:string",
+    "#": "minecraft:crimson_planks"
+  },
+  "result": {
+    "id": "assorteddiscoveries:crimson_rope_ladder",
+    "count": 3
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_rope_ladders"
+    }
+  ]
+}

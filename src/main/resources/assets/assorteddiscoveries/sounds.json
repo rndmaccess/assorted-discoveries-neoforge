@@ -1,0 +1,11 @@
+{
+  "block.mushroom_bounce": {
+    "category": "blocks",
+    "subtitle": "Mushroom bounces",
+    "sounds": [
+      {
+        "name": "assorteddiscoveries:block/mushroom_bounce", "stream": false
+      }
+    ]
+  }
+}

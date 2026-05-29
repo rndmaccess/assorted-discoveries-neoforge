@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:dripstone_bricks"
+  },
+  "result": {
+    "id": "assorteddiscoveries:dripstone_brick_slab",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_dripstone_bricks"
+    }
+  ]
+}

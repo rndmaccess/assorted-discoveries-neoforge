@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "assorteddiscoveries:quartz_tiles",
+  "result": {
+    "id": "assorteddiscoveries:quartz_tile_wall",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_quartz_tiles"
+    }
+  ]
+}

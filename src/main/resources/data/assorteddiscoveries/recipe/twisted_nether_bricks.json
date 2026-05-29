@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "blocks",
+  "ingredients": [
+    "minecraft:nether_bricks",
+    "#c:warped_vegetation"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:twisted_nether_bricks"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_twisted_nether_bricks"
+    }
+  ]
+}

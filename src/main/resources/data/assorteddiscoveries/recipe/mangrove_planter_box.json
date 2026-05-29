@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "planter_boxes",
+  "pattern": [
+    "# #",
+    "#D#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:mangrove_slab",
+    "D": "minecraft:dirt"
+  },
+  "result": {
+    "id": "assorteddiscoveries:mangrove_planter_box"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_planter_boxes"
+    }
+  ]
+}

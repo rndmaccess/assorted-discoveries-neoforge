@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WWW",
+    "BCB",
+    "WWW"
+  ],
+  "key": {
+    "W": "minecraft:white_wool",
+    "B": "minecraft:black_wool",
+    "C": "minecraft:chicken"
+  },
+  "result": {
+    "id": "assorteddiscoveries:temperate_chicken_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_chicken_plushies"
+    }
+  ]
+}

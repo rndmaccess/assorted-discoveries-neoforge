@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "blocks",
+  "ingredients": [
+    "minecraft:granite",
+    "minecraft:terracotta"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:bauxite",
+	"count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_bauxite"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,is_sitting=false": {
+      "model": "assorteddiscoveries:block/white_cat_plushie_standing"
+    },
+    "facing=south,is_sitting=false": {
+      "model": "assorteddiscoveries:block/white_cat_plushie_standing",
+      "y": 180
+    },
+    "facing=west,is_sitting=false": {
+      "model": "assorteddiscoveries:block/white_cat_plushie_standing",
+      "y": 270
+    },
+    "facing=east,is_sitting=false": {
+      "model": "assorteddiscoveries:block/white_cat_plushie_standing",
+      "y": 90
+    },
+    "facing=north,is_sitting=true": {
+      "model": "assorteddiscoveries:block/white_cat_plushie_sitting"
+    },
+    "facing=south,is_sitting=true": {
+      "model": "assorteddiscoveries:block/white_cat_plushie_sitting",
+      "y": 180
+    },
+    "facing=west,is_sitting=true": {
+      "model": "assorteddiscoveries:block/white_cat_plushie_sitting",
+      "y": 270
+    },
+    "facing=east,is_sitting=true": {
+      "model": "assorteddiscoveries:block/white_cat_plushie_sitting",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "category": "misc",
+  "group": "smoky_quartz_walls",
+  "key": {
+    "#": "assorteddiscoveries:smoky_quartz_block"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:smoky_quartz_wall",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_smoky_quartz_blocks"
+    }
+  ]
+}

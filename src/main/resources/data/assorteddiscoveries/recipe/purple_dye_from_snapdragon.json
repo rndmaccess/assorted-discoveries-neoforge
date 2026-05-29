@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "assorteddiscoveries:snapdragon"
+  ],
+  "result": {
+    "id": "minecraft:purple_dye"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_ender_plants"
+    }
+  ]
+}

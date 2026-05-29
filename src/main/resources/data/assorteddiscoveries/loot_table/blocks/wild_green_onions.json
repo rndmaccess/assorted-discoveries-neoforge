@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": [
+                      "minecraft:shears"
+                    ]
+                  }
+                }
+              ],
+              "name": "assorteddiscoveries:wild_green_onions"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:binomial_with_bonus_count",
+                  "parameters": {
+                    "extra": 3,
+                    "probability": 0.5714286
+                  }
+                }
+              ],
+              "name": "assorteddiscoveries:green_onion_seeds"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "assorteddiscoveries:blocks/wild_green_onions"
+}

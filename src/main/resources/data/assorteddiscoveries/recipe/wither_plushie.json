@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+	"WSW",
+    "BBB"
+  ],
+  "key": {
+    "B": "minecraft:black_wool",
+    "W": "minecraft:white_wool",
+    "S": "minecraft:wither_skeleton_skull"
+  },
+  "result": {
+    "id": "assorteddiscoveries:wither_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_wither_plushie"
+    }
+  ]
+}

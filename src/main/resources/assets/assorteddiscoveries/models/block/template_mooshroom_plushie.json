@@ -1,0 +1,198 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "assorteddiscoveries:block/plushie_block",
+	"texture_size": [32, 32],
+	"textures": {
+		"atlas": "#atlas",
+		"particle": "#particle"
+	},
+	"elements": [
+		{
+			"name": "Head",
+			"from": [4.5, 3.5, 4],
+			"to": [11, 9.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, 0]},
+			"faces": {
+				"north": {"uv": [0.016, 0.016, 3.484, 2.984], "texture": "#atlas"},
+				"east": {"uv": [0.016, 6.016, 2.984, 8.984], "texture": "#atlas"},
+				"south": {"uv": [0.016, 3.016, 3.484, 5.984], "texture": "#atlas"},
+				"west": {"uv": [3.016, 6.016, 5.984, 8.984], "texture": "#atlas"},
+				"up": {"uv": [6.984, 2.984, 3.516, 0.016], "texture": "#atlas"},
+				"down": {"uv": [6.984, 3.016, 3.516, 5.984], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "RightHorn",
+			"from": [3.5, 7.5, 6],
+			"to": [5.5, 10.5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, 0]},
+			"faces": {
+				"north": {"uv": [4.516, 10.516, 5.484, 11.984], "texture": "#atlas"},
+				"east": {"uv": [4.516, 9.016, 5.984, 10.484], "texture": "#atlas"},
+				"south": {"uv": [2.516, 11.016, 3.484, 12.484], "texture": "#atlas"},
+				"west": {"uv": [9.516, 4.516, 10.984, 5.984], "texture": "#atlas"},
+				"up": {"uv": [4.484, 12.484, 3.516, 11.016], "texture": "#atlas"},
+				"down": {"uv": [11.984, 4.516, 11.016, 5.984], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "LeftHorn",
+			"from": [10, 7.5, 6],
+			"to": [12, 10.5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, 0]},
+			"faces": {
+				"north": {"uv": [11.016, 6.016, 11.984, 7.484], "texture": "#atlas"},
+				"east": {"uv": [9.516, 6.016, 10.984, 7.484], "texture": "#atlas"},
+				"south": {"uv": [8.516, 11.016, 9.484, 12.484], "texture": "#atlas"},
+				"west": {"uv": [10.516, 0.016, 11.984, 1.484], "texture": "#atlas"},
+				"up": {"uv": [11.984, 9.984, 11.016, 8.516], "texture": "#atlas"},
+				"down": {"uv": [10.484, 11.016, 9.516, 12.484], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "RightEye",
+			"from": [5.5, 6.5, 3.5],
+			"to": [7, 8, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, 0]},
+			"faces": {
+				"north": {"uv": [12.516, 1.516, 13.484, 2.484], "texture": "#atlas"},
+				"east": {"uv": [5.516, 10.516, 5.984, 11.484], "texture": "#atlas"},
+				"west": {"uv": [5.516, 10.516, 5.984, 11.484], "texture": "#atlas"},
+				"up": {"uv": [5.984, 13.484, 5.016, 13.016], "texture": "#atlas"},
+				"down": {"uv": [5.016, 13.016, 5.984, 13.484], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "LeftEye",
+			"from": [8.5, 6.5, 3.5],
+			"to": [10, 8, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, 0]},
+			"faces": {
+				"north": {"uv": [12.516, 1.516, 13.484, 2.484], "texture": "#atlas"},
+				"east": {"uv": [5.516, 10.516, 5.984, 11.484], "texture": "#atlas"},
+				"west": {"uv": [5.516, 10.516, 5.984, 11.484], "texture": "#atlas"},
+				"up": {"uv": [5.016, 13.016, 5.984, 13.484], "texture": "#atlas"},
+				"down": {"uv": [5.016, 13.016, 5.984, 13.484], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "SnoutTop",
+			"from": [6, 4, 3],
+			"to": [9.5, 6, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, 0]},
+			"faces": {
+				"north": {"uv": [9.516, 7.516, 11.484, 8.484], "texture": "#atlas"},
+				"east": {"uv": [2.016, 11.516, 2.484, 12.484], "texture": "#atlas"},
+				"west": {"uv": [13.016, 5.016, 13.484, 5.984], "texture": "#atlas"},
+				"up": {"uv": [13.984, 7.484, 12.016, 7.016], "texture": "#atlas"},
+				"down": {"uv": [3.984, 12.516, 2.016, 12.984], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "RightFrontLeg",
+			"from": [5.6001, 0, 6.5],
+			"to": [7.1001, 2.5, 8],
+			"faces": {
+				"north": {"uv": [11.016, 10.016, 11.984, 11.484], "texture": "#atlas"},
+				"east": {"uv": [0.016, 11.516, 0.984, 12.984], "texture": "#atlas"},
+				"south": {"uv": [1.016, 11.516, 1.984, 12.984], "texture": "#atlas"},
+				"west": {"uv": [11.516, 1.516, 12.484, 2.984], "texture": "#atlas"},
+				"down": {"uv": [13.484, 2.516, 12.516, 3.484], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "LeftFrontLeg",
+			"from": [8.4001, 0, 6.5],
+			"to": [9.9001, 2.5, 8],
+			"faces": {
+				"north": {"uv": [11.516, 3.016, 12.484, 4.484], "texture": "#atlas"},
+				"east": {"uv": [10.516, 11.516, 11.484, 12.984], "texture": "#atlas"},
+				"south": {"uv": [11.516, 11.516, 12.484, 12.984], "texture": "#atlas"},
+				"west": {"uv": [12.016, 0.016, 12.984, 1.484], "texture": "#atlas"},
+				"down": {"uv": [13.484, 3.516, 12.516, 4.484], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "Spot",
+			"from": [5.5, 1, 6.5],
+			"to": [10, 5.5, 13],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [7.75, 3.25, 9.75]},
+			"faces": {
+				"north": {"uv": [8.516, 8.516, 10.984, 10.984], "texture": "#atlas"},
+				"east": {"uv": [6.016, 6.016, 9.484, 8.484], "texture": "#atlas"},
+				"south": {"uv": [0.016, 9.016, 2.484, 11.484], "texture": "#atlas"},
+				"west": {"uv": [7.016, 0.016, 10.484, 2.484], "texture": "#atlas"},
+				"up": {"uv": [9.484, 5.984, 7.016, 2.516], "texture": "#atlas"},
+				"down": {"uv": [8.484, 8.516, 6.016, 11.984], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "LeftBackLeg",
+			"from": [9.4, 0, 9],
+			"to": [10.9, 1.5, 11.5],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [9, 0, 9]},
+			"faces": {
+				"north": {"uv": [8.516, 12.516, 9.484, 13.484], "texture": "#atlas"},
+				"east": {"uv": [11.516, 7.516, 12.984, 8.484], "texture": "#atlas"},
+				"south": {"uv": [9.516, 12.516, 10.484, 13.484], "texture": "#atlas"},
+				"west": {"uv": [4.516, 12.016, 5.984, 12.984], "texture": "#atlas"},
+				"up": {"uv": [12.984, 5.984, 12.016, 4.516], "texture": "#atlas"},
+				"down": {"uv": [6.984, 12.016, 6.016, 13.484], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "RightBackLeg",
+			"from": [4.6, 0, 10],
+			"to": [6.1, 1.5, 12.5],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [4, 0, 10]},
+			"faces": {
+				"north": {"uv": [12.516, 11.516, 13.484, 12.484], "texture": "#atlas"},
+				"east": {"uv": [12.016, 6.016, 13.484, 6.984], "texture": "#atlas"},
+				"south": {"uv": [12.516, 12.516, 13.484, 13.484], "texture": "#atlas"},
+				"west": {"uv": [7.016, 12.016, 8.484, 12.984], "texture": "#atlas"},
+				"up": {"uv": [12.984, 9.984, 12.016, 8.516], "texture": "#atlas"},
+				"down": {"uv": [12.984, 10.016, 12.016, 11.484], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "MushroomStem",
+			"from": [7, 9.5, 6],
+			"to": [8, 10.5, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, 0]},
+			"faces": {
+				"north": {"uv": [10.516, 11.016, 10.984, 11.484], "texture": "#atlas"},
+				"east": {"uv": [5.516, 11.516, 5.984, 11.984], "texture": "#atlas"},
+				"south": {"uv": [4.016, 12.516, 4.484, 12.984], "texture": "#atlas"},
+				"west": {"uv": [7.016, 13.016, 7.484, 13.484], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "MushroomBottom",
+			"from": [5.5, 10.5, 4.5],
+			"to": [9.5, 11.5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, 0]},
+			"faces": {
+				"north": {"uv": [0.016, 13.016, 1.984, 13.484], "texture": "#atlas"},
+				"east": {"uv": [13.016, 0.016, 14.984, 0.484], "texture": "#atlas"},
+				"south": {"uv": [13.016, 0.516, 14.984, 0.984], "texture": "#atlas"},
+				"west": {"uv": [13.016, 1.016, 14.984, 1.484], "texture": "#atlas"},
+				"up": {"uv": [4.484, 10.984, 2.516, 9.016], "texture": "#atlas"},
+				"down": {"uv": [11.484, 2.516, 9.516, 4.484], "texture": "#atlas"}
+			}
+		},
+		{
+			"name": "MushroomTop",
+			"from": [6.5, 11.5, 5.5],
+			"to": [8.5, 12.5, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -1, 0]},
+			"faces": {
+				"north": {"uv": [2.016, 13.016, 2.984, 13.484], "texture": "#atlas"},
+				"east": {"uv": [3.016, 13.016, 3.984, 13.484], "texture": "#atlas"},
+				"south": {"uv": [4.016, 13.016, 4.984, 13.484], "texture": "#atlas"},
+				"west": {"uv": [13.016, 4.516, 13.984, 4.984], "texture": "#atlas"},
+				"up": {"uv": [11.484, 2.484, 10.516, 1.516], "texture": "#atlas"}
+			}
+		}
+	]
+}

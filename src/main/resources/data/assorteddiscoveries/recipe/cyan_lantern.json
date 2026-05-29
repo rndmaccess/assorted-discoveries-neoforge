@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dyed_lanterns",
+  "ingredients": [
+    "minecraft:cyan_dye",
+    "minecraft:lantern"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:cyan_lantern"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_dyed_lanterns"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "blocks",
+  "ingredients": [
+    "minecraft:vine",
+    "assorteddiscoveries:stone_tiles"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:mossy_stone_tiles"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_stone_tiles"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_mossy_stone_tiles"
+        }
+      ]
+    }
+  ]
+}

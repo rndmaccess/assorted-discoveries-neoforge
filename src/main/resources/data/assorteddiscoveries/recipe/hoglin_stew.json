@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:cooked_porkchop",
+    "minecraft:nether_wart",
+    "minecraft:bowl"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:hoglin_stew"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_hoglin_stew"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "assorteddiscoveries:block/wild_green_onions"
+  }
+}

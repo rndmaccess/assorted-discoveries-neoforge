@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "assorteddiscoveries:block/dripstone_slab"
+    },
+    "type=top": {
+      "model": "assorteddiscoveries:block/dripstone_slab_top"
+    },
+    "type=double": {
+      "model": "minecraft:block/dripstone_block"
+    }
+  }
+}

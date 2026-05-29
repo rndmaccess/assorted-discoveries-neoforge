@@ -1,0 +1,9 @@
+{
+  "parent": "assorteddiscoveries:block/template_planter_box",
+  "textures": {
+    "side": "assorteddiscoveries:block/bamboo_planter_box_side",
+    "top": "assorteddiscoveries:block/bamboo_planter_box_top",
+    "bottom": "minecraft:block/bamboo_planks",
+    "soil": "minecraft:block/farmland_moist"
+  }
+}

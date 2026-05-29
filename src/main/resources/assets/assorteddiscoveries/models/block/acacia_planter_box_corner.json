@@ -1,0 +1,9 @@
+{
+  "parent": "assorteddiscoveries:block/template_planter_box_corner",
+  "textures": {
+    "side": "assorteddiscoveries:block/acacia_planter_box_side_corner",
+    "top": "assorteddiscoveries:block/acacia_planter_box_top",
+    "bottom": "minecraft:block/acacia_planks",
+    "soil": "minecraft:block/farmland_moist"
+  }
+}

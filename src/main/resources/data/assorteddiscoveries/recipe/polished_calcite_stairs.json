@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:polished_calcite"
+  },
+  "result": {
+    "id": "assorteddiscoveries:polished_calcite_stairs",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_polished_calcite"
+    }
+  ]
+}

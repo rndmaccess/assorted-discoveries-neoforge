@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "assorteddiscoveries:oak_wall",
+    "assorteddiscoveries:spruce_wall",
+    "assorteddiscoveries:birch_wall",
+    "assorteddiscoveries:jungle_wall",
+    "assorteddiscoveries:acacia_wall",
+    "assorteddiscoveries:dark_oak_wall",
+    "assorteddiscoveries:mangrove_wall",
+    "assorteddiscoveries:warped_wall",
+    "assorteddiscoveries:crimson_wall",
+    "assorteddiscoveries:cherry_wall",
+    "assorteddiscoveries:pale_oak_wall",
+    "assorteddiscoveries:bamboo_wall",
+    "assorteddiscoveries:stripped_oak_wall",
+    "assorteddiscoveries:stripped_spruce_wall",
+    "assorteddiscoveries:stripped_birch_wall",
+    "assorteddiscoveries:stripped_jungle_wall",
+    "assorteddiscoveries:stripped_acacia_wall",
+    "assorteddiscoveries:stripped_dark_oak_wall",
+    "assorteddiscoveries:stripped_mangrove_wall",
+    "assorteddiscoveries:stripped_warped_wall",
+    "assorteddiscoveries:stripped_crimson_wall",
+    "assorteddiscoveries:stripped_cherry_wall",
+    "assorteddiscoveries:stripped_pale_oak_wall",
+    "assorteddiscoveries:stripped_bamboo_wall"
+  ]
+}

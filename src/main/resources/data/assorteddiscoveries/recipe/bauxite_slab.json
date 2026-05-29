@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "assorteddiscoveries:bauxite"
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:bauxite_slab",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_bauxite"
+    }
+  ]
+}

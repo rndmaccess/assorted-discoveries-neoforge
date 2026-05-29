@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "YYY",
+    "BbB",
+    "RRR"
+  ],
+  "key": {
+    "Y": "minecraft:yellow_wool",
+    "R": "minecraft:red_wool",
+    "B": "minecraft:black_wool",
+    "b": "minecraft:blaze_rod"
+  },
+  "result": {
+    "id": "assorteddiscoveries:blaze_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_blaze_plushie"
+    }
+  ]
+}

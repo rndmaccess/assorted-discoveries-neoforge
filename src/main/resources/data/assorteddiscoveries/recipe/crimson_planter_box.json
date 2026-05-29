@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "planter_boxes",
+  "pattern": [
+    "# #",
+    "#S#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:crimson_slab",
+    "S": "#minecraft:soul_fire_base_blocks"
+  },
+  "result": {
+    "id": "assorteddiscoveries:crimson_planter_box"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_planter_boxes"
+    }
+  ]
+}

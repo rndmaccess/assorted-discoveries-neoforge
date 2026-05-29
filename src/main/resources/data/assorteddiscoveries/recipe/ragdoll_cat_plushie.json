@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cat_plushies",
+  "category": "misc",
+  "pattern": [
+    "GWG",
+    "LFL",
+    "WWW"
+  ],
+  "key": {
+    "W": "minecraft:white_wool",
+    "G": "minecraft:light_gray_wool",
+    "L": "minecraft:light_blue_wool",
+    "F": "#minecraft:cat_food"
+  },
+  "result": {
+    "id": "assorteddiscoveries:ragdoll_cat_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cat_plushies"
+    }
+  ]
+}

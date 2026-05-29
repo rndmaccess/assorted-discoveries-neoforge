@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:sweet_berries",
+    "W": "minecraft:wheat"
+  },
+  "pattern": [
+    "BBB",
+    "WWW"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:sweet_berry_pie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_sweet_berry_pie"
+    }
+  ]
+}

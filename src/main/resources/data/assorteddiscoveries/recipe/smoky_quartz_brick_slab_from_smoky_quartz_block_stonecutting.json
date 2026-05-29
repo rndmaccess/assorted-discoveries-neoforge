@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "assorteddiscoveries:smoky_quartz_block",
+  "result": {
+    "id": "assorteddiscoveries:smoky_quartz_brick_slab",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_smoky_quartz_blocks"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_smoky_quartz_bricks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sheep_plushies",
+  "pattern": [
+    "BBB",
+    "bIb",
+    "BBB"
+  ],
+  "key": {
+    "B": "minecraft:light_blue_wool",
+    "b": "minecraft:black_wool",
+    "I": "minecraft:mutton"
+  },
+  "result": {
+    "id": "assorteddiscoveries:light_blue_sheep_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_sheep_plushies"
+    }
+  ]
+}

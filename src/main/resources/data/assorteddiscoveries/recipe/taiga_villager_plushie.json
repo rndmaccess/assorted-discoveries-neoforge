@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "villager_plushies",
+  "key": {
+    "H": "minecraft:terracotta",
+    "C": "minecraft:white_wool",
+    "E": "minecraft:emerald",
+    "I": "minecraft:spruce_sapling"
+  },
+  "pattern": [
+    "HHH",
+    "HEH",
+    "CIC"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:taiga_villager_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_villager_plushies"
+    }
+  ]
+}

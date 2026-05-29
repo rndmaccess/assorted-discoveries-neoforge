@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "blocks",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:dripstone_brick_slab"
+  },
+  "result": {
+    "id": "assorteddiscoveries:chiseled_dripstone_bricks"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_dripstone_bricks"
+    }
+  ]
+}

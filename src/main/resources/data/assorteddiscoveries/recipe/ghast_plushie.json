@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WWW",
+    "GTG",
+    "WWW"
+  ],
+  "key": {
+    "W": "minecraft:white_wool",
+    "G": "minecraft:gray_wool",
+    "T": "minecraft:ghast_tear"
+  },
+  "result": {
+    "id": "assorteddiscoveries:ghast_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_ghast_plushie"
+    }
+  ]
+}

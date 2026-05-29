@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GGG",
+    "BIB",
+    "GGG"
+  ],
+  "key": {
+    "G": "minecraft:green_wool",
+	"B": "minecraft:black_wool",
+    "I": "minecraft:gunpowder"
+  },
+  "result": {
+    "id": "assorteddiscoveries:creeper_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_creeper_plushie"
+    }
+  ]
+}

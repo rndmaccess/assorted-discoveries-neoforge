@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "assorteddiscoveries:dripstone_bricks",
+  "result": {
+    "id": "assorteddiscoveries:dripstone_brick_stairs",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_dripstone_bricks"
+    }
+  ]
+}

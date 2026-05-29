@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RRR",
+    "YMY",
+    "RRR"
+  ],
+  "key": {
+    "R": "minecraft:red_wool",
+    "Y": "minecraft:yellow_wool",
+    "M": "minecraft:magma_cream"
+  },
+  "result": {
+    "id": "assorteddiscoveries:magma_cube_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_magma_cube_plushie"
+    }
+  ]
+}

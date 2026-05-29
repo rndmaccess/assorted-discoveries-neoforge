@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    "assorteddiscoveries:pudding",
+    "assorteddiscoveries:blueberries",
+    "minecraft:sweet_berries"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:berry_pudding"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_blueberries"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_pudding"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "assorteddiscoveries:purple_mushroom_block",
+    "#assorteddiscoveries:dyed_campfires",
+    "#assorteddiscoveries:overworld_planter_boxes",
+    "#assorteddiscoveries:nether_planter_boxes",
+    "#assorteddiscoveries:wooden_walls",
+    "#assorteddiscoveries:rope_ladders"
+  ]
+}

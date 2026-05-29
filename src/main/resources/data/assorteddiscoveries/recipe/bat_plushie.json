@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": "minecraft:brown_wool",
+    "B": "minecraft:black_wool",
+    "S": "#c:stones"
+  },
+  "pattern": [
+    "RRR",
+    "BSB",
+    "RRR"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:bat_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_bat_plushie"
+    }
+  ]
+}

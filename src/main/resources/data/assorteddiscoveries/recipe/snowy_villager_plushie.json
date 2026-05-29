@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "villager_plushies",
+  "key": {
+    "H": "minecraft:terracotta",
+    "C": "minecraft:cyan_wool",
+    "E": "minecraft:emerald",
+    "I": "minecraft:snow_block"
+  },
+  "pattern": [
+    "HHH",
+    "HEH",
+    "CIC"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:snowy_villager_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_villager_plushies"
+    }
+  ]
+}

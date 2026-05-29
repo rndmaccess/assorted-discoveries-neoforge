@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,stack_size=1": {
+      "model": "assorteddiscoveries:block/one_slime_plushie"
+    },
+    "facing=north,stack_size=2": {
+      "model": "assorteddiscoveries:block/two_slime_plushies"
+    },
+    "facing=north,stack_size=3,half=lower": {
+      "model": "assorteddiscoveries:block/two_slime_plushies"
+    },
+    "facing=north,stack_size=3,half=upper": {
+      "model": "assorteddiscoveries:block/three_slime_plushies"
+    },
+    "facing=south,stack_size=1": {
+      "model": "assorteddiscoveries:block/one_slime_plushie",
+      "y": 180
+    },
+    "facing=south,stack_size=2": {
+      "model": "assorteddiscoveries:block/two_slime_plushies",
+      "y": 180
+    },
+    "facing=south,stack_size=3,half=lower": {
+      "model": "assorteddiscoveries:block/two_slime_plushies",
+      "y": 180
+    },
+    "facing=south,stack_size=3,half=upper": {
+      "model": "assorteddiscoveries:block/three_slime_plushies",
+      "y": 180
+    },
+    "facing=west,stack_size=1": {
+      "model": "assorteddiscoveries:block/one_slime_plushie",
+      "y": 270
+    },
+    "facing=west,stack_size=2": {
+      "model": "assorteddiscoveries:block/two_slime_plushies",
+      "y": 270
+    },
+    "facing=west,stack_size=3,half=lower": {
+      "model": "assorteddiscoveries:block/two_slime_plushies",
+      "y": 270
+    },
+    "facing=west,stack_size=3,half=upper": {
+      "model": "assorteddiscoveries:block/three_slime_plushies",
+      "y": 270
+    },
+    "facing=east,stack_size=1": {
+      "model": "assorteddiscoveries:block/one_slime_plushie",
+      "y": 90
+    },
+    "facing=east,stack_size=2": {
+      "model": "assorteddiscoveries:block/two_slime_plushies",
+      "y": 90
+    },
+    "facing=east,stack_size=3,half=lower": {
+      "model": "assorteddiscoveries:block/two_slime_plushies",
+      "y": 90
+    },
+    "facing=east,stack_size=3,half=upper": {
+      "model": "assorteddiscoveries:block/three_slime_plushies",
+      "y": 90
+    }
+  }
+}

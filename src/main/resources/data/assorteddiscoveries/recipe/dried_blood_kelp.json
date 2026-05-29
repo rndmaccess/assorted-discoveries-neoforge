@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "assorteddiscoveries:dried_blood_kelp_block"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:dried_blood_kelp",
+    "count": 9
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_blood_kelp"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "YYY",
+    "BIB",
+    "YYY"
+  ],
+  "key": {
+    "Y": "minecraft:yellow_wool",
+    "B": "minecraft:black_wool",
+    "I": "minecraft:leather"
+  },
+  "result": {
+    "id": "assorteddiscoveries:camel_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_camel_plushie"
+    }
+  ]
+}

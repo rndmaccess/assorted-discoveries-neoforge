@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:twisted_blackstone_tiles"
+  },
+  "result": {
+    "id": "assorteddiscoveries:twisted_blackstone_tile_slab",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_blackstone_tiles"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_twisted_blackstone_tiles"
+        }
+      ]
+    }
+  ]
+}

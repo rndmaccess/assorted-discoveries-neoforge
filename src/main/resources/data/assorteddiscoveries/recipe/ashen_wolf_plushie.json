@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wolf_plushies",
+  "pattern": [
+    "LLL",
+    "BIB",
+    "WWW"
+  ],
+  "key": {
+    "L": "minecraft:light_gray_wool",
+    "W": "minecraft:white_wool",
+    "B": "minecraft:black_wool",
+    "I": "minecraft:bone"
+  },
+  "result": {
+    "id": "assorteddiscoveries:ashen_wolf_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_wolf_plushies"
+    }
+  ]
+}

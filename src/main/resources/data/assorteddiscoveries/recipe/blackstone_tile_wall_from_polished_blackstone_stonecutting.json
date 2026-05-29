@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:polished_blackstone",
+  "result": {
+    "id": "assorteddiscoveries:blackstone_tile_wall",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_blackstone_tiles"
+    }
+  ]
+}

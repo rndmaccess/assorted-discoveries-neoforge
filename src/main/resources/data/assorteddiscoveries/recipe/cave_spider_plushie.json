@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "RSR",
+    "CCC"
+  ],
+  "key": {
+    "C": "minecraft:cyan_wool",
+    "R": "minecraft:red_wool",
+    "S": "minecraft:string"
+  },
+  "result": {
+    "id": "assorteddiscoveries:cave_spider_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cave_spider_plushie"
+    }
+  ]
+}

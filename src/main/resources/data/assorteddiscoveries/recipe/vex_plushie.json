@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:light_gray_wool",
+    "W": "minecraft:white_wool",
+    "I": "minecraft:emerald"
+  },
+  "pattern": [
+    "BBB",
+    "WIW",
+    "BBB"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:vex_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_vex_plushie"
+    }
+  ]
+}

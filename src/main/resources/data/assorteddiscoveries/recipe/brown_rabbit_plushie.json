@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "rabbit_plushies",
+  "pattern": [
+    "BBB",
+    "bRb",
+    "BBB"
+  ],
+  "key": {
+    "B": "minecraft:brown_wool",
+    "b": "minecraft:black_wool",
+    "R": "minecraft:rabbit"
+  },
+  "result": {
+    "id": "assorteddiscoveries:brown_rabbit_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_rabbit_plushies"
+    }
+  ]
+}

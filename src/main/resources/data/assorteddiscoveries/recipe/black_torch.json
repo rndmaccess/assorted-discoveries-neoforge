@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dyed_torches",
+  "ingredients": [
+    "minecraft:black_dye",
+    "minecraft:torch"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:black_torch"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_dyed_torches"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "planter_boxes",
+  "key": {
+    "#": "minecraft:pale_oak_slab",
+    "D": "minecraft:dirt"
+  },
+  "pattern": [
+    "# #",
+    "#D#",
+    "###"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:pale_oak_planter_box"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_planter_boxes"
+    }
+  ]
+}

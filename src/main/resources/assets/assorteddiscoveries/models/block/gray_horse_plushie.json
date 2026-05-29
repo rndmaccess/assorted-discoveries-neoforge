@@ -1,0 +1,7 @@
+{
+  "parent": "assorteddiscoveries:block/template_horse_plushie",
+  "textures": {
+    "particle": "minecraft:block/gray_wool",
+    "atlas": "assorteddiscoveries:block/gray_horse_plushie"
+  }
+}

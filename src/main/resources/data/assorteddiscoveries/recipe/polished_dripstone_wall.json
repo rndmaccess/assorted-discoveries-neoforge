@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:polished_dripstone"
+  },
+  "result": {
+    "id": "assorteddiscoveries:polished_dripstone_wall",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_polished_dripstone"
+    }
+  ]
+}

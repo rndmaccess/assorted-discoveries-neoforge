@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "rope_ladders",
+  "pattern": [
+    "X X",
+    "###",
+    "X X"
+  ],
+  "key": {
+    "X": "minecraft:string",
+    "#": "minecraft:cherry_planks"
+  },
+  "result": {
+    "id": "assorteddiscoveries:cherry_rope_ladder",
+    "count": 3
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_rope_ladders"
+    }
+  ]
+}

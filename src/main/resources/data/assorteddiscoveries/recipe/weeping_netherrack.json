@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "blocks",
+  "ingredients": [
+    "minecraft:netherrack",
+    "#c:crimson_vegetation"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:weeping_netherrack"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_weeping_netherrack"
+    }
+  ]
+}

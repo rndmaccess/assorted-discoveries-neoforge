@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TTT",
+    "WIW",
+    "TTT"
+  ],
+  "key": {
+    "T": "minecraft:terracotta",
+    "W": "minecraft:white_wool",
+    "I": "minecraft:gold_ingot"
+  },
+  "result": {
+    "id": "assorteddiscoveries:piglin_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_piglin_plushies"
+    }
+  ]
+}

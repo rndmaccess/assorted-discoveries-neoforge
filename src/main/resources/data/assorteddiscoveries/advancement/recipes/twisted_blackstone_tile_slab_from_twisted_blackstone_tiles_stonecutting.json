@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "assorteddiscoveries:twisted_blackstone_tile_slab_from_twisted_blackstone_tiles_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_twisted_blackstone_tiles": {
+      "conditions": {
+        "items": [
+          {
+            "items": "assorteddiscoveries:twisted_blackstone_tiles"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "assorteddiscoveries:twisted_blackstone_tile_slab_from_twisted_blackstone_tiles_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_twisted_blackstone_tiles",
+      "has_the_recipe"
+    ]
+  ],
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_blackstone_tiles"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_twisted_blackstone_tiles"
+        }
+      ]
+    }
+  ]
+}

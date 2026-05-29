@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "assorteddiscoveries:bog_blossom"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "assorteddiscoveries:blocks/bog_blossom"
+}

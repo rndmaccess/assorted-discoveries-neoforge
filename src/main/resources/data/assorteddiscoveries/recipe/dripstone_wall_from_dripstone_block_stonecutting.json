@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:dripstone_block",
+  "result": {
+    "id": "assorteddiscoveries:dripstone_wall",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_dripstone_blocks"
+    }
+  ]
+}

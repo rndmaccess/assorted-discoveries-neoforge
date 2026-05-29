@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TTT",
+    "WPW",
+	"TTT"
+  ],
+  "key": {
+    "W": "minecraft:white_wool",
+    "T": "minecraft:terracotta",
+    "P": "minecraft:porkchop"
+  },
+  "result": {
+    "id": "assorteddiscoveries:hoglin_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_hoglin_plushies"
+    }
+  ]
+}

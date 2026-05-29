@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "YYY",
+    "BPB",
+    "WWW"
+  ],
+  "key": {
+    "Y": "minecraft:yellow_wool",
+    "B": "minecraft:light_blue_wool",
+    "W": "minecraft:white_wool",
+    "P": "minecraft:pufferfish"
+  },
+  "result": {
+    "id": "assorteddiscoveries:pufferfish_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_pufferfish_plushie"
+    }
+  ]
+}

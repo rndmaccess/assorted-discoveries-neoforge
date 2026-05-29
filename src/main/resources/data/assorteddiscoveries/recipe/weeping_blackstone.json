@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "blocks",
+  "ingredients": [
+    "#c:crimson_vegetation",
+    "minecraft:blackstone"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:weeping_blackstone"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_weeping_blackstone"
+    }
+  ]
+}

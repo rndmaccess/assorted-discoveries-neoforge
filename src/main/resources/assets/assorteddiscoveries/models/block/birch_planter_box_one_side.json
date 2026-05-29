@@ -1,0 +1,9 @@
+{
+  "parent": "assorteddiscoveries:block/template_planter_box_one_side",
+  "textures": {
+    "side": "assorteddiscoveries:block/birch_planter_box_side_middle",
+    "top": "assorteddiscoveries:block/birch_planter_box_top",
+    "bottom": "minecraft:block/birch_planks",
+    "soil": "minecraft:block/farmland_moist"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "feature": "assorteddiscoveries:cattail",
+  "placement": [
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:count",
+      "count": 16
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

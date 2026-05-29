@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cat_plushies",
+  "pattern": [
+    "YYb",
+    "GFG",
+    "bYY"
+  ],
+  "key": {
+    "Y": "minecraft:yellow_wool",
+    "G": "minecraft:green_wool",
+    "b": "minecraft:brown_wool",
+    "F": "#minecraft:cat_food"
+  },
+  "result": {
+    "id": "assorteddiscoveries:ocelot_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cat_plushies"
+    }
+  ]
+}

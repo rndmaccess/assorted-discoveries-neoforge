@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:calcite_bricks"
+  },
+  "result": {
+    "id": "assorteddiscoveries:calcite_brick_stairs",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_calcite_bricks"
+    }
+  ]
+}

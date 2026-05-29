@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:cracked_calcite_bricks"
+  },
+  "result": {
+    "id": "assorteddiscoveries:cracked_calcite_brick_slab",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_calcite_bricks"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_cracked_calcite_bricks"
+        }
+      ]
+    }
+  ]
+}

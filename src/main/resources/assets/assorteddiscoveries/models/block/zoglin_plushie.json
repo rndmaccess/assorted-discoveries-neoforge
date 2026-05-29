@@ -1,0 +1,7 @@
+{
+  "parent": "assorteddiscoveries:block/template_hoglin_plushie",
+  "textures": {
+    "particle": "minecraft:block/pink_wool",
+    "atlas": "assorteddiscoveries:block/zoglin_plushie"
+  }
+}

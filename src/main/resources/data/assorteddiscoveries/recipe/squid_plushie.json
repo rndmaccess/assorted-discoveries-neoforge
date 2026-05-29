@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "squid_plushies",
+  "key": {
+    "B": "minecraft:blue_wool",
+    "b": "minecraft:black_wool",
+    "I": "minecraft:ink_sac"
+  },
+  "pattern": [
+    "BBB",
+    "bIb",
+    "BBB"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:squid_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_squid_plushies"
+    }
+  ]
+}

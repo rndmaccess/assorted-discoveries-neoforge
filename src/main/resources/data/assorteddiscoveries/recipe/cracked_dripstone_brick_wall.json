@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:cracked_dripstone_bricks"
+  },
+  "result": {
+    "id": "assorteddiscoveries:cracked_dripstone_brick_wall",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_dripstone_bricks"
+    },
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cracked_dripstone_bricks"
+    }
+  ]
+}

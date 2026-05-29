@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "package": "rndm_access.assorteddiscoveries.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "AxeItemMixin",
+    "BambooBlockMixin",
+    "BoneMealItemMixin",
+    "EntityAccessor",
+    "FenceGateBlockMixin",
+    "LivingEntityMixin",
+    "PlantBlockMixin",
+    "ShovelItemMixin",
+    "SnowyBlockMixin",
+    "SpreadingSnowyBlockMixin",
+    "TrunkPlacerMixin",
+    "WallBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

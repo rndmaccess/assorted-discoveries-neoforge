@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cat_plushies",
+  "key": {
+    "W": "minecraft:white_wool",
+    "L": "minecraft:light_blue_wool",
+    "Y": "minecraft:yellow_wool",
+    "F": "#minecraft:cat_food"
+  },
+  "pattern": [
+    "WWW",
+    "YFL",
+    "WWW"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:white_cat_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cat_plushies"
+    }
+  ]
+}

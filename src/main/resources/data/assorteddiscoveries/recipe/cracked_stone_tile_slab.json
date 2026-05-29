@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:cracked_stone_tiles"
+  },
+  "result": {
+    "id": "assorteddiscoveries:cracked_stone_tile_slab",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "neoforge:and",
+      "values": [
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_stone_tiles"
+        },
+        {
+          "condition": "assorteddiscoveries:config_entry_enabled",
+          "value": "enable_cracked_stone_tiles"
+        }
+      ]
+    }
+  ]
+}

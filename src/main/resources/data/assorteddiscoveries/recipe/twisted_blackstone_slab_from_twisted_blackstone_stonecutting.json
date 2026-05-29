@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "assorteddiscoveries:twisted_blackstone",
+  "result": {
+    "id": "assorteddiscoveries:twisted_blackstone_slab",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_twisted_blackstone"
+    }
+  ]
+}

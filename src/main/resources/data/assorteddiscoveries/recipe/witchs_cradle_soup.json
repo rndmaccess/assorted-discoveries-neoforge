@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "assorteddiscoveries:witchs_cradle_branch",
+    "assorteddiscoveries:witchs_cradle_branch",
+    "assorteddiscoveries:witchs_cradle_branch",
+    "assorteddiscoveries:witchs_cradle_branch",
+    "assorteddiscoveries:witchs_cradle_branch",
+    "assorteddiscoveries:witchs_cradle_branch"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:witchs_cradle_soup"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_witchs_cradles"
+    }
+  ]
+}

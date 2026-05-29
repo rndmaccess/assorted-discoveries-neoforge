@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cat_plushies",
+  "pattern": [
+    "GGG",
+    "BFB",
+    "WWW"
+  ],
+  "key": {
+    "G": "minecraft:gray_wool",
+    "W": "minecraft:white_wool",
+    "B": "minecraft:black_wool",
+    "F": "#minecraft:cat_food"
+  },
+  "result": {
+    "id": "assorteddiscoveries:jellie_cat_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cat_plushies"
+    }
+  ]
+}

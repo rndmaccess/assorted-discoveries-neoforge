@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "count": 1,
+      "id": "assorteddiscoveries:calcite_bricks"
+    },
+    "title": {
+      "translate": "advancements.assorteddiscoveries.story.root.title"
+    },
+    "description": {
+      "translate": "advancements.assorteddiscoveries.story.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "assorteddiscoveries:gui/advancements/backgrounds/calcite_bricks"
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "blocks",
+  "ingredients": [
+    "minecraft:netherrack",
+    "#c:warped_vegetation"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:twisted_netherrack"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_twisted_netherrack"
+    }
+  ]
+}

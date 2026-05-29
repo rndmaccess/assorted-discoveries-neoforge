@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:stone_bricks",
+  "result": {
+    "id": "assorteddiscoveries:stone_tiles",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_stone_tiles"
+    }
+  ]
+}

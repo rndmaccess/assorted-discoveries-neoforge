@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:milk_bucket",
+    "minecraft:sugar",
+    "minecraft:egg"
+  ],
+  "result": {
+    "id": "assorteddiscoveries:pudding"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_pudding"
+    }
+  ]
+}

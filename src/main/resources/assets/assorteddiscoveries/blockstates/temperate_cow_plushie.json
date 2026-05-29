@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "assorteddiscoveries:block/temperate_cow_plushie"
+    },
+    "facing=south": {
+      "model": "assorteddiscoveries:block/temperate_cow_plushie",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "assorteddiscoveries:block/temperate_cow_plushie",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "assorteddiscoveries:block/temperate_cow_plushie",
+      "y": 90
+    }
+  }
+}

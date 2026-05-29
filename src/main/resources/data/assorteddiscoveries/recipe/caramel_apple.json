@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#S#",
+    "#A#",
+    "###"
+  ],
+  "key": {
+    "#": "assorteddiscoveries:caramel",
+    "S": "minecraft:stick",
+    "A": "minecraft:apple"
+  },
+  "result": {
+    "id": "assorteddiscoveries:caramel_apple"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_caramel_apple"
+    }
+  ]
+}

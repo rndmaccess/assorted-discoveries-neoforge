@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "assorteddiscoveries:cattail"
+  ],
+  "result": {
+    "id": "minecraft:brown_dye"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cattails"
+    }
+  ]
+}

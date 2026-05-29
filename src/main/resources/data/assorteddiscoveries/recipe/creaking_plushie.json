@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    "EIE",
+    "BBB"
+  ],
+  "key": {
+    "B": "minecraft:gray_wool",
+    "E": "minecraft:orange_wool",
+    "I": "minecraft:pale_oak_log"
+  },
+  "result": {
+    "id": "assorteddiscoveries:creaking_plushie"
+  },
+  "neoforge:conditions": [
+    {
+      "condition": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_creaking_plushie"
+    }
+  ]
+}
