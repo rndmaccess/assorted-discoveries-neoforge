@@ -13,8 +13,12 @@ import net.minecraft.world.item.StandingAndWallBlockItem;
 import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import rndm_access.assorteddiscoveries.AssortedDiscoveries;
+
+import java.util.function.Function;
+import java.util.function.Supplier;
 
 public final class ModItems {
     private static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(AssortedDiscoveries.MOD_ID);
@@ -74,7 +78,7 @@ public final class ModItems {
             = register(new Item(new Item.Properties().food(ModFoodComponents.GREEN_ONION)
             .setId(GREEN_ONION_KEY)), GREEN_ONION_KEY);
     public static final ResourceKey<Item> BLUEBERRIES_KEY = makeRegistryKey("blueberries");
-    public static final Item BLUEBERRIES = registerBlockItem(BLUEBERRIES_KEY, ModBlocks.BLUEBERRY_BUSH,
+    public static final Item BLUEBERRIES = registerBlockItem(BLUEBERRIES_KEY, ModBlocks.BLUEBERRY_BUSH.get(),
             new Item.Properties().food(ModFoodComponents.BLUEBERRIES).setId(BLUEBERRIES_KEY));
     public static final ResourceKey<Item> SWEET_BERRY_JUICE_KEY = makeRegistryKey("sweet_berry_juice");
     public static final Item SWEET_BERRY_JUICE = register(new Item(new Item.Properties()
@@ -165,8 +169,9 @@ public final class ModItems {
         return ResourceKey.create(Registries.ITEM, AssortedDiscoveries.makeModId(name));
     }
 
-    private static Item register(Item item, ResourceKey<Item> key) {
-        return Registry.register(BuiltInRegistries.ITEM, key, item);
+    private static DeferredItem<Item> register(String name, Function<Item.Properties, ? extends Item> item,
+                                               Supplier<Item.Properties> itemProperties) {
+        return ITEMS.registerItem(name, item, itemProperties);
     }
 
     private static Item registerBlockItem(ResourceKey<Item> key, Block standingBlock, Block wallBlock) {

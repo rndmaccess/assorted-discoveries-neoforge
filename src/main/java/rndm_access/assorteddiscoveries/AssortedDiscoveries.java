@@ -22,6 +22,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -38,6 +39,8 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -62,10 +65,11 @@ public class AssortedDiscoveries {
             .title(Component.translatable("itemGroup." + MOD_ID))
             .build();
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.assorteddiscoveries")) //The language key for the title of your CreativeModeTab
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ASSORTED_DISCOVERIES_TAB = CREATIVE_MODE_TABS.register("mod_tab", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup." + MOD_ID)) //The language key for the title of your CreativeModeTab
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
+            .icon(() -> ModBlocks.ENDERMAN_PLUSHIE.get().asItem().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 if (ModClientConfig.getBoolEntries().get(ModServerConfigKeys.ENABLE_SLIME_PLUSHIE)) {
                     output.accept(ModBlocks.SLIME_PLUSHIE.asItem());
@@ -822,8 +826,8 @@ public class AssortedDiscoveries {
 
         // General Registries
         ModBlocks.register(modEventBus);
-        ModItems.register();
-        AssortedDiscoveries.modifyCreativeTabs();
+        ModItems.register(modEventBus);
+        CREATIVE_MODE_TABS.register(modEventBus);
         ModBlockEntityTypes.register();
         ModParticleTypes.register();
         ModSoundEvents.register();

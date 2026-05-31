@@ -198,77 +198,47 @@ public final class ModBlocks {
             ModBlocks::makeSmokyQuartzSettings);
     public static final DeferredBlock<Block> SMOKY_QUARTZ_PILLAR = register("smoky_quartz_pillar",
             RotatedPillarBlock::new, ModBlocks::makeSmokyQuartzSettings, true);
+    public static final DeferredBlock<Block> SMOKY_QUARTZ_STAIRS = registerStairs("smoky_quartz_stairs",
+            ModBlocks::makeSmokyQuartzSettings, SMOKY_QUARTZ_BLOCK);
+    public static final DeferredBlock<Block> SMOKY_QUARTZ_SLAB = registerSlab("smoky_quartz_slab",
+            ModBlocks::makeSmokyQuartzSettings);
+    public static final DeferredBlock<Block> SMOKY_QUARTZ_WALL = registerWall("smoky_quartz_wall",
+            ModBlocks::makeSmokyQuartzSettings);
+    public static final DeferredBlock<Block> SMOOTH_SMOKY_QUARTZ = registerSimpleBlock("smooth_smoky_quartz",
+            ModBlocks::makeSmokyQuartzSettings, true);
+    public static final DeferredBlock<Block> SMOOTH_SMOKY_QUARTZ_STAIRS
+            = registerStairs("smooth_smoky_quartz_stairs",
+            ModBlocks::makeSmokyQuartzSettings, SMOOTH_SMOKY_QUARTZ);
+    public static final DeferredBlock<Block> SMOOTH_SMOKY_QUARTZ_SLAB = registerSlab("smooth_smoky_quartz_slab",
+            ModBlocks::makeSmokyQuartzSettings);
+    public static final DeferredBlock<Block> SMOOTH_SMOKY_QUARTZ_WALL = registerWall("smooth_smoky_quartz_wall",
+            ModBlocks::makeSmokyQuartzSettings);
+    public static final DeferredBlock<Block> CRACKED_STONE_BRICK_STAIRS
+            = registerStairs("cracked_stone_brick_stairs",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS), () -> Blocks.CRACKED_STONE_BRICKS);
+    public static final DeferredBlock<Block> CRACKED_STONE_BRICK_SLAB = registerSlab("cracked_stone_brick_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS));
+    public static final DeferredBlock<Block> CRACKED_STONE_BRICK_WALL = registerWall("cracked_stone_brick_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS));
+    public static final DeferredBlock<Block> BLUEBERRY_BUSH = register("blueberry_bush",
+            BlueberryBushBlock::new, () -> BlockBehaviour.Properties.of().mapColor(MapColor.GRASS)
+                    .randomTicks().noCollision().sound(SoundType.SWEET_BERRY_BUSH)
+                    .pushReaction(PushReaction.DESTROY), false);
+    public static final DeferredBlock<Block> GREEN_ONIONS = register("green_onions",
+            GreenOnionsBlock::new, () -> BlockBehaviour.Properties.of().mapColor(MapColor.PLANT)
+                    .noCollision().randomTicks().instabreak().sound(SoundType.CROP)
+                    .pushReaction(PushReaction.DESTROY), false);
+    public static final DeferredBlock<Block> OAK_PLANTER_BOX = registerPlanterBox("oak_planter_box",
+            Blocks.OAK_PLANKS.defaultMapColor(), SoundType.WOOD);
+    public static final DeferredBlock<Block> SPRUCE_PLANTER_BOX = registerPlanterBox("spruce_planter_box",
+            Blocks.SPRUCE_PLANKS.defaultMapColor(), SoundType.WOOD);
+    public static final DeferredBlock<Block> BIRCH_PLANTER_BOX = registerPlanterBox("birch_planter_box",
+            Blocks.BIRCH_PLANKS.defaultMapColor(), SoundType.WOOD);
+    public static final DeferredBlock<Block> JUNGLE_PLANTER_BOX = registerPlanterBox("jungle_planter_box",
+            Blocks.JUNGLE_PLANKS.defaultMapColor(), SoundType.WOOD);
 
 
-    public static final ResourceKey<Block> SMOKY_QUARTZ_STAIRS_KEY = makeRegistryKey("smoky_quartz_stairs");
-    public static final Block SMOKY_QUARTZ_STAIRS
-            = registerStairs(SMOKY_QUARTZ_STAIRS_KEY, makeSmokyQuartzSettings(SMOKY_QUARTZ_STAIRS_KEY),
-            SMOKY_QUARTZ_BLOCK);
-    public static final ResourceKey<Block> SMOKY_QUARTZ_SLAB_KEY = makeRegistryKey("smoky_quartz_slab");
-    public static final Block SMOKY_QUARTZ_SLAB = registerSlab(SMOKY_QUARTZ_SLAB_KEY,
-            makeSmokyQuartzSettings(SMOKY_QUARTZ_SLAB_KEY));
-    public static final ResourceKey<Block> SMOKY_QUARTZ_WALL_KEY = makeRegistryKey("smoky_quartz_wall");
-    public static final Block SMOKY_QUARTZ_WALL = registerWall(SMOKY_QUARTZ_WALL_KEY,
-            makeSmokyQuartzSettings(SMOKY_QUARTZ_WALL_KEY));
-    public static final ResourceKey<Block> SMOOTH_SMOKY_QUARTZ_KEY = makeRegistryKey("smooth_smoky_quartz");
-    public static final Block SMOOTH_SMOKY_QUARTZ
-            = register(new Block(makeSmokyQuartzSettings(SMOOTH_SMOKY_QUARTZ_KEY)),
-            SMOOTH_SMOKY_QUARTZ_KEY, true);
-    public static final ResourceKey<Block> SMOOTH_SMOKY_QUARTZ_STAIRS_KEY
-            = makeRegistryKey("smooth_smoky_quartz_stairs");
-    public static final Block SMOOTH_SMOKY_QUARTZ_STAIRS
-            = registerStairs(SMOOTH_SMOKY_QUARTZ_STAIRS_KEY, makeSmokyQuartzSettings(SMOOTH_SMOKY_QUARTZ_STAIRS_KEY),
-            SMOOTH_SMOKY_QUARTZ);
-    public static final ResourceKey<Block> SMOOTH_SMOKY_QUARTZ_SLAB_KEY
-            = makeRegistryKey("smooth_smoky_quartz_slab");
-    public static final Block SMOOTH_SMOKY_QUARTZ_SLAB = registerSlab(SMOOTH_SMOKY_QUARTZ_SLAB_KEY,
-            makeSmokyQuartzSettings(SMOOTH_SMOKY_QUARTZ_SLAB_KEY));
-    public static final ResourceKey<Block> SMOOTH_SMOKY_QUARTZ_WALL_KEY
-            = makeRegistryKey("smooth_smoky_quartz_wall");
-    public static final Block SMOOTH_SMOKY_QUARTZ_WALL = registerWall(SMOOTH_SMOKY_QUARTZ_WALL_KEY,
-            makeSmokyQuartzSettings(SMOOTH_SMOKY_QUARTZ_WALL_KEY));
-    public static final ResourceKey<Block> CRACKED_STONE_BRICK_STAIRS_KEY
-            = makeRegistryKey("cracked_stone_brick_stairs");
-    public static final Block CRACKED_STONE_BRICK_STAIRS
-            = registerStairs(CRACKED_STONE_BRICK_STAIRS_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS)
-                    .setId(CRACKED_STONE_BRICK_STAIRS_KEY), Blocks.CRACKED_STONE_BRICKS);
-    public static final ResourceKey<Block> CRACKED_STONE_BRICK_SLAB_KEY
-            = makeRegistryKey("cracked_stone_brick_slab");
-    public static final Block CRACKED_STONE_BRICK_SLAB = registerSlab(CRACKED_STONE_BRICK_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS)
-                    .setId(CRACKED_STONE_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> CRACKED_STONE_BRICK_WALL_KEY
-            = makeRegistryKey("cracked_stone_brick_wall");
-    public static final Block CRACKED_STONE_BRICK_WALL = registerWall(CRACKED_STONE_BRICK_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS)
-                    .setId(CRACKED_STONE_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> BLUEBERRY_BUSH_KEY = makeRegistryKey("blueberry_bush");
-    public static final Block BLUEBERRY_BUSH
-            = register(new BlueberryBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS)
-            .randomTicks().noCollision().sound(SoundType.SWEET_BERRY_BUSH)
-            .pushReaction(PushReaction.DESTROY).setId(BLUEBERRY_BUSH_KEY)),
-            BLUEBERRY_BUSH_KEY, false);
-    public static final ResourceKey<Block> GREEN_ONIONS_KEY = makeRegistryKey("green_onions");
-    public static final Block GREEN_ONIONS
-            = register(new GreenOnionsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT)
-            .noCollision().randomTicks().instabreak().sound(SoundType.CROP)
-                    .pushReaction(PushReaction.DESTROY).setId(GREEN_ONIONS_KEY)),
-            GREEN_ONIONS_KEY, false);
-    public static final ResourceKey<Block> OAK_PLANTER_BOX_KEY = makeRegistryKey("oak_planter_box");
-    public static final Block OAK_PLANTER_BOX
-            = registerPlanterBox(OAK_PLANTER_BOX_KEY, Blocks.OAK_PLANKS.defaultMapColor(), SoundType.WOOD);
-    public static final ResourceKey<Block> SPRUCE_PLANTER_BOX_KEY = makeRegistryKey("spruce_planter_box");
-    public static final Block SPRUCE_PLANTER_BOX
-            = registerPlanterBox(SPRUCE_PLANTER_BOX_KEY, Blocks.SPRUCE_PLANKS.defaultMapColor(),
-            SoundType.WOOD);
-    public static final ResourceKey<Block> BIRCH_PLANTER_BOX_KEY = makeRegistryKey("birch_planter_box");
-    public static final Block BIRCH_PLANTER_BOX
-            = registerPlanterBox(BIRCH_PLANTER_BOX_KEY, Blocks.BIRCH_PLANKS.defaultMapColor(), SoundType.WOOD);
-    public static final ResourceKey<Block> JUNGLE_PLANTER_BOX_KEY = makeRegistryKey("jungle_planter_box");
-    public static final Block JUNGLE_PLANTER_BOX
-            = registerPlanterBox(JUNGLE_PLANTER_BOX_KEY, Blocks.JUNGLE_PLANKS.defaultMapColor(),
-            SoundType.WOOD);
+
     public static final ResourceKey<Block> ACACIA_PLANTER_BOX_KEY = makeRegistryKey("acacia_planter_box");
     public static final Block ACACIA_PLANTER_BOX
             = registerPlanterBox(ACACIA_PLANTER_BOX_KEY, Blocks.ACACIA_PLANKS.defaultMapColor(),
@@ -1427,7 +1397,7 @@ public final class ModBlocks {
     }
 
     private static DeferredBlock<Block> registerStairs(String name, Supplier<BlockBehaviour.Properties> settings,
-                                                       DeferredBlock<Block> baseBlock) {
+                                                       Supplier<Block> baseBlock) {
         return register(name, properties -> new StairBlock(baseBlock.get().defaultBlockState(), properties),
                 settings, true);
     }
