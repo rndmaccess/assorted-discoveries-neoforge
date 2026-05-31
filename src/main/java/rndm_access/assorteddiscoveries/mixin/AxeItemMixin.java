@@ -24,16 +24,16 @@ import net.minecraft.world.level.block.state.BlockState;
 public abstract class AxeItemMixin {
     @Unique
     private static final Map<Block, Block> STRIPPABLE_WALLS = new ImmutableMap.Builder<Block, Block>()
-            .put(ModBlocks.OAK_WALL, ModBlocks.STRIPPED_OAK_WALL)
-            .put(ModBlocks.SPRUCE_WALL, ModBlocks.STRIPPED_SPRUCE_WALL)
-            .put(ModBlocks.BIRCH_WALL, ModBlocks.STRIPPED_BIRCH_WALL)
-            .put(ModBlocks.JUNGLE_WALL, ModBlocks.STRIPPED_JUNGLE_WALL)
-            .put(ModBlocks.ACACIA_WALL, ModBlocks.STRIPPED_ACACIA_WALL)
-            .put(ModBlocks.DARK_OAK_WALL, ModBlocks.STRIPPED_DARK_OAK_WALL)
-            .put(ModBlocks.MANGROVE_WALL, ModBlocks.STRIPPED_MANGROVE_WALL)
-            .put(ModBlocks.CRIMSON_WALL, ModBlocks.STRIPPED_CRIMSON_WALL)
-            .put(ModBlocks.WARPED_WALL, ModBlocks.STRIPPED_WARPED_WALL)
-            .put(ModBlocks.CHERRY_WALL, ModBlocks.STRIPPED_CHERRY_WALL).build();
+            .put(ModBlocks.OAK_WALL.get(), ModBlocks.STRIPPED_OAK_WALL.get())
+            .put(ModBlocks.SPRUCE_WALL.get(), ModBlocks.STRIPPED_SPRUCE_WALL.get())
+            .put(ModBlocks.BIRCH_WALL.get(), ModBlocks.STRIPPED_BIRCH_WALL.get())
+            .put(ModBlocks.JUNGLE_WALL.get(), ModBlocks.STRIPPED_JUNGLE_WALL.get())
+            .put(ModBlocks.ACACIA_WALL.get(), ModBlocks.STRIPPED_ACACIA_WALL.get())
+            .put(ModBlocks.DARK_OAK_WALL.get(), ModBlocks.STRIPPED_DARK_OAK_WALL.get())
+            .put(ModBlocks.MANGROVE_WALL.get(), ModBlocks.STRIPPED_MANGROVE_WALL.get())
+            .put(ModBlocks.CRIMSON_WALL.get(), ModBlocks.STRIPPED_CRIMSON_WALL.get())
+            .put(ModBlocks.WARPED_WALL.get(), ModBlocks.STRIPPED_WARPED_WALL.get())
+            .put(ModBlocks.CHERRY_WALL.get(), ModBlocks.STRIPPED_CHERRY_WALL.get()).build();
 
     @ModifyReturnValue(method = "useOn", at = @At("RETURN"))
     private InteractionResult useOn(InteractionResult original, UseOnContext context) {

@@ -23,56 +23,42 @@ import java.util.function.Supplier;
 public final class ModItems {
     private static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(AssortedDiscoveries.MOD_ID);
 
-    public static final ResourceKey<Item> WHITE_TORCH_KEY = makeRegistryKey("white_torch");
-    public static final Item WHITE_TORCH = registerBlockItem(WHITE_TORCH_KEY,
+    public static final DeferredItem<Item> WHITE_TORCH = registerBlockItem("white_torch",
             ModBlocks.WHITE_TORCH, ModBlocks.WHITE_WALL_TORCH);
-    public static final ResourceKey<Item> ORANGE_TORCH_KEY = makeRegistryKey("orange_torch");
-    public static final Item ORANGE_TORCH = registerBlockItem(ORANGE_TORCH_KEY,
+    public static final DeferredItem<Item> ORANGE_TORCH = registerBlockItem("orange_torch",
             ModBlocks.ORANGE_TORCH, ModBlocks.ORANGE_WALL_TORCH);
-    public static final ResourceKey<Item> MAGENTA_TORCH_KEY = makeRegistryKey("magenta_torch");
-    public static final Item MAGENTA_TORCH = registerBlockItem(MAGENTA_TORCH_KEY,
+    public static final DeferredItem<Item> MAGENTA_TORCH = registerBlockItem("magenta_torch",
             ModBlocks.MAGENTA_TORCH, ModBlocks.MAGENTA_WALL_TORCH);
-    public static final ResourceKey<Item> LIGHT_BLUE_TORCH_KEY = makeRegistryKey("light_blue_torch");
-    public static final Item LIGHT_BLUE_TORCH = registerBlockItem(LIGHT_BLUE_TORCH_KEY,
+    public static final DeferredItem<Item> LIGHT_BLUE_TORCH = registerBlockItem("light_blue_torch",
             ModBlocks.LIGHT_BLUE_TORCH, ModBlocks.LIGHT_BLUE_WALL_TORCH);
-    public static final ResourceKey<Item> YELLOW_TORCH_KEY = makeRegistryKey("yellow_torch");
-    public static final Item YELLOW_TORCH = registerBlockItem(YELLOW_TORCH_KEY,
+    public static final DeferredItem<Item> YELLOW_TORCH = registerBlockItem("yellow_torch",
             ModBlocks.YELLOW_TORCH, ModBlocks.YELLOW_WALL_TORCH);
-    public static final ResourceKey<Item> LIME_TORCH_KEY = makeRegistryKey("lime_torch");
-    public static final Item LIME_TORCH = registerBlockItem(LIME_TORCH_KEY,
+    public static final DeferredItem<Item> LIME_TORCH = registerBlockItem("lime_torch",
             ModBlocks.LIME_TORCH, ModBlocks.LIME_WALL_TORCH);
-    public static final ResourceKey<Item> PINK_TORCH_KEY = makeRegistryKey("pink_torch");
-    public static final Item PINK_TORCH = registerBlockItem(PINK_TORCH_KEY,
+    public static final DeferredItem<Item> PINK_TORCH = registerBlockItem("pink_torch",
             ModBlocks.PINK_TORCH, ModBlocks.PINK_WALL_TORCH);
-    public static final ResourceKey<Item> GRAY_TORCH_KEY = makeRegistryKey("gray_torch");
-    public static final Item GRAY_TORCH = registerBlockItem(GRAY_TORCH_KEY,
+    public static final DeferredItem<Item> GRAY_TORCH = registerBlockItem("gray_torch",
             ModBlocks.GRAY_TORCH, ModBlocks.GRAY_WALL_TORCH);
-    public static final ResourceKey<Item> LIGHT_GRAY_TORCH_KEY = makeRegistryKey("light_gray_torch");
-    public static final Item LIGHT_GRAY_TORCH = registerBlockItem(LIGHT_GRAY_TORCH_KEY,
+    public static final DeferredItem<Item> LIGHT_GRAY_TORCH = registerBlockItem("light_gray_torch",
             ModBlocks.LIGHT_GRAY_TORCH, ModBlocks.LIGHT_GRAY_WALL_TORCH);
-    public static final ResourceKey<Item> CYAN_TORCH_KEY = makeRegistryKey("cyan_torch");
-    public static final Item CYAN_TORCH = registerBlockItem(CYAN_TORCH_KEY,
+    public static final DeferredItem<Item> CYAN_TORCH = registerBlockItem("cyan_torch",
             ModBlocks.CYAN_TORCH, ModBlocks.CYAN_WALL_TORCH);
-    public static final ResourceKey<Item> PURPLE_TORCH_KEY = makeRegistryKey("purple_torch");
-    public static final Item PURPLE_TORCH = registerBlockItem(PURPLE_TORCH_KEY,
+    public static final DeferredItem<Item> PURPLE_TORCH = registerBlockItem("purple_torch",
             ModBlocks.PURPLE_TORCH, ModBlocks.PURPLE_WALL_TORCH);
-    public static final ResourceKey<Item> BLUE_TORCH_KEY = makeRegistryKey("blue_torch");
-    public static final Item BLUE_TORCH = registerBlockItem(BLUE_TORCH_KEY,
+    public static final DeferredItem<Item> BLUE_TORCH = registerBlockItem("blue_torch",
             ModBlocks.BLUE_TORCH, ModBlocks.BLUE_WALL_TORCH);
-    public static final ResourceKey<Item> BROWN_TORCH_KEY = makeRegistryKey("brown_torch");
-    public static final Item BROWN_TORCH = registerBlockItem(BROWN_TORCH_KEY,
+    public static final DeferredItem<Item> BROWN_TORCH = registerBlockItem("brown_torch",
             ModBlocks.BROWN_TORCH, ModBlocks.BROWN_WALL_TORCH);
-    public static final ResourceKey<Item> GREEN_TORCH_KEY = makeRegistryKey("green_torch");
-    public static final Item GREEN_TORCH = registerBlockItem(GREEN_TORCH_KEY,
+    public static final DeferredItem<Item> GREEN_TORCH = registerBlockItem("green_torch",
             ModBlocks.GREEN_TORCH, ModBlocks.GREEN_WALL_TORCH);
-    public static final ResourceKey<Item> RED_TORCH_KEY = makeRegistryKey("red_torch");
-    public static final Item RED_TORCH = registerBlockItem(RED_TORCH_KEY,
+    public static final DeferredItem<Item> RED_TORCH = registerBlockItem("red_torch",
             ModBlocks.RED_TORCH, ModBlocks.RED_WALL_TORCH);
-    public static final ResourceKey<Item> BLACK_TORCH_KEY = makeRegistryKey("black_torch");
-    public static final Item BLACK_TORCH = registerBlockItem(BLACK_TORCH_KEY,
+    public static final DeferredItem<Item> BLACK_TORCH = registerBlockItem("black_torch",
             ModBlocks.BLACK_TORCH, ModBlocks.BLACK_WALL_TORCH);
-    public static final ResourceKey<Item> GREEN_ONION_SEEDS_KEY = makeRegistryKey("green_onion_seeds");
-    public static final Item GREEN_ONION_SEEDS = registerBlockItem(GREEN_ONION_SEEDS_KEY, ModBlocks.GREEN_ONIONS);
+    public static final Item GREEN_ONION_SEEDS = registerBlockItem("green_onion_seeds", ModBlocks.GREEN_ONIONS);
+
+
+
     public static final ResourceKey<Item> GREEN_ONION_KEY = makeRegistryKey("green_onion");
     public static final Item GREEN_ONION
             = register(new Item(new Item.Properties().food(ModFoodComponents.GREEN_ONION)
@@ -174,24 +160,24 @@ public final class ModItems {
         return ITEMS.registerItem(name, item, itemProperties);
     }
 
-    private static Item registerBlockItem(ResourceKey<Item> key, Block standingBlock, Block wallBlock) {
-        final Item blockItem = new StandingAndWallBlockItem(standingBlock, wallBlock,
-                Direction.DOWN, new Item.Properties().setId(key));
-        Item.BY_BLOCK.put(standingBlock, blockItem);
-        Item.BY_BLOCK.put(wallBlock, blockItem);
-        return register(blockItem, key);
+    private static DeferredItem<Item> registerBlockItem(String name, Supplier<Block> standingBlock, Supplier<Block> wallBlock) {
+        final Function<Item.Properties, StandingAndWallBlockItem> blockItem
+                = prop -> new StandingAndWallBlockItem(standingBlock.get(), wallBlock.get(), Direction.DOWN, prop);
+        //Item.BY_BLOCK.put(standingBlock, blockItem);
+        //Item.BY_BLOCK.put(wallBlock, blockItem);
+        return register(name, blockItem, Item.Properties::new);
     }
 
-    private static Item registerBlockItem(ResourceKey<Item> key, Block block) {
-        final Item blockItem = new BlockItem(block, new Item.Properties().setId(key));
-        Item.BY_BLOCK.put(block, blockItem);
-        return register(blockItem, key);
+    private static DeferredItem<Item> registerBlockItem(String name, Supplier<Block> block) {
+        final Function<Item.Properties, BlockItem> blockItem = prop -> new BlockItem(block.get(), prop);
+        //Item.BY_BLOCK.put(block, blockItem);
+        return register(name, blockItem, Item.Properties::new);
     }
 
-    private static Item registerBlockItem(ResourceKey<Item> key, Block block, Item.Properties settings) {
-        final Item blockItem = new BlockItem(block, settings);
-        Item.BY_BLOCK.put(block, blockItem);
-        return register(blockItem, key);
+    private static DeferredItem<Item> registerBlockItem(String name, Supplier<Block> block, Supplier<Item.Properties> properties) {
+        final Function<Item.Properties, BlockItem> blockItem = prop -> new BlockItem(block.get(), prop);
+        //Item.BY_BLOCK.put(block, blockItem);
+        return register(name, blockItem, properties);
     }
 
     /**
