@@ -378,80 +378,74 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> GREEN_LANTERN = registerLantern("green_lantern");
     public static final DeferredBlock<Block> RED_LANTERN = registerLantern("red_lantern");
     public static final DeferredBlock<Block> BLACK_LANTERN = registerLantern("black_lantern");
+    public static final DeferredBlock<Block> WHITE_TORCH
+            = registerTorch("white_torch", ModParticleTypes.WHITE_FLAME);
+    public static final DeferredBlock<Block> ORANGE_TORCH
+            = registerTorch("orange_torch", ModParticleTypes.ORANGE_FLAME);
+    public static final DeferredBlock<Block> MAGENTA_TORCH
+            = registerTorch("magenta_torch", ModParticleTypes.MAGENTA_FLAME);
+    public static final DeferredBlock<Block> LIGHT_BLUE_TORCH
+            = registerTorch("light_blue_torch", ModParticleTypes.LIGHT_BLUE_FLAME);
+    public static final DeferredBlock<Block> YELLOW_TORCH
+            = registerTorch("yellow_torch", ModParticleTypes.YELLOW_FLAME);
+    public static final DeferredBlock<Block> LIME_TORCH
+            = registerTorch("lime_torch", ModParticleTypes.LIME_FLAME);
+    public static final DeferredBlock<Block> PINK_TORCH
+            = registerTorch("pink_torch", ModParticleTypes.PINK_FLAME);
+    public static final DeferredBlock<Block> GRAY_TORCH
+            = registerTorch("gray_torch", ModParticleTypes.GRAY_FLAME);
+    public static final DeferredBlock<Block> LIGHT_GRAY_TORCH
+            = registerTorch("light_gray_torch", ModParticleTypes.LIGHT_GRAY_FLAME);
+    public static final DeferredBlock<Block> CYAN_TORCH
+            = registerTorch("cyan_torch", ModParticleTypes.CYAN_FLAME);
+    public static final DeferredBlock<Block> PURPLE_TORCH
+            = registerTorch("purple_torch", ModParticleTypes.PURPLE_FLAME);
+    public static final DeferredBlock<Block> BLUE_TORCH
+            = registerTorch("blue_torch", ModParticleTypes.BLUE_FLAME);
+    public static final DeferredBlock<Block> BROWN_TORCH
+            = registerTorch("brown_torch", ModParticleTypes.BROWN_FLAME);
+    public static final DeferredBlock<Block> GREEN_TORCH
+            = registerTorch("green_torch", ModParticleTypes.GREEN_FLAME);
+    public static final DeferredBlock<Block> RED_TORCH
+            = registerTorch("red_torch", ModParticleTypes.RED_FLAME);
+    public static final DeferredBlock<Block> BLACK_TORCH
+            = registerTorch("black_torch", ModParticleTypes.BLACK_FLAME);
+    public static final DeferredBlock<Block> WHITE_WALL_TORCH
+            = registerWallTorch("white_wall_torch", WHITE_TORCH, ModParticleTypes.WHITE_FLAME);
+    public static final DeferredBlock<Block> ORANGE_WALL_TORCH
+            = registerWallTorch("orange_wall_torch", ORANGE_TORCH, ModParticleTypes.ORANGE_FLAME);
+    public static final DeferredBlock<Block> MAGENTA_WALL_TORCH
+            = registerWallTorch("magenta_wall_torch", MAGENTA_TORCH, ModParticleTypes.MAGENTA_FLAME);
+    public static final DeferredBlock<Block> LIGHT_BLUE_WALL_TORCH
+            = registerWallTorch("light_blue_wall_torch", LIGHT_BLUE_TORCH, ModParticleTypes.LIGHT_BLUE_FLAME);
+    public static final DeferredBlock<Block> YELLOW_WALL_TORCH
+            = registerWallTorch("yellow_wall_torch", YELLOW_TORCH, ModParticleTypes.YELLOW_FLAME);
+    public static final DeferredBlock<Block> LIME_WALL_TORCH
+            = registerWallTorch("lime_wall_torch", LIME_TORCH, ModParticleTypes.LIME_FLAME);
+    public static final DeferredBlock<Block> PINK_WALL_TORCH
+            = registerWallTorch("pink_wall_torch", PINK_TORCH, ModParticleTypes.PINK_FLAME);
+    public static final DeferredBlock<Block> GRAY_WALL_TORCH
+            = registerWallTorch("gray_wall_torch", GRAY_TORCH, ModParticleTypes.GRAY_FLAME);
+    public static final DeferredBlock<Block> LIGHT_GRAY_WALL_TORCH
+            = registerWallTorch("light_gray_wall_torch", LIGHT_GRAY_TORCH, ModParticleTypes.LIGHT_GRAY_FLAME);
+    public static final DeferredBlock<Block> CYAN_WALL_TORCH
+            = registerWallTorch("cyan_wall_torch", CYAN_TORCH, ModParticleTypes.CYAN_FLAME);
+    public static final DeferredBlock<Block> PURPLE_WALL_TORCH
+            = registerWallTorch("purple_wall_torch", PURPLE_TORCH, ModParticleTypes.PURPLE_FLAME);
+    public static final DeferredBlock<Block> BLUE_WALL_TORCH
+            = registerWallTorch("blue_wall_torch", BLUE_TORCH, ModParticleTypes.BLUE_FLAME);
+    public static final DeferredBlock<Block> BROWN_WALL_TORCH
+            = registerWallTorch("brown_wall_torch", BROWN_TORCH, ModParticleTypes.BROWN_FLAME);
+    public static final DeferredBlock<Block> GREEN_WALL_TORCH
+            = registerWallTorch("green_wall_torch", GREEN_TORCH, ModParticleTypes.GREEN_FLAME);
+    public static final DeferredBlock<Block> RED_WALL_TORCH
+            = registerWallTorch("red_wall_torch", RED_TORCH, ModParticleTypes.RED_FLAME);
+    public static final DeferredBlock<Block> BLACK_WALL_TORCH
+            = registerWallTorch("black_wall_torch", BLACK_TORCH, ModParticleTypes.BLACK_FLAME);
 
 
 
 
-
-    public static final ResourceKey<Block> WHITE_TORCH_KEY = makeRegistryKey("white_torch");
-    public static final Block WHITE_TORCH = registerTorch(WHITE_TORCH_KEY, ModParticleTypes.WHITE_FLAME);
-
-
-
-
-
-    public static final ResourceKey<Block> ORANGE_TORCH_KEY = makeRegistryKey("orange_torch");
-    public static final Block ORANGE_TORCH = registerTorch(ORANGE_TORCH_KEY, ModParticleTypes.ORANGE_FLAME);
-    public static final ResourceKey<Block> MAGENTA_TORCH_KEY = makeRegistryKey("magenta_torch");
-    public static final Block MAGENTA_TORCH = registerTorch(MAGENTA_TORCH_KEY, ModParticleTypes.MAGENTA_FLAME);
-    public static final ResourceKey<Block> LIGHT_BLUE_TORCH_KEY = makeRegistryKey("light_blue_torch");
-    public static final Block LIGHT_BLUE_TORCH = registerTorch(LIGHT_BLUE_TORCH_KEY, ModParticleTypes.LIGHT_BLUE_FLAME);
-    public static final ResourceKey<Block> YELLOW_TORCH_KEY = makeRegistryKey("yellow_torch");
-    public static final Block YELLOW_TORCH = registerTorch(YELLOW_TORCH_KEY, ModParticleTypes.YELLOW_FLAME);
-    public static final ResourceKey<Block> LIME_TORCH_KEY = makeRegistryKey("lime_torch");
-    public static final Block LIME_TORCH = registerTorch(LIME_TORCH_KEY, ModParticleTypes.LIME_FLAME);
-    public static final ResourceKey<Block> PINK_TORCH_KEY = makeRegistryKey("pink_torch");
-    public static final Block PINK_TORCH = registerTorch(PINK_TORCH_KEY, ModParticleTypes.PINK_FLAME);
-    public static final ResourceKey<Block> GRAY_TORCH_KEY = makeRegistryKey("gray_torch");
-    public static final Block GRAY_TORCH = registerTorch(GRAY_TORCH_KEY, ModParticleTypes.GRAY_FLAME);
-    public static final ResourceKey<Block> LIGHT_GRAY_TORCH_KEY = makeRegistryKey("light_gray_torch");
-    public static final Block LIGHT_GRAY_TORCH = registerTorch(LIGHT_GRAY_TORCH_KEY, ModParticleTypes.LIGHT_GRAY_FLAME);
-    public static final ResourceKey<Block> CYAN_TORCH_KEY = makeRegistryKey("cyan_torch");
-    public static final Block CYAN_TORCH = registerTorch(CYAN_TORCH_KEY, ModParticleTypes.CYAN_FLAME);
-    public static final ResourceKey<Block> PURPLE_TORCH_KEY = makeRegistryKey("purple_torch");
-    public static final Block PURPLE_TORCH = registerTorch(PURPLE_TORCH_KEY, ModParticleTypes.PURPLE_FLAME);
-    public static final ResourceKey<Block> BLUE_TORCH_KEY = makeRegistryKey("blue_torch");
-    public static final Block BLUE_TORCH = registerTorch(BLUE_TORCH_KEY, ModParticleTypes.BLUE_FLAME);
-    public static final ResourceKey<Block> BROWN_TORCH_KEY = makeRegistryKey("brown_torch");
-    public static final Block BROWN_TORCH = registerTorch(BROWN_TORCH_KEY, ModParticleTypes.BROWN_FLAME);
-    public static final ResourceKey<Block> GREEN_TORCH_KEY = makeRegistryKey("green_torch");
-    public static final Block GREEN_TORCH = registerTorch(GREEN_TORCH_KEY, ModParticleTypes.GREEN_FLAME);
-    public static final ResourceKey<Block> RED_TORCH_KEY = makeRegistryKey("red_torch");
-    public static final Block RED_TORCH = registerTorch(RED_TORCH_KEY, ModParticleTypes.RED_FLAME);
-    public static final ResourceKey<Block> BLACK_TORCH_KEY = makeRegistryKey("black_torch");
-    public static final Block BLACK_TORCH = registerTorch(BLACK_TORCH_KEY, ModParticleTypes.BLACK_FLAME);
-    public static final ResourceKey<Block> WHITE_WALL_TORCH_KEY = makeRegistryKey("white_wall_torch");
-    public static final Block WHITE_WALL_TORCH = registerWallTorch(WHITE_WALL_TORCH_KEY, WHITE_TORCH, ModParticleTypes.WHITE_FLAME);
-    public static final ResourceKey<Block> ORANGE_WALL_TORCH_KEY = makeRegistryKey("orange_wall_torch");
-    public static final Block ORANGE_WALL_TORCH = registerWallTorch(ORANGE_WALL_TORCH_KEY, ORANGE_TORCH, ModParticleTypes.ORANGE_FLAME);
-    public static final ResourceKey<Block> MAGENTA_WALL_TORCH_KEY = makeRegistryKey("magenta_wall_torch");
-    public static final Block MAGENTA_WALL_TORCH = registerWallTorch(MAGENTA_WALL_TORCH_KEY, MAGENTA_TORCH, ModParticleTypes.MAGENTA_FLAME);
-    public static final ResourceKey<Block> LIGHT_BLUE_WALL_TORCH_KEY = makeRegistryKey("light_blue_wall_torch");
-    public static final Block LIGHT_BLUE_WALL_TORCH = registerWallTorch(LIGHT_BLUE_WALL_TORCH_KEY, LIGHT_BLUE_TORCH, ModParticleTypes.LIGHT_BLUE_FLAME);
-    public static final ResourceKey<Block> YELLOW_WALL_TORCH_KEY = makeRegistryKey("yellow_wall_torch");
-    public static final Block YELLOW_WALL_TORCH = registerWallTorch(YELLOW_WALL_TORCH_KEY, YELLOW_TORCH, ModParticleTypes.YELLOW_FLAME);
-    public static final ResourceKey<Block> LIME_WALL_TORCH_KEY = makeRegistryKey("lime_wall_torch");
-    public static final Block LIME_WALL_TORCH = registerWallTorch(LIME_WALL_TORCH_KEY, LIME_TORCH, ModParticleTypes.LIME_FLAME);
-    public static final ResourceKey<Block> PINK_WALL_TORCH_KEY = makeRegistryKey("pink_wall_torch");
-    public static final Block PINK_WALL_TORCH = registerWallTorch(PINK_WALL_TORCH_KEY, PINK_TORCH, ModParticleTypes.PINK_FLAME);
-    public static final ResourceKey<Block> GRAY_WALL_TORCH_KEY = makeRegistryKey("gray_wall_torch");
-    public static final Block GRAY_WALL_TORCH = registerWallTorch(GRAY_WALL_TORCH_KEY, GRAY_TORCH, ModParticleTypes.GRAY_FLAME);
-    public static final ResourceKey<Block> LIGHT_GRAY_WALL_TORCH_KEY = makeRegistryKey("light_gray_wall_torch");
-    public static final Block LIGHT_GRAY_WALL_TORCH = registerWallTorch(LIGHT_GRAY_WALL_TORCH_KEY, LIGHT_GRAY_TORCH, ModParticleTypes.LIGHT_GRAY_FLAME);
-    public static final ResourceKey<Block> CYAN_WALL_TORCH_KEY = makeRegistryKey("cyan_wall_torch");
-    public static final Block CYAN_WALL_TORCH = registerWallTorch(CYAN_WALL_TORCH_KEY, CYAN_TORCH, ModParticleTypes.CYAN_FLAME);
-    public static final ResourceKey<Block> PURPLE_WALL_TORCH_KEY = makeRegistryKey("purple_wall_torch");
-    public static final Block PURPLE_WALL_TORCH = registerWallTorch(PURPLE_WALL_TORCH_KEY, PURPLE_TORCH, ModParticleTypes.PURPLE_FLAME);
-    public static final ResourceKey<Block> BLUE_WALL_TORCH_KEY = makeRegistryKey("blue_wall_torch");
-    public static final Block BLUE_WALL_TORCH = registerWallTorch(BLUE_WALL_TORCH_KEY, BLUE_TORCH, ModParticleTypes.BLUE_FLAME);
-    public static final ResourceKey<Block> BROWN_WALL_TORCH_KEY = makeRegistryKey("brown_wall_torch");
-    public static final Block BROWN_WALL_TORCH = registerWallTorch(BROWN_WALL_TORCH_KEY, BROWN_TORCH, ModParticleTypes.BROWN_FLAME);
-    public static final ResourceKey<Block> GREEN_WALL_TORCH_KEY = makeRegistryKey("green_wall_torch");
-    public static final Block GREEN_WALL_TORCH = registerWallTorch(GREEN_WALL_TORCH_KEY, GREEN_TORCH, ModParticleTypes.GREEN_FLAME);
-    public static final ResourceKey<Block> RED_WALL_TORCH_KEY = makeRegistryKey("red_wall_torch");
-    public static final Block RED_WALL_TORCH = registerWallTorch(RED_WALL_TORCH_KEY, RED_TORCH, ModParticleTypes.RED_FLAME);
-    public static final ResourceKey<Block> BLACK_WALL_TORCH_KEY = makeRegistryKey("black_wall_torch");
-    public static final Block BLACK_WALL_TORCH = registerWallTorch(BLACK_WALL_TORCH_KEY, BLACK_TORCH, ModParticleTypes.BLACK_FLAME);
     public static final ResourceKey<Block> WITCHS_CRADLE_KEY = makeRegistryKey("witchs_cradle");
     public static final Block WITCHS_CRADLE = register(new WitchsCradleBlock(BlockBehaviour.Properties
             .ofFullCopy(Blocks.SWEET_BERRY_BUSH).lightLevel((state) -> 8).setId(WITCHS_CRADLE_KEY)),
@@ -1309,16 +1303,17 @@ public final class ModBlocks {
         return deferredBlock;
     }
 
-    private static DeferredBlock<Block> registerTorch(String name, SimpleParticleType particle) {
+    private static DeferredBlock<Block> registerTorch(String name, Supplier<SimpleParticleType> particle) {
         Supplier<BlockBehaviour.Properties> torchSettings = () -> BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH);
-        return register(name, properties -> new TorchBlock(particle, properties),
+        return register(name, properties -> new TorchBlock(particle.get(), properties),
                 torchSettings, false);
     }
 
-    private static DeferredBlock<Block> registerWallTorch(String name, Block standingTorch, SimpleParticleType particle) {
-        Supplier<BlockBehaviour.Properties> wallTorchSettings = () -> wallVariant(standingTorch).noCollision().instabreak()
-                .lightLevel((blockState) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY);
-        return register(name, settings -> new WallTorchBlock(particle, settings),
+    private static DeferredBlock<Block> registerWallTorch(String name, Supplier<Block> standingTorch, Supplier<SimpleParticleType> particle) {
+        Supplier<BlockBehaviour.Properties> wallTorchSettings = () -> wallVariant(standingTorch.get()).noCollision()
+                .instabreak().lightLevel((blockState) -> 14).sound(SoundType.WOOD)
+                .pushReaction(PushReaction.DESTROY);
+        return register(name, settings -> new WallTorchBlock(particle.get(), settings),
                 wallTorchSettings, false);
     }
 
@@ -1362,18 +1357,18 @@ public final class ModBlocks {
         return register(moddedCakeBlock, blockKey, true);
     }
 
-    private static Block registerChocolateCandleCake(ResourceKey<Block> blockKey, Block candle) {
-        return registerCandleCake(blockKey, ModBlocks.CHOCOLATE_CAKE, candle);
+    private static Block registerChocolateCandleCake(String name, Supplier<Block> candle) {
+        return registerCandleCake(name, () -> ModBlocks.CHOCOLATE_CAKE, candle);
     }
 
-    private static Block registerRedVelvetCandleCake(ResourceKey<Block> blockKey, Block candle) {
-        return registerCandleCake(blockKey, ModBlocks.RED_VELVET_CAKE, candle);
+    private static Block registerRedVelvetCandleCake(String name, Supplier<Block> candle) {
+        return registerCandleCake(name, () -> ModBlocks.RED_VELVET_CAKE, candle);
     }
 
-    private static Block registerCandleCake(ResourceKey<Block> blockKey, Block cake, Block candle) {
+    private static Block registerCandleCake(String name, Supplier<Block> cake, Block candle) {
         Block candleCakeBlock = new ModdedCandleCakeBlock(cake, candle,
                 BlockBehaviour.Properties.ofFullCopy(Blocks.CANDLE_CAKE));
-        return register(candleCakeBlock, blockKey, false);
+        return register(name, candleCakeBlock, false);
     }
 
     private static Block registerPie(ResourceKey<Block> blockKey) {
