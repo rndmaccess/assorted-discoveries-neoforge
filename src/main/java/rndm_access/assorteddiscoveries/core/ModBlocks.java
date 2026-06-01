@@ -330,82 +330,66 @@ public final class ModBlocks {
             PurpleMushroomBlock::new, () -> BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE)
                     .instrument(NoteBlockInstrument.BASS).strength(0.2F)
                     .sound(SoundType.WOOD).ignitedByLava(), true);
-    public static final DeferredBlock<Block> WHITE_CAMPFIRE = registerDyedCampfire("white_campfire",
-            ModParticleTypes.WHITE_EMBER);
+    public static final DeferredBlock<Block> WHITE_CAMPFIRE
+            = registerDyedCampfire("white_campfire", ModParticleTypes.WHITE_EMBER);
+    public static final DeferredBlock<Block> ORANGE_CAMPFIRE
+            = registerDyedCampfire("orange_campfire", ModParticleTypes.ORANGE_EMBER);
+    public static final DeferredBlock<Block> MAGENTA_CAMPFIRE
+            = registerDyedCampfire("magenta_campfire", ModParticleTypes.MAGENTA_EMBER);
+    public static final DeferredBlock<Block> LIGHT_BLUE_CAMPFIRE
+            = registerDyedCampfire("light_blue_campfire", ModParticleTypes.LIGHT_BLUE_EMBER);
+    public static final DeferredBlock<Block> YELLOW_CAMPFIRE
+            = registerDyedCampfire("yellow_campfire", ModParticleTypes.YELLOW_EMBER);
+    public static final DeferredBlock<Block> LIME_CAMPFIRE
+            = registerDyedCampfire("lime_campfire", ModParticleTypes.LIME_EMBER);
+    public static final DeferredBlock<Block> PINK_CAMPFIRE
+            = registerDyedCampfire("pink_campfire", ModParticleTypes.PINK_EMBER);
+    public static final DeferredBlock<Block> GRAY_CAMPFIRE
+            = registerDyedCampfire("gray_campfire", ModParticleTypes.GRAY_EMBER);
+    public static final DeferredBlock<Block> LIGHT_GRAY_CAMPFIRE
+            = registerDyedCampfire("light_gray_campfire", ModParticleTypes.LIGHT_GRAY_EMBER);
+    public static final DeferredBlock<Block> CYAN_CAMPFIRE
+            = registerDyedCampfire("cyan_campfire", ModParticleTypes.CYAN_EMBER);
+    public static final DeferredBlock<Block> PURPLE_CAMPFIRE
+            = registerDyedCampfire("purple_campfire", ModParticleTypes.PURPLE_EMBER);
+    public static final DeferredBlock<Block> BLUE_CAMPFIRE
+            = registerDyedCampfire("blue_campfire", ModParticleTypes.BLUE_EMBER);
+    public static final DeferredBlock<Block> BROWN_CAMPFIRE
+            = registerDyedCampfire("brown_campfire", ModParticleTypes.BROWN_EMBER);
+    public static final DeferredBlock<Block> GREEN_CAMPFIRE
+            = registerDyedCampfire("green_campfire", ModParticleTypes.GREEN_EMBER);
+    public static final DeferredBlock<Block> RED_CAMPFIRE
+            = registerDyedCampfire("red_campfire", ModParticleTypes.RED_EMBER);
+    public static final DeferredBlock<Block> BLACK_CAMPFIRE
+            = registerDyedCampfire("black_campfire", ModParticleTypes.BLACK_EMBER);
+    public static final DeferredBlock<Block> WHITE_LANTERN = registerLantern("white_lantern");
+    public static final DeferredBlock<Block> ORANGE_LANTERN = registerLantern("orange_lantern");
+    public static final DeferredBlock<Block> MAGENTA_LANTERN = registerLantern("magenta_lantern");
+    public static final DeferredBlock<Block> LIGHT_BLUE_LANTERN = registerLantern("light_blue_lantern");
+    public static final DeferredBlock<Block> YELLOW_LANTERN = registerLantern("yellow_lantern");
+    public static final DeferredBlock<Block> LIME_LANTERN = registerLantern("lime_lantern");
+    public static final DeferredBlock<Block> PINK_LANTERN = registerLantern("pink_lantern");
+    public static final DeferredBlock<Block> GRAY_LANTERN = registerLantern("gray_lantern");
+    public static final DeferredBlock<Block> LIGHT_GRAY_LANTERN = registerLantern("light_gray_lantern");
+    public static final DeferredBlock<Block> CYAN_LANTERN = registerLantern("cyan_lantern");
+    public static final DeferredBlock<Block> PURPLE_LANTERN = registerLantern("purple_lantern");
+    public static final DeferredBlock<Block> BLUE_LANTERN = registerLantern("blue_lantern");
+    public static final DeferredBlock<Block> BROWN_LANTERN = registerLantern("brown_lantern");
+    public static final DeferredBlock<Block> GREEN_LANTERN = registerLantern("green_lantern");
+    public static final DeferredBlock<Block> RED_LANTERN = registerLantern("red_lantern");
+    public static final DeferredBlock<Block> BLACK_LANTERN = registerLantern("black_lantern");
 
 
 
 
 
-    public static final ResourceKey<Block> ORANGE_CAMPFIRE_KEY = makeRegistryKey("orange_campfire");
-    public static final Block ORANGE_CAMPFIRE
-            = registerDyedCampfire(ORANGE_CAMPFIRE_KEY, ModParticleTypes.ORANGE_EMBER);
-    public static final ResourceKey<Block> MAGENTA_CAMPFIRE_KEY = makeRegistryKey("magenta_campfire");
-    public static final Block MAGENTA_CAMPFIRE
-            = registerDyedCampfire(MAGENTA_CAMPFIRE_KEY, ModParticleTypes.MAGENTA_EMBER);
-    public static final ResourceKey<Block> LIGHT_BLUE_CAMPFIRE_KEY = makeRegistryKey("light_blue_campfire");
-    public static final Block LIGHT_BLUE_CAMPFIRE
-            = registerDyedCampfire(LIGHT_BLUE_CAMPFIRE_KEY, ModParticleTypes.LIGHT_BLUE_EMBER);
-    public static final ResourceKey<Block> YELLOW_CAMPFIRE_KEY = makeRegistryKey("yellow_campfire");
-    public static final Block YELLOW_CAMPFIRE
-            = registerDyedCampfire(YELLOW_CAMPFIRE_KEY, ModParticleTypes.YELLOW_EMBER);
-    public static final ResourceKey<Block> LIME_CAMPFIRE_KEY = makeRegistryKey("lime_campfire");
-    public static final Block LIME_CAMPFIRE = registerDyedCampfire(LIME_CAMPFIRE_KEY, ModParticleTypes.LIME_EMBER);
-    public static final ResourceKey<Block> PINK_CAMPFIRE_KEY = makeRegistryKey("pink_campfire");
-    public static final Block PINK_CAMPFIRE = registerDyedCampfire(PINK_CAMPFIRE_KEY, ModParticleTypes.PINK_EMBER);
-    public static final ResourceKey<Block> GRAY_CAMPFIRE_KEY = makeRegistryKey("gray_campfire");
-    public static final Block GRAY_CAMPFIRE = registerDyedCampfire(GRAY_CAMPFIRE_KEY, ModParticleTypes.GRAY_EMBER);
-    public static final ResourceKey<Block> LIGHT_GRAY_CAMPFIRE_KEY = makeRegistryKey("light_gray_campfire");
-    public static final Block LIGHT_GRAY_CAMPFIRE
-            = registerDyedCampfire(LIGHT_GRAY_CAMPFIRE_KEY, ModParticleTypes.LIGHT_GRAY_EMBER);
-    public static final ResourceKey<Block> CYAN_CAMPFIRE_KEY = makeRegistryKey("cyan_campfire");
-    public static final Block CYAN_CAMPFIRE = registerDyedCampfire(CYAN_CAMPFIRE_KEY, ModParticleTypes.CYAN_EMBER);
-    public static final ResourceKey<Block> PURPLE_CAMPFIRE_KEY = makeRegistryKey("purple_campfire");
-    public static final Block PURPLE_CAMPFIRE = registerDyedCampfire(PURPLE_CAMPFIRE_KEY, ModParticleTypes.PURPLE_EMBER);
-    public static final ResourceKey<Block> BLUE_CAMPFIRE_KEY = makeRegistryKey("blue_campfire");
-    public static final Block BLUE_CAMPFIRE = registerDyedCampfire(BLUE_CAMPFIRE_KEY, ModParticleTypes.BLUE_EMBER);
-    public static final ResourceKey<Block> BROWN_CAMPFIRE_KEY = makeRegistryKey("brown_campfire");
-    public static final Block BROWN_CAMPFIRE = registerDyedCampfire(BROWN_CAMPFIRE_KEY, ModParticleTypes.BROWN_EMBER);
-    public static final ResourceKey<Block> GREEN_CAMPFIRE_KEY = makeRegistryKey("green_campfire");
-    public static final Block GREEN_CAMPFIRE = registerDyedCampfire(GREEN_CAMPFIRE_KEY, ModParticleTypes.GREEN_EMBER);
-    public static final ResourceKey<Block> RED_CAMPFIRE_KEY = makeRegistryKey("red_campfire");
-    public static final Block RED_CAMPFIRE = registerDyedCampfire(RED_CAMPFIRE_KEY, ModParticleTypes.RED_EMBER);
-    public static final ResourceKey<Block> BLACK_CAMPFIRE_KEY = makeRegistryKey("black_campfire");
-    public static final Block BLACK_CAMPFIRE = registerDyedCampfire(BLACK_CAMPFIRE_KEY, ModParticleTypes.BLACK_EMBER);
-    public static final ResourceKey<Block> WHITE_LANTERN_KEY = makeRegistryKey("white_lantern");
-    public static final Block WHITE_LANTERN = registerLantern(WHITE_LANTERN_KEY);
-    public static final ResourceKey<Block> ORANGE_LANTERN_KEY = makeRegistryKey("orange_lantern");
-    public static final Block ORANGE_LANTERN = registerLantern(ORANGE_LANTERN_KEY);
-    public static final ResourceKey<Block> MAGENTA_LANTERN_KEY = makeRegistryKey("magenta_lantern");
-    public static final Block MAGENTA_LANTERN = registerLantern(MAGENTA_LANTERN_KEY);
-    public static final ResourceKey<Block> LIGHT_BLUE_LANTERN_KEY = makeRegistryKey("light_blue_lantern");
-    public static final Block LIGHT_BLUE_LANTERN = registerLantern(LIGHT_BLUE_LANTERN_KEY);
-    public static final ResourceKey<Block> YELLOW_LANTERN_KEY = makeRegistryKey("yellow_lantern");
-    public static final Block YELLOW_LANTERN = registerLantern(YELLOW_LANTERN_KEY);
-    public static final ResourceKey<Block> LIME_LANTERN_KEY = makeRegistryKey("lime_lantern");
-    public static final Block LIME_LANTERN = registerLantern(LIME_LANTERN_KEY);
-    public static final ResourceKey<Block> PINK_LANTERN_KEY = makeRegistryKey("pink_lantern");
-    public static final Block PINK_LANTERN = registerLantern(PINK_LANTERN_KEY);
-    public static final ResourceKey<Block> GRAY_LANTERN_KEY = makeRegistryKey("gray_lantern");
-    public static final Block GRAY_LANTERN = registerLantern(GRAY_LANTERN_KEY);
-    public static final ResourceKey<Block> LIGHT_GRAY_LANTERN_KEY = makeRegistryKey("light_gray_lantern");
-    public static final Block LIGHT_GRAY_LANTERN = registerLantern(LIGHT_GRAY_LANTERN_KEY);
-    public static final ResourceKey<Block> CYAN_LANTERN_KEY = makeRegistryKey("cyan_lantern");
-    public static final Block CYAN_LANTERN = registerLantern(CYAN_LANTERN_KEY);
-    public static final ResourceKey<Block> PURPLE_LANTERN_KEY = makeRegistryKey("purple_lantern");
-    public static final Block PURPLE_LANTERN = registerLantern(PURPLE_LANTERN_KEY);
-    public static final ResourceKey<Block> BLUE_LANTERN_KEY = makeRegistryKey("blue_lantern");
-    public static final Block BLUE_LANTERN = registerLantern(BLUE_LANTERN_KEY);
-    public static final ResourceKey<Block> BROWN_LANTERN_KEY = makeRegistryKey("brown_lantern");
-    public static final Block BROWN_LANTERN = registerLantern(BROWN_LANTERN_KEY);
-    public static final ResourceKey<Block> GREEN_LANTERN_KEY = makeRegistryKey("green_lantern");
-    public static final Block GREEN_LANTERN = registerLantern(GREEN_LANTERN_KEY);
-    public static final ResourceKey<Block> RED_LANTERN_KEY = makeRegistryKey("red_lantern");
-    public static final Block RED_LANTERN = registerLantern(RED_LANTERN_KEY);
-    public static final ResourceKey<Block> BLACK_LANTERN_KEY = makeRegistryKey("black_lantern");
-    public static final Block BLACK_LANTERN = registerLantern(BLACK_LANTERN_KEY);
     public static final ResourceKey<Block> WHITE_TORCH_KEY = makeRegistryKey("white_torch");
     public static final Block WHITE_TORCH = registerTorch(WHITE_TORCH_KEY, ModParticleTypes.WHITE_FLAME);
+
+
+
+
+
     public static final ResourceKey<Block> ORANGE_TORCH_KEY = makeRegistryKey("orange_torch");
     public static final Block ORANGE_TORCH = registerTorch(ORANGE_TORCH_KEY, ModParticleTypes.ORANGE_FLAME);
     public static final ResourceKey<Block> MAGENTA_TORCH_KEY = makeRegistryKey("magenta_torch");
@@ -1357,8 +1341,8 @@ public final class ModBlocks {
         return register(name, WallBlock::new, settings, true);
     }
 
-    private static DeferredBlock<Block> registerDyedCampfire(String name, ParticleOptions emberParticle) {
-        return register(name, properties -> new DyedCampfireBlock(properties, emberParticle),
+    private static DeferredBlock<Block> registerDyedCampfire(String name, Supplier<SimpleParticleType> emberParticle) {
+        return register(name, properties -> new DyedCampfireBlock(properties, emberParticle.get()),
                 () -> BlockBehaviour.Properties.ofFullCopy(Blocks.CAMPFIRE), true);
     }
 

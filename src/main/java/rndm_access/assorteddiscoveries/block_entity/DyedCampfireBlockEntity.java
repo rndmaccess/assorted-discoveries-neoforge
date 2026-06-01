@@ -14,11 +14,11 @@ public class DyedCampfireBlockEntity extends CampfireBlockEntity {
 
     @Override
     public @NonNull BlockEntityType<?> getType() {
-        return ModBlockEntityTypes.DYED_CAMPFIRE;
+        return ModBlockEntityTypes.DYED_CAMPFIRE.get();
     }
 
     @Override
     public boolean isValidBlockState(@NonNull BlockState state) {
-        return ModBlockEntityTypes.DYED_CAMPFIRE.isValid(state);
+        return ModBlockEntityTypes.DYED_CAMPFIRE.get().isValid(state);
     }
 }

@@ -828,8 +828,8 @@ public class AssortedDiscoveries {
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
-        ModBlockEntityTypes.register();
-        ModParticleTypes.register();
+        ModBlockEntityTypes.register(modEventBus);
+        ModParticleTypes.register(modEventBus);
         ModSoundEvents.register();
         AssortedDiscoveries.registerFuel();
         AssortedDiscoveries.registerCompostables();

@@ -31,7 +31,7 @@ public class BlueberryBushBlock extends AbstractBerryBushBlock {
 
     @Override
     protected Item berryItem() {
-        return ModItems.BLUEBERRIES;
+        return ModItems.BLUEBERRIES.get();
     }
 
     @Override

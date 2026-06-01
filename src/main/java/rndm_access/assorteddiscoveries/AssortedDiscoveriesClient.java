@@ -46,7 +46,7 @@ public class AssortedDiscoveriesClient {
     }
 
     private static void registerBlockEntityRenderers() {
-        BlockEntityRenderers.register(ModBlockEntityTypes.DYED_CAMPFIRE, DyedCampfireBlockEntityRenderer::new);
+        BlockEntityRenderers.register(ModBlockEntityTypes.DYED_CAMPFIRE.get(), DyedCampfireBlockEntityRenderer::new);
     }
 
     @SubscribeEvent
@@ -75,41 +75,41 @@ public class AssortedDiscoveriesClient {
 
     @SubscribeEvent
     private static void registerParticleProvider(RegisterParticleProvidersEvent event) {
-        event.registerSpriteSet(ModParticleTypes.WHITE_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.ORANGE_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.MAGENTA_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.LIGHT_BLUE_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.YELLOW_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.LIME_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.PINK_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.GRAY_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.LIGHT_GRAY_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.CYAN_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.PURPLE_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.BLUE_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.BROWN_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.GREEN_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.RED_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.BLACK_EMBER, LavaParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.WHITE_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.ORANGE_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.MAGENTA_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.LIGHT_BLUE_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.YELLOW_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.LIME_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.PINK_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.GRAY_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.LIGHT_GRAY_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.CYAN_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.PURPLE_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.BLUE_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.BROWN_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.GREEN_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.RED_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.BLACK_FLAME, FlameParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.BLOOD_KELP_SPORE, SporeParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.WITCHS_CRADLE_SPORE, SporeParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.BOG_BLOSSOM_NECTAR, BogBlossomNectarParticle.Provider::new);
-        event.registerSpriteSet(ModParticleTypes.SOUL_EMBER, LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.WHITE_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.ORANGE_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.MAGENTA_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.LIGHT_BLUE_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.YELLOW_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.LIME_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.PINK_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.GRAY_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.LIGHT_GRAY_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.CYAN_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.PURPLE_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.BLUE_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.BROWN_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.GREEN_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.RED_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.BLACK_EMBER.get(), LavaParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.WHITE_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.ORANGE_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.MAGENTA_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.LIGHT_BLUE_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.YELLOW_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.LIME_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.PINK_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.GRAY_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.LIGHT_GRAY_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.CYAN_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.PURPLE_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.BLUE_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.BROWN_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.GREEN_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.RED_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.BLACK_FLAME.get(), FlameParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.BLOOD_KELP_SPORE.get(), SporeParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.WITCHS_CRADLE_SPORE.get(), SporeParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.BOG_BLOSSOM_NECTAR.get(), BogBlossomNectarParticle.Provider::new);
+        event.registerSpriteSet(ModParticleTypes.SOUL_EMBER.get(), LavaParticle.Provider::new);
     }
 }

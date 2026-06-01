@@ -55,17 +55,16 @@ public final class ModItems {
             ModBlocks.RED_TORCH, ModBlocks.RED_WALL_TORCH);
     public static final DeferredItem<Item> BLACK_TORCH = registerBlockItem("black_torch",
             ModBlocks.BLACK_TORCH, ModBlocks.BLACK_WALL_TORCH);
-    public static final Item GREEN_ONION_SEEDS = registerBlockItem("green_onion_seeds", ModBlocks.GREEN_ONIONS);
+    public static final DeferredItem<Item> GREEN_ONION_SEEDS = registerBlockItem("green_onion_seeds",
+            ModBlocks.GREEN_ONIONS);
+    public static final DeferredItem<Item> GREEN_ONION = ITEMS.registerSimpleItem("green_onion",
+            () -> new Item.Properties().food(ModFoodComponents.GREEN_ONION));
+    public static final DeferredItem<Item> BLUEBERRIES = registerBlockItem("blueberries", ModBlocks.BLUEBERRY_BUSH,
+            () -> new Item.Properties().food(ModFoodComponents.BLUEBERRIES));
 
 
 
-    public static final ResourceKey<Item> GREEN_ONION_KEY = makeRegistryKey("green_onion");
-    public static final Item GREEN_ONION
-            = register(new Item(new Item.Properties().food(ModFoodComponents.GREEN_ONION)
-            .setId(GREEN_ONION_KEY)), GREEN_ONION_KEY);
-    public static final ResourceKey<Item> BLUEBERRIES_KEY = makeRegistryKey("blueberries");
-    public static final Item BLUEBERRIES = registerBlockItem(BLUEBERRIES_KEY, ModBlocks.BLUEBERRY_BUSH.get(),
-            new Item.Properties().food(ModFoodComponents.BLUEBERRIES).setId(BLUEBERRIES_KEY));
+
     public static final ResourceKey<Item> SWEET_BERRY_JUICE_KEY = makeRegistryKey("sweet_berry_juice");
     public static final Item SWEET_BERRY_JUICE = register(new Item(new Item.Properties()
                 .food(ModFoodComponents.JUICE, Consumables.DEFAULT_DRINK).stacksTo(16)

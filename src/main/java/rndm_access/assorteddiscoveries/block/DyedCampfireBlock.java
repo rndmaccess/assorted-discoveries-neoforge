@@ -59,13 +59,13 @@ public class DyedCampfireBlock extends CampfireBlock {
                 RecipeManager.CachedCheck<SingleRecipeInput, CampfireCookingRecipe> matchGetter
                         = RecipeManager.createCheck(RecipeType.CAMPFIRE_COOKING);
 
-                return createTickerHelper(type, ModBlockEntityTypes.DYED_CAMPFIRE,
+                return createTickerHelper(type, ModBlockEntityTypes.DYED_CAMPFIRE.get(),
                         (worldx, pos, statex, blockEntity) ->
                                 DyedCampfireBlockEntity.cookTick(serverWorld, pos, statex, blockEntity, matchGetter));
             }
-            return createTickerHelper(type, ModBlockEntityTypes.DYED_CAMPFIRE, DyedCampfireBlockEntity::cooldownTick);
+            return createTickerHelper(type, ModBlockEntityTypes.DYED_CAMPFIRE.get(), DyedCampfireBlockEntity::cooldownTick);
         }
-        return isLit ? createTickerHelper(type, ModBlockEntityTypes.DYED_CAMPFIRE, DyedCampfireBlockEntity::particleTick) : null;
+        return isLit ? createTickerHelper(type, ModBlockEntityTypes.DYED_CAMPFIRE.get(), DyedCampfireBlockEntity::particleTick) : null;
     }
 
     @Override
