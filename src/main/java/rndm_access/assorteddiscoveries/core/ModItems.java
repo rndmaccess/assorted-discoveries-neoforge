@@ -61,41 +61,35 @@ public final class ModItems {
             () -> new Item.Properties().food(ModFoodComponents.GREEN_ONION));
     public static final DeferredItem<Item> BLUEBERRIES = registerBlockItem("blueberries", ModBlocks.BLUEBERRY_BUSH,
             () -> new Item.Properties().food(ModFoodComponents.BLUEBERRIES));
+    public static final DeferredItem<Item> SWEET_BERRY_JUICE = ITEMS.registerSimpleItem("sweet_berry_juice",
+            () -> new Item.Properties()
+                    .food(ModFoodComponents.JUICE, Consumables.DEFAULT_DRINK).stacksTo(16)
+                    .usingConvertsTo(Items.GLASS_BOTTLE));
+    public static final DeferredItem<Item> BLUEBERRY_JUICE = ITEMS.registerSimpleItem("blueberry_juice",
+            () -> new Item.Properties()
+                    .food(ModFoodComponents.JUICE, Consumables.DEFAULT_DRINK).stacksTo(16)
+                    .usingConvertsTo(Items.GLASS_BOTTLE));
+    public static final DeferredItem<Item> NOODLES = ITEMS.registerSimpleItem("noodles", Item.Properties::new);
+    public static final DeferredItem<Item> NOODLE_SOUP = ITEMS.registerSimpleItem("noodle_soup",
+            () -> new Item.Properties().food(ModFoodComponents.NOODLE_SOUP)
+                    .stacksTo(1).usingConvertsTo(Items.BOWL));
+    public static final DeferredItem<Item> PUDDING = ITEMS.registerSimpleItem("pudding",
+            () -> new Item.Properties().food(ModFoodComponents.PUDDING).stacksTo(1).usingConvertsTo(Items.BOWL));
+    public static final DeferredItem<Item> BERRY_PUDDING = ITEMS.registerSimpleItem("berry_pudding",
+            () -> new Item.Properties().food(ModFoodComponents.BERRY_PUDDING)
+                    .stacksTo(1).usingConvertsTo(Items.BOWL));
+    public static final DeferredItem<Item> SMOKY_QUARTZ
+            = ITEMS.registerSimpleItem("smoky_quartz", Item.Properties::new);
+    public static final DeferredItem<Item> CARAMEL_APPLE = ITEMS.registerSimpleItem("caramel_apple",
+            () -> new Item.Properties().food(ModFoodComponents.CARAMEL_APPLE)
+                    .stacksTo(1).usingConvertsTo(Items.STICK));
+    public static final DeferredItem<Item> CARAMEL = ITEMS.registerSimpleItem("caramel",
+            () -> new Item.Properties().food(ModFoodComponents.CARAMEL));
 
 
 
 
-    public static final ResourceKey<Item> SWEET_BERRY_JUICE_KEY = makeRegistryKey("sweet_berry_juice");
-    public static final Item SWEET_BERRY_JUICE = register(new Item(new Item.Properties()
-                .food(ModFoodComponents.JUICE, Consumables.DEFAULT_DRINK).stacksTo(16)
-                .usingConvertsTo(Items.GLASS_BOTTLE).setId(SWEET_BERRY_JUICE_KEY)), SWEET_BERRY_JUICE_KEY);
-    public static final ResourceKey<Item> BLUEBERRY_JUICE_KEY = makeRegistryKey("blueberry_juice");
-    public static final Item BLUEBERRY_JUICE = register(new Item(new Item.Properties()
-                .food(ModFoodComponents.JUICE, Consumables.DEFAULT_DRINK).stacksTo(16)
-                .usingConvertsTo(Items.GLASS_BOTTLE).setId(BLUEBERRY_JUICE_KEY)), BLUEBERRY_JUICE_KEY);
-    public static final ResourceKey<Item> NOODLES_KEY = makeRegistryKey("noodles");
-    public static final Item NOODLES = register(new Item(new Item.Properties().setId(NOODLES_KEY)), NOODLES_KEY);
-    public static final ResourceKey<Item> NOODLE_SOUP_KEY = makeRegistryKey("noodle_soup");
-    public static final Item NOODLE_SOUP = register(new Item(new Item.Properties().food(ModFoodComponents.NOODLE_SOUP)
-            .stacksTo(1).usingConvertsTo(Items.BOWL).setId(NOODLE_SOUP_KEY)), NOODLE_SOUP_KEY);
-    public static final ResourceKey<Item> PUDDING_KEY = makeRegistryKey("pudding");
-    public static final Item PUDDING = register(new Item(new Item.Properties()
-            .food(ModFoodComponents.PUDDING).stacksTo(1).usingConvertsTo(Items.BOWL).setId(PUDDING_KEY)),
-            PUDDING_KEY);
-    public static final ResourceKey<Item> BERRY_PUDDING_KEY = makeRegistryKey("berry_pudding");
-    public static final Item BERRY_PUDDING = register(new Item(new Item.Properties()
-            .food(ModFoodComponents.BERRY_PUDDING).stacksTo(1).usingConvertsTo(Items.BOWL)
-            .setId(BERRY_PUDDING_KEY)), BERRY_PUDDING_KEY);
-    public static final ResourceKey<Item> SMOKY_QUARTZ_KEY = makeRegistryKey("smoky_quartz");
-    public static final Item SMOKY_QUARTZ = register(new Item(new Item.Properties().setId(SMOKY_QUARTZ_KEY)),
-            SMOKY_QUARTZ_KEY);
-    public static final ResourceKey<Item> CARAMEL_APPLE_KEY = makeRegistryKey("caramel_apple");
-    public static final Item CARAMEL_APPLE = register(new Item(new Item.Properties()
-            .food(ModFoodComponents.CARAMEL_APPLE).stacksTo(1).usingConvertsTo(Items.STICK)
-            .setId(CARAMEL_APPLE_KEY)), CARAMEL_APPLE_KEY);
-    public static final ResourceKey<Item> CARAMEL_KEY = makeRegistryKey("caramel");
-    public static final Item CARAMEL = register(new Item(new Item.Properties().food(ModFoodComponents.CARAMEL)
-            .setId(CARAMEL_KEY)), CARAMEL_KEY);
+
     public static final ResourceKey<Item> SPRUCE_CONE_KEY = makeRegistryKey("spruce_cone");
     public static final Item SPRUCE_CONE = register(new Item(new Item.Properties().food(ModFoodComponents.SPRUCE_CONE)
             .setId(SPRUCE_CONE_KEY)), SPRUCE_CONE_KEY);

@@ -442,31 +442,26 @@ public final class ModBlocks {
             = registerWallTorch("red_wall_torch", RED_TORCH, ModParticleTypes.RED_FLAME);
     public static final DeferredBlock<Block> BLACK_WALL_TORCH
             = registerWallTorch("black_wall_torch", BLACK_TORCH, ModParticleTypes.BLACK_FLAME);
+    public static final DeferredBlock<Block> WITCHS_CRADLE = register("witchs_cradle", WitchsCradleBlock::new,
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH).lightLevel((state) -> 8),
+            false);
+    public static final DeferredBlock<Block> BAUXITE
+            = registerSimpleBlock("bauxite", ModBlocks::makeBauxiteSettings, true);
+    public static final DeferredBlock<Block> BAUXITE_SLAB
+            = registerSlab("bauxite_slab", ModBlocks::makeBauxiteSettings);
+    public static final DeferredBlock<Block> BAUXITE_STAIRS
+            = registerStairs("bauxite_stairs", ModBlocks::makeBauxiteSettings, BAUXITE);
+    public static final DeferredBlock<Block> BAUXITE_WALL
+            = registerWall("bauxite_wall", ModBlocks::makeBauxiteSettings);
+    public static final DeferredBlock<Block> BAUXITE_BRICKS = registerSimpleBlock("bauxite_bricks",
+            ModBlocks::makeBauxiteBricksSettings, true);
+    public static final DeferredBlock<Block> BAUXITE_BRICK_STAIRS = registerStairs("bauxite_brick_stairs",
+            ModBlocks::makeBauxiteBricksSettings, BAUXITE_BRICKS);
 
 
 
 
-    public static final ResourceKey<Block> WITCHS_CRADLE_KEY = makeRegistryKey("witchs_cradle");
-    public static final Block WITCHS_CRADLE = register(new WitchsCradleBlock(BlockBehaviour.Properties
-            .ofFullCopy(Blocks.SWEET_BERRY_BUSH).lightLevel((state) -> 8).setId(WITCHS_CRADLE_KEY)),
-            WITCHS_CRADLE_KEY, false);
-    public static final ResourceKey<Block> BAUXITE_KEY = makeRegistryKey("bauxite");
-    public static final Block BAUXITE = register(new Block(makeBauxiteSettings(BAUXITE_KEY)),
-            BAUXITE_KEY, true);
-    public static final ResourceKey<Block> BAUXITE_SLAB_KEY = makeRegistryKey("bauxite_slab");
-    public static final Block BAUXITE_SLAB = registerSlab(BAUXITE_SLAB_KEY, makeBauxiteSettings(BAUXITE_SLAB_KEY));
-    public static final ResourceKey<Block> BAUXITE_STAIRS_KEY = makeRegistryKey("bauxite_stairs");
-    public static final Block BAUXITE_STAIRS
-            = registerStairs(BAUXITE_STAIRS_KEY, makeBauxiteSettings(BAUXITE_STAIRS_KEY), BAUXITE);
-    public static final ResourceKey<Block> BAUXITE_WALL_KEY = makeRegistryKey("bauxite_wall");
-    public static final Block BAUXITE_WALL = registerWall(BAUXITE_WALL_KEY, makeBauxiteSettings(BAUXITE_WALL_KEY));
-    public static final ResourceKey<Block> BAUXITE_BRICKS_KEY = makeRegistryKey("bauxite_bricks");
-    public static final Block BAUXITE_BRICKS = register(new Block(makeBauxiteBricksSettings(BAUXITE_BRICKS_KEY)),
-            BAUXITE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> BAUXITE_BRICK_STAIRS_KEY = makeRegistryKey("bauxite_brick_stairs");
-    public static final Block BAUXITE_BRICK_STAIRS
-            = registerStairs(BAUXITE_BRICK_STAIRS_KEY,
-            makeBauxiteBricksSettings(BAUXITE_BRICK_STAIRS_KEY), BAUXITE_BRICKS);
+
     public static final ResourceKey<Block> BAUXITE_BRICK_SLAB_KEY = makeRegistryKey("bauxite_brick_slab");
     public static final Block BAUXITE_BRICK_SLAB
             = registerSlab(BAUXITE_BRICK_SLAB_KEY, makeBauxiteBricksSettings(BAUXITE_BRICK_SLAB_KEY));
@@ -1352,29 +1347,29 @@ public final class ModBlocks {
                 settings, false);
     }
 
-    private static Block registerCake(ResourceKey<Block> blockKey) {
-        Block moddedCakeBlock = new ModdedCakeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE));
-        return register(moddedCakeBlock, blockKey, true);
+    private static DeferredBlock<Block> registerCake(String name) {
+        return register(name, ModdedCakeBlock::new,
+                () -> BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), true);
     }
 
-    private static Block registerChocolateCandleCake(String name, Supplier<Block> candle) {
+    private static DeferredBlock<Block> registerChocolateCandleCake(String name, Supplier<Block> candle) {
         return registerCandleCake(name, () -> ModBlocks.CHOCOLATE_CAKE, candle);
     }
 
-    private static Block registerRedVelvetCandleCake(String name, Supplier<Block> candle) {
+    private static DeferredBlock<Block> registerRedVelvetCandleCake(String name, Supplier<Block> candle) {
         return registerCandleCake(name, () -> ModBlocks.RED_VELVET_CAKE, candle);
     }
 
-    private static Block registerCandleCake(String name, Supplier<Block> cake, Block candle) {
-        Block candleCakeBlock = new ModdedCandleCakeBlock(cake, candle,
-                BlockBehaviour.Properties.ofFullCopy(Blocks.CANDLE_CAKE));
-        return register(name, candleCakeBlock, false);
+    private static DeferredBlock<Block> registerCandleCake(String name, Supplier<Block> cake, Supplier<Block> candle) {
+        Function<BlockBehaviour.Properties, ModdedCandleCakeBlock> candleCakeBlock 
+                = prop -> new ModdedCandleCakeBlock(cake.get(), candle.get(), prop);
+        return register(name, candleCakeBlock, () -> BlockBehaviour.Properties.ofFullCopy(Blocks.CANDLE_CAKE), false);
     }
 
-    private static Block registerPie(ResourceKey<Block> blockKey) {
-        BlockBehaviour.Properties pieSettings = BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE);
-        Block pieBlock = new PieBlock(pieSettings, 3, 0.6F);
-        return register(pieBlock, blockKey, true);
+    private static DeferredBlock<Block> registerPie(String name) {
+        Supplier<BlockBehaviour.Properties> pieProperties = () -> BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE);
+        Function<BlockBehaviour.Properties, PieBlock> pieBlock = prop -> new PieBlock(prop, 3, 0.6F);
+        return register(name, pieBlock, pieProperties, true);
     }
 
     private static DeferredBlock<Block> registerSnowySlab(String name, Supplier<BlockBehaviour.Properties> settings) {
