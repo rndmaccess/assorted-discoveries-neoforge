@@ -457,14 +457,11 @@ public final class ModBlocks {
             ModBlocks::makeBauxiteBricksSettings, true);
     public static final DeferredBlock<Block> BAUXITE_BRICK_STAIRS = registerStairs("bauxite_brick_stairs",
             ModBlocks::makeBauxiteBricksSettings, BAUXITE_BRICKS);
+    public static final DeferredBlock<Block> BAUXITE_BRICK_SLAB
+            = registerSlab("bauxite_brick_slab", ModBlocks::makeBauxiteBricksSettings);
 
 
 
-
-
-    public static final ResourceKey<Block> BAUXITE_BRICK_SLAB_KEY = makeRegistryKey("bauxite_brick_slab");
-    public static final Block BAUXITE_BRICK_SLAB
-            = registerSlab(BAUXITE_BRICK_SLAB_KEY, makeBauxiteBricksSettings(BAUXITE_BRICK_SLAB_KEY));
     public static final ResourceKey<Block> BAUXITE_BRICK_WALL_KEY = makeRegistryKey("bauxite_brick_wall");
     public static final Block BAUXITE_BRICK_WALL
             = registerWall(BAUXITE_BRICK_WALL_KEY, makeBauxiteBricksSettings(BAUXITE_BRICK_WALL_KEY));

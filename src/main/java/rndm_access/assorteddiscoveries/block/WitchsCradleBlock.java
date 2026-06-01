@@ -61,7 +61,7 @@ public class WitchsCradleBlock extends AbstractBerryBushBlock {
 
     @Override
     protected Item berryItem() {
-        return ModItems.WITCHS_CRADLE_BRANCH;
+        return ModItems.WITCHS_CRADLE_BRANCH.get();
     }
 
     @Override

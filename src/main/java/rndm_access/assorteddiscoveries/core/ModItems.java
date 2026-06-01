@@ -85,30 +85,24 @@ public final class ModItems {
                     .stacksTo(1).usingConvertsTo(Items.STICK));
     public static final DeferredItem<Item> CARAMEL = ITEMS.registerSimpleItem("caramel",
             () -> new Item.Properties().food(ModFoodComponents.CARAMEL));
+    public static final DeferredItem<Item> SPRUCE_CONE = ITEMS.registerSimpleItem("spruce_cone",
+            () -> new Item.Properties().food(ModFoodComponents.SPRUCE_CONE));
+    public static final DeferredItem<Item> FORESTS_BOUNTY = ITEMS.registerSimpleItem("forests_bounty",
+            () -> new Item.Properties().food(ModFoodComponents.FORESTS_BOUNTY)
+                    .stacksTo(1).usingConvertsTo(Items.BOWL));
+    public static final DeferredItem<Item> WITCHS_CRADLE_BRANCH = registerBlockItem("witchs_cradle_branch",
+            ModBlocks.WITCHS_CRADLE, () -> new Item.Properties().food(ModFoodComponents.WITCHS_CRADLE_BRANCH));
+    public static final DeferredItem<Item> WITCHS_CRADLE_SOUP = ITEMS.registerSimpleItem("witchs_cradle_soup",
+            () -> new Item.Properties()
+                    .food(ModFoodComponents.WITCHS_CRADLE_SOUP, ModConsumableComponents.WITCHS_CRADLE_SOUP)
+                    .stacksTo(1).usingConvertsTo(Items.BOWL));
+    public static final DeferredItem<Item> FRIED_EGG = ITEMS.registerSimpleItem("fried_egg",
+            () -> new Item.Properties().food(ModFoodComponents.FRIED_EGG).stacksTo(16));
+    public static final DeferredItem<Item> BLOOD_KELP_SEED_CLUSTER
+            = registerBlockItem("blood_kelp_seed_cluster", ModBlocks.BLOOD_KELP);
 
 
 
-
-
-    public static final ResourceKey<Item> SPRUCE_CONE_KEY = makeRegistryKey("spruce_cone");
-    public static final Item SPRUCE_CONE = register(new Item(new Item.Properties().food(ModFoodComponents.SPRUCE_CONE)
-            .setId(SPRUCE_CONE_KEY)), SPRUCE_CONE_KEY);
-    public static final ResourceKey<Item> FORESTS_BOUNTY_KEY = makeRegistryKey("forests_bounty");
-    public static final Item FORESTS_BOUNTY = register(new Item(new Item.Properties()
-            .food(ModFoodComponents.FORESTS_BOUNTY).stacksTo(1).usingConvertsTo(Items.BOWL)
-            .setId(FORESTS_BOUNTY_KEY)), FORESTS_BOUNTY_KEY);
-    public static final ResourceKey<Item> WITCHS_CRADLE_BRANCH_KEY = makeRegistryKey("witchs_cradle_branch");
-    public static final Item WITCHS_CRADLE_BRANCH = registerBlockItem(WITCHS_CRADLE_BRANCH_KEY, ModBlocks.WITCHS_CRADLE,
-            new Item.Properties().food(ModFoodComponents.WITCHS_CRADLE_BRANCH).setId(WITCHS_CRADLE_BRANCH_KEY));
-    public static final ResourceKey<Item> WITCHS_CRADLE_SOUP_KEY = makeRegistryKey("witchs_cradle_soup");
-    public static final Item WITCHS_CRADLE_SOUP = register(new Item(new Item.Properties()
-            .food(ModFoodComponents.WITCHS_CRADLE_SOUP, ModConsumableComponents.WITCHS_CRADLE_SOUP)
-            .stacksTo(1).usingConvertsTo(Items.BOWL).setId(WITCHS_CRADLE_SOUP_KEY)), WITCHS_CRADLE_SOUP_KEY);
-    public static final ResourceKey<Item> FRIED_EGG_KEY = makeRegistryKey("fried_egg");
-    public static final Item FRIED_EGG = register(new Item(new Item.Properties()
-            .food(ModFoodComponents.FRIED_EGG).stacksTo(16).setId(FRIED_EGG_KEY)), FRIED_EGG_KEY);
-    public static final ResourceKey<Item> BLOOD_KELP_SEED_CLUSTER_KEY = makeRegistryKey("blood_kelp_seed_cluster");
-    public static final Item BLOOD_KELP_SEED_CLUSTER = registerBlockItem(BLOOD_KELP_SEED_CLUSTER_KEY, ModBlocks.BLOOD_KELP);
     public static final ResourceKey<Item> BLOOD_KELP_KEY = makeRegistryKey("blood_kelp");
     public static final Item BLOOD_KELP = register(new Item(new Item.Properties()
             .setId(BLOOD_KELP_KEY)), BLOOD_KELP_KEY);
