@@ -28,7 +28,7 @@ public class CattailFeature extends Feature<ProbabilityFeatureConfiguration> {
     private boolean placeCattail(WorldGenLevel world, RandomSource random, int xOrigin, int zOrigin) {
         BlockPos lowerPos = this.offsetPos(random, world, xOrigin, zOrigin);
         BlockPos upperPos = lowerPos.above();
-        BlockState lowerHalf = ModBlocks.CATTAIL.defaultBlockState();
+        BlockState lowerHalf = ModBlocks.CATTAIL.get().defaultBlockState();
         BlockState upperHalf = lowerHalf.setValue(CattailBlock.HALF, DoubleBlockHalf.UPPER);
         boolean canPlace = lowerHalf.canSurvive(world, lowerPos) && world.getBlockState(upperPos).isAir();
         boolean isCold = world.getBiome(lowerPos).value().coldEnoughToSnow(lowerPos, world.getSeaLevel());

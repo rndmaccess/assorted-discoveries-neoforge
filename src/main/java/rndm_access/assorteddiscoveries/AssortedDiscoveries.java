@@ -818,9 +818,9 @@ public class AssortedDiscoveries {
                 }
             }).build());
 
-    @Override
     public void onInitialize(IEventBus modEventBus, ModContainer modContainer) {
         // Config
+        Config.register(modContainer);
         AssortedDiscoveries.registerConfigEvents();
         ModResourceConditionTypes.register();
 

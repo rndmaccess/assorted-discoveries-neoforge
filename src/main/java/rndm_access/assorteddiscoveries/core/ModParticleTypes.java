@@ -10,7 +10,8 @@ import rndm_access.assorteddiscoveries.AssortedDiscoveries;
 import java.util.function.Supplier;
 
 public final class ModParticleTypes {
-    private static final DeferredRegister<ParticleType<?>> PARTICLES = DeferredRegister.create(BuiltInRegistries.PARTICLE_TYPE, AssortedDiscoveries.MOD_ID);
+    private static final DeferredRegister<ParticleType<?>> PARTICLES
+            = DeferredRegister.create(BuiltInRegistries.PARTICLE_TYPE, AssortedDiscoveries.MOD_ID);
 
     public static final Supplier<SimpleParticleType> WHITE_EMBER = register("white_ember");
     public static final Supplier<SimpleParticleType> ORANGE_EMBER = register("orange_ember");

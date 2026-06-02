@@ -119,9 +119,9 @@ public abstract class BoneMealItemMixin {
         boolean placeSnapdragon = random.nextFloat() <= 0.4F; // 40% chance
 
         if(placeSnapdragon) {
-            level.setBlockAndUpdate(pos, ModBlocks.SNAPDRAGON.defaultBlockState());
+            level.setBlockAndUpdate(pos, ModBlocks.SNAPDRAGON.get().defaultBlockState());
         } else {
-            level.setBlockAndUpdate(pos, ModBlocks.SHORT_ENDER_GRASS.defaultBlockState());
+            level.setBlockAndUpdate(pos, ModBlocks.SHORT_ENDER_GRASS.get().defaultBlockState());
         }
     }
 }

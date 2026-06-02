@@ -12,6 +12,8 @@ import rndm_access.assorteddiscoveries.worldgen.feature.CattailFeature;
 
 @SuppressWarnings("unused")
 public final class ModFeatures {
+
+
     public static final Feature<ProbabilityFeatureConfiguration> CATTAIL
             = register("cattail", new CattailFeature(ProbabilityFeatureConfiguration.CODEC));
     public static final Feature<NoneFeatureConfiguration> BLOOD_KELP

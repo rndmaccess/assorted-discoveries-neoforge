@@ -459,281 +459,167 @@ public final class ModBlocks {
             ModBlocks::makeBauxiteBricksSettings, BAUXITE_BRICKS);
     public static final DeferredBlock<Block> BAUXITE_BRICK_SLAB
             = registerSlab("bauxite_brick_slab", ModBlocks::makeBauxiteBricksSettings);
+    public static final DeferredBlock<Block> BAUXITE_BRICK_WALL
+            = registerWall("bauxite_brick_wall", ModBlocks::makeBauxiteBricksSettings);
+    public static final DeferredBlock<Block> MOSSY_BAUXITE_BRICKS = registerSimpleBlock("mossy_bauxite_bricks",
+            ModBlocks::makeBauxiteBricksSettings, true);
+    public static final DeferredBlock<Block> MOSSY_BAUXITE_BRICK_STAIRS
+            = registerStairs("mossy_bauxite_brick_stairs",
+            ModBlocks::makeBauxiteBricksSettings, MOSSY_BAUXITE_BRICKS);
+    public static final DeferredBlock<Block> MOSSY_BAUXITE_BRICK_SLAB
+            = registerSlab("mossy_bauxite_brick_slab", ModBlocks::makeBauxiteBricksSettings);
+    public static final DeferredBlock<Block> MOSSY_BAUXITE_BRICK_WALL
+            = registerWall("mossy_bauxite_brick_wall", ModBlocks::makeBauxiteBricksSettings);
+    public static final DeferredBlock<Block> CRACKED_BAUXITE_BRICKS
+            = registerSimpleBlock("cracked_bauxite_bricks",
+            ModBlocks::makeBauxiteBricksSettings, true);
+    public static final DeferredBlock<Block> CRACKED_BAUXITE_BRICK_STAIRS
+            = registerStairs("cracked_bauxite_brick_stairs",
+            ModBlocks::makeBauxiteBricksSettings, CRACKED_BAUXITE_BRICKS);
+    public static final DeferredBlock<Block> CRACKED_BAUXITE_BRICK_SLAB
+            = registerSlab("cracked_bauxite_brick_slab", ModBlocks::makeBauxiteBricksSettings);
+    public static final DeferredBlock<Block> CRACKED_BAUXITE_BRICK_WALL
+            = registerWall("cracked_bauxite_brick_wall", ModBlocks::makeBauxiteBricksSettings);
+    public static final DeferredBlock<Block> TWISTED_NETHER_BRICKS
+            = registerSimpleBlock("twisted_nether_bricks",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS), true);
+    public static final DeferredBlock<Block> TWISTED_NETHER_BRICK_STAIRS
+            = registerStairs("twisted_nether_brick_stairs",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS), TWISTED_NETHER_BRICKS);
+    public static final DeferredBlock<Block> TWISTED_NETHER_BRICK_SLAB
+            = registerSlab("twisted_nether_brick_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS));
+    public static final DeferredBlock<Block> TWISTED_NETHER_BRICK_WALL
+            = registerWall("twisted_nether_brick_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS));
+    public static final DeferredBlock<Block> TWISTED_NETHERRACK
+            = registerSimpleBlock("twisted_netherrack",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK), true);
+    public static final DeferredBlock<Block> TWISTED_NETHERRACK_STAIRS
+            = registerStairs("twisted_netherrack_stairs",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK), TWISTED_NETHERRACK);
+    public static final DeferredBlock<Block> TWISTED_NETHERRACK_SLAB
+            = registerSlab("twisted_netherrack_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK));
+    public static final DeferredBlock<Block> TWISTED_NETHERRACK_WALL
+            = registerWall("twisted_netherrack_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK));
+    public static final DeferredBlock<Block> WEEPING_NETHER_BRICKS
+            = registerSimpleBlock("weeping_nether_bricks",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS), true);
+    public static final DeferredBlock<Block> WEEPING_NETHER_BRICK_STAIRS
+            = registerStairs("weeping_nether_brick_stairs",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS), WEEPING_NETHER_BRICKS);
+    public static final DeferredBlock<Block> WEEPING_NETHER_BRICK_SLAB
+            = registerSlab("weeping_nether_brick_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS));
+    public static final DeferredBlock<Block> WEEPING_NETHER_BRICK_WALL
+            = registerWall("weeping_nether_brick_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS));
+    public static final DeferredBlock<Block> WEEPING_NETHERRACK
+            = registerSimpleBlock("weeping_netherrack",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK), true);
+    public static final DeferredBlock<Block> WEEPING_NETHERRACK_STAIRS
+            = registerStairs("weeping_netherrack_stairs",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK), WEEPING_NETHERRACK);
+    public static final DeferredBlock<Block> WEEPING_NETHERRACK_SLAB
+            = registerSlab("weeping_netherrack_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK));
+    public static final DeferredBlock<Block> WEEPING_NETHERRACK_WALL
+            = registerWall("weeping_netherrack_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK));
+    public static final DeferredBlock<Block> SNAPDRAGON
+            = register("snapdragon", prop -> new SnapdragonBlock(MobEffects.LUCK, 8, prop),
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POPPY).lightLevel((state) -> 8),
+            true);
+    public static final DeferredBlock<Block> POTTED_SNAPDRAGON
+            = registerPottedSnapdragon(() -> BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_POPPY)
+            .lightLevel((state) -> 8));
+    public static final DeferredBlock<Block> POTTED_PURPLE_MUSHROOM = register("potted_purple_mushroom",
+            prop -> new FlowerPotBlock(() -> (FlowerPotBlock)Blocks.FLOWER_POT, ModBlocks.PURPLE_MUSHROOM, prop),
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_RED_MUSHROOM), false);
+    public static final DeferredBlock<Block> SHORT_ENDER_GRASS
+        = register("short_ender_grass", ShortEnderGrassBlock::new,
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS)
+                    .lightLevel((state) -> 8), true);
+    public static final DeferredBlock<Block> CATTAIL = register("cattail", CattailBlock::new,
+            () -> BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).noCollision()
+                    .noOcclusion().sound(SoundType.WET_GRASS), true);
+    public static final DeferredBlock<Block> CHOCOLATE_CAKE = registerCake("chocolate_cake");
+    public static final DeferredBlock<Block> RED_VELVET_CAKE = registerCake("red_velvet_cake");
+    public static final DeferredBlock<Block> CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("candle_chocolate_cake", () -> Blocks.CANDLE);
+    public static final DeferredBlock<Block> WHITE_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("white_candle_chocolate_cake", () -> Blocks.WHITE_CANDLE);
+    public static final DeferredBlock<Block> ORANGE_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("orange_candle_chocolate_cake", () -> Blocks.ORANGE_CANDLE);
+    public static final DeferredBlock<Block> MAGENTA_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("magenta_candle_chocolate_cake", () -> Blocks.MAGENTA_CANDLE);
+    public static final DeferredBlock<Block> LIGHT_BLUE_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("light_blue_candle_chocolate_cake", () -> Blocks.LIGHT_BLUE_CANDLE);
+    public static final DeferredBlock<Block> YELLOW_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("yellow_candle_chocolate_cake", () -> Blocks.YELLOW_CANDLE);
+    public static final DeferredBlock<Block> LIME_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("lime_candle_chocolate_cake", () -> Blocks.LIME_CANDLE);
+    public static final DeferredBlock<Block> PINK_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("pink_candle_chocolate_cake", () -> Blocks.PINK_CANDLE);
+    public static final DeferredBlock<Block> GRAY_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("gray_candle_chocolate_cake", () -> Blocks.GRAY_CANDLE);
+    public static final DeferredBlock<Block> LIGHT_GRAY_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("light_gray_candle_chocolate_cake", () -> Blocks.LIGHT_GRAY_CANDLE);
+    public static final DeferredBlock<Block> CYAN_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("cyan_candle_chocolate_cake", () -> Blocks.CYAN_CANDLE);
+    public static final DeferredBlock<Block> PURPLE_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("purple_candle_chocolate_cake", () -> Blocks.PURPLE_CANDLE);
+    public static final DeferredBlock<Block> BLUE_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("blue_candle_chocolate_cake", () -> Blocks.BLUE_CANDLE);
+    public static final DeferredBlock<Block> BROWN_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("brown_candle_chocolate_cake", () -> Blocks.BROWN_CANDLE);
+    public static final DeferredBlock<Block> GREEN_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("green_candle_chocolate_cake", () -> Blocks.GREEN_CANDLE);
+    public static final DeferredBlock<Block> RED_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("red_candle_chocolate_cake", () -> Blocks.RED_CANDLE);
+    public static final DeferredBlock<Block> BLACK_CANDLE_CHOCOLATE_CAKE
+            = registerChocolateCandleCake("black_candle_chocolate_cake", () -> Blocks.BLACK_CANDLE);
+    public static final DeferredBlock<Block> CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("candle_red_velvet_cake", () -> Blocks.CANDLE);
+    public static final DeferredBlock<Block> WHITE_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("white_candle_red_velvet_cake", () -> Blocks.WHITE_CANDLE);
+    public static final DeferredBlock<Block> ORANGE_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("orange_candle_red_velvet_cake", () -> Blocks.ORANGE_CANDLE);
+    public static final DeferredBlock<Block> MAGENTA_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("magenta_candle_red_velvet_cake", () -> Blocks.MAGENTA_CANDLE);
+    public static final DeferredBlock<Block> LIGHT_BLUE_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("light_blue_candle_red_velvet_cake", () -> Blocks.LIGHT_BLUE_CANDLE);
+    public static final DeferredBlock<Block> YELLOW_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("yellow_candle_red_velvet_cake", () -> Blocks.YELLOW_CANDLE);
+    public static final DeferredBlock<Block> LIME_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("lime_candle_red_velvet_cake", () -> Blocks.LIME_CANDLE);
+    public static final DeferredBlock<Block> PINK_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("pink_candle_red_velvet_cake", () -> Blocks.PINK_CANDLE);
+    public static final DeferredBlock<Block> GRAY_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("gray_candle_red_velvet_cake", () -> Blocks.GRAY_CANDLE);
+    public static final DeferredBlock<Block> LIGHT_GRAY_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("light_gray_candle_red_velvet_cake", () -> Blocks.LIGHT_GRAY_CANDLE);
+    public static final DeferredBlock<Block> CYAN_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("cyan_candle_red_velvet_cake", () -> Blocks.CYAN_CANDLE);
+    public static final DeferredBlock<Block> PURPLE_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("purple_candle_red_velvet_cake", () -> Blocks.PURPLE_CANDLE);
+    public static final DeferredBlock<Block> BLUE_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("blue_candle_red_velvet_cake", () -> Blocks.BLUE_CANDLE);
+    public static final DeferredBlock<Block> BROWN_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("brown_candle_red_velvet_cake", () -> Blocks.BROWN_CANDLE);
+    public static final DeferredBlock<Block> GREEN_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("green_candle_red_velvet_cake", () -> Blocks.GREEN_CANDLE);
+    public static final DeferredBlock<Block> RED_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("red_candle_red_velvet_cake", () -> Blocks.RED_CANDLE);
+    public static final DeferredBlock<Block> BLACK_CANDLE_RED_VELVET_CAKE
+            = registerRedVelvetCandleCake("black_candle_red_velvet_cake", () -> Blocks.BLACK_CANDLE);
+    public static final DeferredBlock<Block> STONE_TILES
+            = registerSimpleBlock("stone_tiles", ModBlocks::makeStoneTileSettings, true);
 
 
 
-    public static final ResourceKey<Block> BAUXITE_BRICK_WALL_KEY = makeRegistryKey("bauxite_brick_wall");
-    public static final Block BAUXITE_BRICK_WALL
-            = registerWall(BAUXITE_BRICK_WALL_KEY, makeBauxiteBricksSettings(BAUXITE_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> MOSSY_BAUXITE_BRICKS_KEY = makeRegistryKey("mossy_bauxite_bricks");
-    public static final Block MOSSY_BAUXITE_BRICKS
-            = register(new Block(makeBauxiteBricksSettings(MOSSY_BAUXITE_BRICKS_KEY)),
-            MOSSY_BAUXITE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> MOSSY_BAUXITE_BRICK_STAIRS_KEY
-            = makeRegistryKey("mossy_bauxite_brick_stairs");
-    public static final Block MOSSY_BAUXITE_BRICK_STAIRS
-            = registerStairs(MOSSY_BAUXITE_BRICK_STAIRS_KEY, makeBauxiteBricksSettings(MOSSY_BAUXITE_BRICK_STAIRS_KEY),
-            MOSSY_BAUXITE_BRICKS);
-    public static final ResourceKey<Block> MOSSY_BAUXITE_BRICK_SLAB_KEY
-            = makeRegistryKey("mossy_bauxite_brick_slab");
-    public static final Block MOSSY_BAUXITE_BRICK_SLAB
-            = registerSlab(MOSSY_BAUXITE_BRICK_SLAB_KEY, makeBauxiteBricksSettings(MOSSY_BAUXITE_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> MOSSY_BAUXITE_BRICK_WALL_KEY
-            = makeRegistryKey("mossy_bauxite_brick_wall");
-    public static final Block MOSSY_BAUXITE_BRICK_WALL
-            = registerWall(MOSSY_BAUXITE_BRICK_WALL_KEY, makeBauxiteBricksSettings(MOSSY_BAUXITE_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> CRACKED_BAUXITE_BRICKS_KEY = makeRegistryKey("cracked_bauxite_bricks");
-    public static final Block CRACKED_BAUXITE_BRICKS
-            = register(new Block(makeBauxiteBricksSettings(CRACKED_BAUXITE_BRICKS_KEY)),
-            CRACKED_BAUXITE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> CRACKED_BAUXITE_BRICK_STAIRS_KEY
-            = makeRegistryKey("cracked_bauxite_brick_stairs");
-    public static final Block CRACKED_BAUXITE_BRICK_STAIRS
-            = registerStairs(CRACKED_BAUXITE_BRICK_STAIRS_KEY,
-            makeBauxiteBricksSettings(CRACKED_BAUXITE_BRICK_STAIRS_KEY), CRACKED_BAUXITE_BRICKS);
-    public static final ResourceKey<Block> CRACKED_BAUXITE_BRICK_SLAB_KEY
-            = makeRegistryKey("cracked_bauxite_brick_slab");
-    public static final Block CRACKED_BAUXITE_BRICK_SLAB
-            = registerSlab(CRACKED_BAUXITE_BRICK_SLAB_KEY, makeBauxiteBricksSettings(CRACKED_BAUXITE_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> CRACKED_BAUXITE_BRICK_WALL_KEY
-            = makeRegistryKey("cracked_bauxite_brick_wall");
-    public static final Block CRACKED_BAUXITE_BRICK_WALL
-            = registerWall(CRACKED_BAUXITE_BRICK_WALL_KEY, makeBauxiteBricksSettings(CRACKED_BAUXITE_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> TWISTED_NETHER_BRICKS_KEY = makeRegistryKey("twisted_nether_bricks");
-    public static final Block TWISTED_NETHER_BRICKS
-            = register(new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
-                    .setId(TWISTED_NETHER_BRICKS_KEY)),
-            TWISTED_NETHER_BRICKS_KEY, true);
-    public static final ResourceKey<Block> TWISTED_NETHER_BRICK_STAIRS_KEY
-            = makeRegistryKey("twisted_nether_brick_stairs");
-    public static final Block TWISTED_NETHER_BRICK_STAIRS
-            = registerStairs(TWISTED_NETHER_BRICK_STAIRS_KEY, BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
-                    .setId(TWISTED_NETHER_BRICK_STAIRS_KEY), TWISTED_NETHER_BRICKS);
-    public static final ResourceKey<Block> TWISTED_NETHER_BRICK_SLAB_KEY
-            = makeRegistryKey("twisted_nether_brick_slab");
-    public static final Block TWISTED_NETHER_BRICK_SLAB
-            = registerSlab(TWISTED_NETHER_BRICK_SLAB_KEY, BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
-            .setId(TWISTED_NETHER_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> TWISTED_NETHER_BRICK_WALL_KEY
-            = makeRegistryKey("twisted_nether_brick_wall");
-    public static final Block TWISTED_NETHER_BRICK_WALL
-            = registerWall(TWISTED_NETHER_BRICK_WALL_KEY, BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
-            .setId(TWISTED_NETHER_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> TWISTED_NETHERRACK_KEY = makeRegistryKey("twisted_netherrack");
-    public static final Block TWISTED_NETHERRACK = register(new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK)
-            .setId(TWISTED_NETHERRACK_KEY)), TWISTED_NETHERRACK_KEY, true);
-    public static final ResourceKey<Block> TWISTED_NETHERRACK_STAIRS_KEY
-            = makeRegistryKey("twisted_netherrack_stairs");
-    public static final Block TWISTED_NETHERRACK_STAIRS = registerStairs(TWISTED_NETHERRACK_STAIRS_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK).setId(TWISTED_NETHERRACK_STAIRS_KEY),
-            TWISTED_NETHERRACK);
-    public static final ResourceKey<Block> TWISTED_NETHERRACK_SLAB_KEY
-            = makeRegistryKey("twisted_netherrack_slab");
-    public static final Block TWISTED_NETHERRACK_SLAB = registerSlab(TWISTED_NETHERRACK_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK).setId(TWISTED_NETHERRACK_SLAB_KEY));
-    public static final ResourceKey<Block> TWISTED_NETHERRACK_WALL_KEY
-            = makeRegistryKey("twisted_netherrack_wall");
-    public static final Block TWISTED_NETHERRACK_WALL = registerWall(TWISTED_NETHERRACK_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK).setId(TWISTED_NETHERRACK_WALL_KEY));
-    public static final ResourceKey<Block> WEEPING_NETHER_BRICKS_KEY = makeRegistryKey("weeping_nether_bricks");
-    public static final Block WEEPING_NETHER_BRICKS
-            = register(new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
-            .setId(WEEPING_NETHER_BRICKS_KEY)), WEEPING_NETHER_BRICKS_KEY, true);
-    public static final ResourceKey<Block> WEEPING_NETHER_BRICK_STAIRS_KEY
-            = makeRegistryKey("weeping_nether_brick_stairs");
-    public static final Block WEEPING_NETHER_BRICK_STAIRS = registerStairs(WEEPING_NETHER_BRICK_STAIRS_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
-                    .setId(WEEPING_NETHER_BRICK_STAIRS_KEY), WEEPING_NETHER_BRICKS);
-    public static final ResourceKey<Block> WEEPING_NETHER_BRICK_SLAB_KEY
-            = makeRegistryKey("weeping_nether_brick_slab");
-    public static final Block WEEPING_NETHER_BRICK_SLAB = registerSlab(WEEPING_NETHER_BRICK_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
-                .setId(WEEPING_NETHER_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> WEEPING_NETHER_BRICK_WALL_KEY
-            = makeRegistryKey("weeping_nether_brick_wall");
-    public static final Block WEEPING_NETHER_BRICK_WALL = registerWall(WEEPING_NETHER_BRICK_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS)
-                .setId(WEEPING_NETHER_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> WEEPING_NETHERRACK_KEY = makeRegistryKey("weeping_netherrack");
-    public static final Block WEEPING_NETHERRACK
-            = register(new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK)
-            .setId(WEEPING_NETHERRACK_KEY)), WEEPING_NETHERRACK_KEY, true);
-    public static final ResourceKey<Block> WEEPING_NETHERRACK_STAIRS_KEY
-            = makeRegistryKey("weeping_netherrack_stairs");
-    public static final Block WEEPING_NETHERRACK_STAIRS = registerStairs(WEEPING_NETHERRACK_STAIRS_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK)
-                    .setId(WEEPING_NETHERRACK_STAIRS_KEY), WEEPING_NETHERRACK);
-    public static final ResourceKey<Block> WEEPING_NETHERRACK_SLAB_KEY
-            = makeRegistryKey("weeping_netherrack_slab");
-    public static final Block WEEPING_NETHERRACK_SLAB = registerSlab(WEEPING_NETHERRACK_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK)
-                    .setId(WEEPING_NETHERRACK_SLAB_KEY));
-    public static final ResourceKey<Block> WEEPING_NETHERRACK_WALL_KEY = makeRegistryKey("weeping_netherrack_wall");
-    public static final Block WEEPING_NETHERRACK_WALL = registerWall(WEEPING_NETHERRACK_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK).setId(WEEPING_NETHERRACK_WALL_KEY));
-    public static final ResourceKey<Block> SNAPDRAGON_KEY = makeRegistryKey("snapdragon");
-    public static final Block SNAPDRAGON = register(new SnapdragonBlock(MobEffects.LUCK, 8,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.POPPY).lightLevel((state) -> 8)
-                    .setId(SNAPDRAGON_KEY)), SNAPDRAGON_KEY, true);
-    public static final ResourceKey<Block> POTTED_SNAPDRAGON_KEY = makeRegistryKey("potted_snapdragon");
-    public static final Block POTTED_SNAPDRAGON = registerPottedSnapdragon(BlockBehaviour.Properties
-            .ofFullCopy(Blocks.POTTED_POPPY).lightLevel((state) -> 8).setId(POTTED_SNAPDRAGON_KEY));
-    public static final ResourceKey<Block> POTTED_PURPLE_MUSHROOM_KEY = makeRegistryKey("potted_purple_mushroom");
-    public static final Block POTTED_PURPLE_MUSHROOM = register(new FlowerPotBlock(ModBlocks.PURPLE_MUSHROOM,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_RED_MUSHROOM).setId(POTTED_PURPLE_MUSHROOM_KEY)),
-            POTTED_PURPLE_MUSHROOM_KEY, false);
-    public static final ResourceKey<Block> SHORT_ENDER_GRASS_KEY = makeRegistryKey("short_ender_grass");
-    public static final Block SHORT_ENDER_GRASS
-        = register(new ShortEnderGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS)
-            .lightLevel((state) -> 8).setId(SHORT_ENDER_GRASS_KEY)),
-            SHORT_ENDER_GRASS_KEY, true);
-    public static final ResourceKey<Block> CATTAIL_KEY = makeRegistryKey("cattail");
-    public static final Block CATTAIL = register(new CattailBlock(BlockBehaviour.Properties.of()
-            .mapColor(MapColor.COLOR_BROWN).noCollision().noOcclusion().sound(SoundType.WET_GRASS)
-            .setId(CATTAIL_KEY)), CATTAIL_KEY, true);
-    public static final ResourceKey<Block> CHOCOLATE_CAKE_KEY = makeRegistryKey("chocolate_cake");
-    public static final Block CHOCOLATE_CAKE = registerCake(CHOCOLATE_CAKE_KEY);
-    public static final ResourceKey<Block> RED_VELVET_CAKE_KEY = makeRegistryKey("red_velvet_cake");
-    public static final Block RED_VELVET_CAKE = registerCake(RED_VELVET_CAKE_KEY);
-    public static final ResourceKey<Block> CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("candle_chocolate_cake");
-    public static final Block CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(CANDLE_CHOCOLATE_CAKE_KEY, Blocks.CANDLE);
-    public static final ResourceKey<Block> WHITE_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("white_candle_chocolate_cake");
-    public static final Block WHITE_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(WHITE_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.WHITE_CANDLE);
-    public static final ResourceKey<Block> ORANGE_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("orange_candle_chocolate_cake");
-    public static final Block ORANGE_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(ORANGE_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.ORANGE_CANDLE);
-    public static final ResourceKey<Block> MAGENTA_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("magenta_candle_chocolate_cake");
-    public static final Block MAGENTA_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(MAGENTA_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.MAGENTA_CANDLE);
-    public static final ResourceKey<Block> LIGHT_BLUE_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("light_blue_candle_chocolate_cake");
-    public static final Block LIGHT_BLUE_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(LIGHT_BLUE_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.LIGHT_BLUE_CANDLE);
-    public static final ResourceKey<Block> YELLOW_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("yellow_candle_chocolate_cake");
-    public static final Block YELLOW_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(YELLOW_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.YELLOW_CANDLE);
-    public static final ResourceKey<Block> LIME_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("lime_candle_chocolate_cake");
-    public static final Block LIME_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(LIME_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.LIME_CANDLE);
-    public static final ResourceKey<Block> PINK_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("pink_candle_chocolate_cake");
-    public static final Block PINK_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(PINK_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.PINK_CANDLE);
-    public static final ResourceKey<Block> GRAY_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("gray_candle_chocolate_cake");
-    public static final Block GRAY_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(GRAY_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.GRAY_CANDLE);
-    public static final ResourceKey<Block> LIGHT_GRAY_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("light_gray_candle_chocolate_cake");
-    public static final Block LIGHT_GRAY_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(LIGHT_GRAY_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.LIGHT_GRAY_CANDLE);
-    public static final ResourceKey<Block> CYAN_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("cyan_candle_chocolate_cake");
-    public static final Block CYAN_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(CYAN_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.CYAN_CANDLE);
-    public static final ResourceKey<Block> PURPLE_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("purple_candle_chocolate_cake");
-    public static final Block PURPLE_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(PURPLE_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.PURPLE_CANDLE);
-    public static final ResourceKey<Block> BLUE_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("blue_candle_chocolate_cake");
-    public static final Block BLUE_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(BLUE_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.BLUE_CANDLE);
-    public static final ResourceKey<Block> BROWN_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("brown_candle_chocolate_cake");
-    public static final Block BROWN_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(BROWN_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.BROWN_CANDLE);
-    public static final ResourceKey<Block> GREEN_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("green_candle_chocolate_cake");
-    public static final Block GREEN_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(GREEN_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.GREEN_CANDLE);
-    public static final ResourceKey<Block> RED_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("red_candle_chocolate_cake");
-    public static final Block RED_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(RED_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.RED_CANDLE);
-    public static final ResourceKey<Block> BLACK_CANDLE_CHOCOLATE_CAKE_KEY
-            = makeRegistryKey("black_candle_chocolate_cake");
-    public static final Block BLACK_CANDLE_CHOCOLATE_CAKE
-            = registerChocolateCandleCake(BLACK_CANDLE_CHOCOLATE_CAKE_KEY, Blocks.BLACK_CANDLE);
-    public static final ResourceKey<Block> CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("candle_red_velvet_cake");
-    public static final Block CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(CANDLE_RED_VELVET_CAKE_KEY, Blocks.CANDLE);
-    public static final ResourceKey<Block> WHITE_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("white_candle_red_velvet_cake");
-    public static final Block WHITE_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(WHITE_CANDLE_RED_VELVET_CAKE_KEY, Blocks.WHITE_CANDLE);
-    public static final ResourceKey<Block> ORANGE_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("orange_candle_red_velvet_cake");
-    public static final Block ORANGE_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(ORANGE_CANDLE_RED_VELVET_CAKE_KEY, Blocks.ORANGE_CANDLE);
-    public static final ResourceKey<Block> MAGENTA_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("magenta_candle_red_velvet_cake");
-    public static final Block MAGENTA_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(MAGENTA_CANDLE_RED_VELVET_CAKE_KEY, Blocks.MAGENTA_CANDLE);
-    public static final ResourceKey<Block> LIGHT_BLUE_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("light_blue_candle_red_velvet_cake");
-    public static final Block LIGHT_BLUE_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(LIGHT_BLUE_CANDLE_RED_VELVET_CAKE_KEY, Blocks.LIGHT_BLUE_CANDLE);
-    public static final ResourceKey<Block> YELLOW_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("yellow_candle_red_velvet_cake");
-    public static final Block YELLOW_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(YELLOW_CANDLE_RED_VELVET_CAKE_KEY, Blocks.YELLOW_CANDLE);
-    public static final ResourceKey<Block> LIME_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("lime_candle_red_velvet_cake");
-    public static final Block LIME_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(LIME_CANDLE_RED_VELVET_CAKE_KEY, Blocks.LIME_CANDLE);
-    public static final ResourceKey<Block> PINK_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("pink_candle_red_velvet_cake");
-    public static final Block PINK_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(PINK_CANDLE_RED_VELVET_CAKE_KEY, Blocks.PINK_CANDLE);
-    public static final ResourceKey<Block> GRAY_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("gray_candle_red_velvet_cake");
-    public static final Block GRAY_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(GRAY_CANDLE_RED_VELVET_CAKE_KEY, Blocks.GRAY_CANDLE);
-    public static final ResourceKey<Block> LIGHT_GRAY_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("light_gray_candle_red_velvet_cake");
-    public static final Block LIGHT_GRAY_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(LIGHT_GRAY_CANDLE_RED_VELVET_CAKE_KEY, Blocks.LIGHT_GRAY_CANDLE);
-    public static final ResourceKey<Block> CYAN_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("cyan_candle_red_velvet_cake");
-    public static final Block CYAN_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(CYAN_CANDLE_RED_VELVET_CAKE_KEY, Blocks.CYAN_CANDLE);
-    public static final ResourceKey<Block> PURPLE_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("purple_candle_red_velvet_cake");
-    public static final Block PURPLE_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(PURPLE_CANDLE_RED_VELVET_CAKE_KEY, Blocks.PURPLE_CANDLE);
-    public static final ResourceKey<Block> BLUE_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("blue_candle_red_velvet_cake");
-    public static final Block BLUE_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(BLUE_CANDLE_RED_VELVET_CAKE_KEY, Blocks.BLUE_CANDLE);
-    public static final ResourceKey<Block> BROWN_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("brown_candle_red_velvet_cake");
-    public static final Block BROWN_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(BROWN_CANDLE_RED_VELVET_CAKE_KEY, Blocks.BROWN_CANDLE);
-    public static final ResourceKey<Block> GREEN_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("green_candle_red_velvet_cake");
-    public static final Block GREEN_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(GREEN_CANDLE_RED_VELVET_CAKE_KEY, Blocks.GREEN_CANDLE);
-    public static final ResourceKey<Block> RED_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("red_candle_red_velvet_cake");
-    public static final Block RED_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(RED_CANDLE_RED_VELVET_CAKE_KEY, Blocks.RED_CANDLE);
-    public static final ResourceKey<Block> BLACK_CANDLE_RED_VELVET_CAKE_KEY
-            = makeRegistryKey("black_candle_red_velvet_cake");
-    public static final Block BLACK_CANDLE_RED_VELVET_CAKE
-            = registerRedVelvetCandleCake(BLACK_CANDLE_RED_VELVET_CAKE_KEY, Blocks.BLACK_CANDLE);
-    public static final ResourceKey<Block> STONE_TILES_KEY = makeRegistryKey("stone_tiles");
-    public static final Block STONE_TILES
-            = register(new Block(makeStoneTileSettings(STONE_TILES_KEY)), STONE_TILES_KEY, true);
     public static final ResourceKey<Block> STONE_TILE_SLAB_KEY = makeRegistryKey("stone_tile_slab");
     public static final Block STONE_TILE_SLAB
             = registerSlab(STONE_TILE_SLAB_KEY, makeStoneTileSettings(STONE_TILE_SLAB_KEY));
@@ -1340,7 +1226,7 @@ public final class ModBlocks {
 
     private static DeferredBlock<Block> registerPottedSnapdragon(Supplier<BlockBehaviour.Properties> settings) {
         return register("potted_snapdragon",
-                prop -> new PottedSnapdragonBlock(ModBlocks.SNAPDRAGON, prop),
+                prop -> new PottedSnapdragonBlock(ModBlocks.SNAPDRAGON.get(), prop),
                 settings, false);
     }
 

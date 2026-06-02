@@ -10,7 +10,8 @@ import rndm_access.assorteddiscoveries.block_entity.DyedCampfireBlockEntity;
 import java.util.function.Supplier;
 
 public final class ModBlockEntityTypes {
-    private static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, AssortedDiscoveries.MOD_ID);
+    private static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES
+            = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, AssortedDiscoveries.MOD_ID);
 
     public static final Supplier<BlockEntityType<DyedCampfireBlockEntity>> DYED_CAMPFIRE
             = BLOCK_ENTITIES.register("dyed_campfire", () -> new BlockEntityType<>(DyedCampfireBlockEntity::new,
