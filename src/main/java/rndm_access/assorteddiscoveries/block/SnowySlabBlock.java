@@ -88,7 +88,7 @@ public class SnowySlabBlock extends SlabBlock {
     public void randomTick(@NonNull BlockState state, @NonNull ServerLevel world,
                            @NonNull BlockPos pos, @NonNull RandomSource random) {
         if(!canGrowGrass(state, world, pos)) {
-            world.setBlockAndUpdate(pos, ModBlocks.DIRT_SLAB.defaultBlockState().setValue(TYPE, state.getValue(TYPE))
+            world.setBlockAndUpdate(pos, ModBlocks.DIRT_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE))
                     .setValue(WATERLOGGED, state.getValue(WATERLOGGED)));
         }
     }

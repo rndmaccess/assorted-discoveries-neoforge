@@ -1,0 +1,49 @@
+{
+  "values": {
+    "assorteddiscoveries:blueberries": {
+      "chance": 0.3
+    },
+    "assorteddiscoveries:cindersnap_berries": {
+      "chance": 0.3
+    },
+    "assorteddiscoveries:frostbite_berries": {
+      "chance": 0.3
+    },
+    "assorteddiscoveries:witchs_cradle_branch": {
+      "chance": 0.3
+    },
+    "assorteddiscoveries:blood_kelp_seed_cluster": {
+      "chance": 0.3
+    },
+    "assorteddiscoveries:blood_kelp": {
+      "chance": 0.3
+    },
+    "assorteddiscoveries:dried_blood_kelp": {
+      "chance": 0.3
+    },
+    "assorteddiscoveries:dried_blood_kelp_block": {
+      "chance": 0.5
+    },
+    "assorteddiscoveries:snapdragon": {
+      "chance": 0.65
+    },
+    "assorteddiscoveries:short_ender_grass": {
+      "chance": 0.3
+    },
+    "assorteddiscoveries:purple_mushroom_block": {
+      "chance": 0.85
+    },
+    "assorteddiscoveries:purple_mushroom": {
+      "chance": 0.65
+    },
+    "assorteddiscoveries:cattail": {
+      "chance": 0.5
+    },
+    "assorteddiscoveries:green_onion": {
+      "chance": 0.65
+    },
+    "assorteddiscoveries:green_onion_seeds": {
+      "chance": 0.3
+    }
+  }
+}

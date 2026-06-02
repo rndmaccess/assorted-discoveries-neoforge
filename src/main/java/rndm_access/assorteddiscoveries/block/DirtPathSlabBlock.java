@@ -40,7 +40,7 @@ public class DirtPathSlabBlock extends SlabBlock {
         }
 
         if(direction.equals(Direction.UP) && !state.getValue(TYPE).equals(SlabType.BOTTOM)) {
-            return ModBlocks.DIRT_SLAB.defaultBlockState().setValue(TYPE, state.getValue(TYPE))
+            return ModBlocks.DIRT_SLAB.get().defaultBlockState().setValue(TYPE, state.getValue(TYPE))
                     .setValue(WATERLOGGED, state.getValue(WATERLOGGED));
         } else {
             return state;

@@ -20,7 +20,7 @@ public class PurpleMushroomBlock extends HugeMushroomBlock {
 
     @Override
     public void fallOn(Level world, BlockState state, BlockPos pos, Entity entity, double fallDistance) {
-        SoundEvent sound = ModSoundEvents.BLOCK_MUSHROOM_BOUNCE;
+        SoundEvent sound = ModSoundEvents.BLOCK_MUSHROOM_BOUNCE.value();
         RandomSource random = world.getRandom();
         int x = pos.getX();
         int y = pos.getY();

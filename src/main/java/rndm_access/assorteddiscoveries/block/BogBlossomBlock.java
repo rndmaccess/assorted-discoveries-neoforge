@@ -3,6 +3,7 @@ package rndm_access.assorteddiscoveries.block;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
@@ -43,6 +44,7 @@ public class BogBlossomBlock extends Block implements BonemealableBlock {
         int floatingCount = 10;
         int floatingArea = random.nextInt(4) + 10;
         int risingNum = random.nextInt(2) + 1;
+        SimpleParticleType bogBlossomNectar = ModParticleTypes.BOG_BLOSSOM_NECTAR.get();
 
         // Play rising particles
         for (int l = 0; l < risingNum; l++) {
@@ -50,7 +52,7 @@ public class BogBlossomBlock extends Block implements BonemealableBlock {
             double risingY = y + random.nextDouble();
             double risingZ = z + random.nextDouble();
 
-            world.addParticle(ModParticleTypes.BOG_BLOSSOM_NECTAR, risingX, risingY, risingZ,
+            world.addParticle(bogBlossomNectar, risingX, risingY, risingZ,
                     random.nextDouble(), 2 + random.nextDouble(), random.nextDouble());
         }
 
@@ -68,8 +70,7 @@ public class BogBlossomBlock extends Block implements BonemealableBlock {
                 double floatingY = mutable.getY() + random.nextDouble();
                 double floatingZ = mutable.getZ() + random.nextDouble();
 
-                world.addParticle(ModParticleTypes.BOG_BLOSSOM_NECTAR, floatingX, floatingY, floatingZ,
-                        0.0D, 0.0D, 0.0D);
+                world.addParticle(bogBlossomNectar, floatingX, floatingY, floatingZ, 0.0D, 0.0D, 0.0D);
             }
         }
     }

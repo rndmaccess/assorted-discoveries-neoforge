@@ -1,8 +1,6 @@
 package rndm_access.assorteddiscoveries.core;
 
 import net.minecraft.core.Direction;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.food.Foods;
@@ -23,37 +21,37 @@ import java.util.function.Supplier;
 public final class ModItems {
     private static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(AssortedDiscoveries.MOD_ID);
 
-    public static final DeferredItem<Item> WHITE_TORCH = registerBlockItem("white_torch",
+    public static final DeferredItem<Item> WHITE_TORCH = registerTorchBlockItem("white_torch",
             ModBlocks.WHITE_TORCH, ModBlocks.WHITE_WALL_TORCH);
-    public static final DeferredItem<Item> ORANGE_TORCH = registerBlockItem("orange_torch",
+    public static final DeferredItem<Item> ORANGE_TORCH = registerTorchBlockItem("orange_torch",
             ModBlocks.ORANGE_TORCH, ModBlocks.ORANGE_WALL_TORCH);
-    public static final DeferredItem<Item> MAGENTA_TORCH = registerBlockItem("magenta_torch",
+    public static final DeferredItem<Item> MAGENTA_TORCH = registerTorchBlockItem("magenta_torch",
             ModBlocks.MAGENTA_TORCH, ModBlocks.MAGENTA_WALL_TORCH);
-    public static final DeferredItem<Item> LIGHT_BLUE_TORCH = registerBlockItem("light_blue_torch",
+    public static final DeferredItem<Item> LIGHT_BLUE_TORCH = registerTorchBlockItem("light_blue_torch",
             ModBlocks.LIGHT_BLUE_TORCH, ModBlocks.LIGHT_BLUE_WALL_TORCH);
-    public static final DeferredItem<Item> YELLOW_TORCH = registerBlockItem("yellow_torch",
+    public static final DeferredItem<Item> YELLOW_TORCH = registerTorchBlockItem("yellow_torch",
             ModBlocks.YELLOW_TORCH, ModBlocks.YELLOW_WALL_TORCH);
-    public static final DeferredItem<Item> LIME_TORCH = registerBlockItem("lime_torch",
+    public static final DeferredItem<Item> LIME_TORCH = registerTorchBlockItem("lime_torch",
             ModBlocks.LIME_TORCH, ModBlocks.LIME_WALL_TORCH);
-    public static final DeferredItem<Item> PINK_TORCH = registerBlockItem("pink_torch",
+    public static final DeferredItem<Item> PINK_TORCH = registerTorchBlockItem("pink_torch",
             ModBlocks.PINK_TORCH, ModBlocks.PINK_WALL_TORCH);
-    public static final DeferredItem<Item> GRAY_TORCH = registerBlockItem("gray_torch",
+    public static final DeferredItem<Item> GRAY_TORCH = registerTorchBlockItem("gray_torch",
             ModBlocks.GRAY_TORCH, ModBlocks.GRAY_WALL_TORCH);
-    public static final DeferredItem<Item> LIGHT_GRAY_TORCH = registerBlockItem("light_gray_torch",
+    public static final DeferredItem<Item> LIGHT_GRAY_TORCH = registerTorchBlockItem("light_gray_torch",
             ModBlocks.LIGHT_GRAY_TORCH, ModBlocks.LIGHT_GRAY_WALL_TORCH);
-    public static final DeferredItem<Item> CYAN_TORCH = registerBlockItem("cyan_torch",
+    public static final DeferredItem<Item> CYAN_TORCH = registerTorchBlockItem("cyan_torch",
             ModBlocks.CYAN_TORCH, ModBlocks.CYAN_WALL_TORCH);
-    public static final DeferredItem<Item> PURPLE_TORCH = registerBlockItem("purple_torch",
+    public static final DeferredItem<Item> PURPLE_TORCH = registerTorchBlockItem("purple_torch",
             ModBlocks.PURPLE_TORCH, ModBlocks.PURPLE_WALL_TORCH);
-    public static final DeferredItem<Item> BLUE_TORCH = registerBlockItem("blue_torch",
+    public static final DeferredItem<Item> BLUE_TORCH = registerTorchBlockItem("blue_torch",
             ModBlocks.BLUE_TORCH, ModBlocks.BLUE_WALL_TORCH);
-    public static final DeferredItem<Item> BROWN_TORCH = registerBlockItem("brown_torch",
+    public static final DeferredItem<Item> BROWN_TORCH = registerTorchBlockItem("brown_torch",
             ModBlocks.BROWN_TORCH, ModBlocks.BROWN_WALL_TORCH);
-    public static final DeferredItem<Item> GREEN_TORCH = registerBlockItem("green_torch",
+    public static final DeferredItem<Item> GREEN_TORCH = registerTorchBlockItem("green_torch",
             ModBlocks.GREEN_TORCH, ModBlocks.GREEN_WALL_TORCH);
-    public static final DeferredItem<Item> RED_TORCH = registerBlockItem("red_torch",
+    public static final DeferredItem<Item> RED_TORCH = registerTorchBlockItem("red_torch",
             ModBlocks.RED_TORCH, ModBlocks.RED_WALL_TORCH);
-    public static final DeferredItem<Item> BLACK_TORCH = registerBlockItem("black_torch",
+    public static final DeferredItem<Item> BLACK_TORCH = registerTorchBlockItem("black_torch",
             ModBlocks.BLACK_TORCH, ModBlocks.BLACK_WALL_TORCH);
     public static final DeferredItem<Item> GREEN_ONION_SEEDS = registerBlockItem("green_onion_seeds",
             ModBlocks.GREEN_ONIONS);
@@ -111,26 +109,18 @@ public final class ModItems {
             ModBlocks.CINDERSNAP_BERRY_BUSH, () -> new Item.Properties().food(ModFoodComponents.NETHER_BERRIES));
     public static final DeferredItem<Item> FROSTBITE_BERRIES = registerBlockItem("frostbite_berries",
             ModBlocks.FROSTBITE_BERRY_BUSH, () -> new Item.Properties().food(ModFoodComponents.NETHER_BERRIES));
-
-
-
-
-    public static final ResourceKey<Item> CINDERSNAP_BERRY_JUICE_KEY = makeRegistryKey("cindersnap_berry_juice");
-    public static final Item CINDERSNAP_BERRY_JUICE = register(new Item(new Item.Properties()
-                .food(ModFoodComponents.JUICE, ModConsumableComponents.NETHER_FOOD).stacksTo(16)
-                .usingConvertsTo(Items.GLASS_BOTTLE).setId(CINDERSNAP_BERRY_JUICE_KEY)), CINDERSNAP_BERRY_JUICE_KEY);
-    public static final ResourceKey<Item> FROSTBITE_BERRY_JUICE_KEY = makeRegistryKey("frostbite_berry_juice");
-    public static final Item FROSTBITE_BERRY_JUICE = register(new Item(new Item.Properties()
+    public static final DeferredItem<Item> CINDERSNAP_BERRY_JUICE
+            = ITEMS.registerSimpleItem("cindersnap_berry_juice", () -> new Item.Properties()
             .food(ModFoodComponents.JUICE, ModConsumableComponents.NETHER_FOOD).stacksTo(16)
-            .usingConvertsTo(Items.GLASS_BOTTLE).setId(FROSTBITE_BERRY_JUICE_KEY)), FROSTBITE_BERRY_JUICE_KEY);
-    public static final ResourceKey<Item> WARPED_FORAGE_MIX_KEY = makeRegistryKey("warped_forage_mix");
-    public static final Item WARPED_FORAGE_MIX = register(new Item(new Item.Properties()
-            .food(ModFoodComponents.NETHER_FORAGE, ModConsumableComponents.NETHER_FOOD)
-            .setId(WARPED_FORAGE_MIX_KEY)), WARPED_FORAGE_MIX_KEY);
-    public static final ResourceKey<Item> CRIMSON_FORAGE_MIX_KEY = makeRegistryKey("crimson_forage_mix");
-    public static final Item CRIMSON_FORAGE_MIX = register(new Item(new Item.Properties()
-            .food(ModFoodComponents.NETHER_FORAGE, ModConsumableComponents.NETHER_FOOD)
-            .setId(CRIMSON_FORAGE_MIX_KEY)), CRIMSON_FORAGE_MIX_KEY);
+            .usingConvertsTo(Items.GLASS_BOTTLE));
+    public static final DeferredItem<Item> FROSTBITE_BERRY_JUICE
+            = ITEMS.registerSimpleItem("frostbite_berry_juice", () -> new Item.Properties()
+            .food(ModFoodComponents.JUICE, ModConsumableComponents.NETHER_FOOD).stacksTo(16)
+            .usingConvertsTo(Items.GLASS_BOTTLE));
+    public static final DeferredItem<Item> WARPED_FORAGE_MIX = ITEMS.registerSimpleItem("warped_forage_mix",
+            () -> new Item.Properties().food(ModFoodComponents.NETHER_FORAGE, ModConsumableComponents.NETHER_FOOD));
+    public static final DeferredItem<Item> CRIMSON_FORAGE_MIX = ITEMS.registerSimpleItem("crimson_forage_mix",
+            () -> new Item.Properties().food(ModFoodComponents.NETHER_FORAGE, ModConsumableComponents.NETHER_FOOD));
 
     private static ResourceKey<Item> makeRegistryKey(String name) {
         return ResourceKey.create(Registries.ITEM, AssortedDiscoveries.makeModId(name));
@@ -141,7 +131,7 @@ public final class ModItems {
         return ITEMS.registerItem(name, item, itemProperties);
     }
 
-    private static DeferredItem<Item> registerBlockItem(String name, Supplier<Block> standingBlock, Supplier<Block> wallBlock) {
+    private static DeferredItem<Item> registerTorchBlockItem(String name, Supplier<Block> standingBlock, Supplier<Block> wallBlock) {
         final Function<Item.Properties, StandingAndWallBlockItem> blockItem
                 = prop -> new StandingAndWallBlockItem(standingBlock.get(), wallBlock.get(), Direction.DOWN, prop);
         //Item.BY_BLOCK.put(standingBlock, blockItem);
