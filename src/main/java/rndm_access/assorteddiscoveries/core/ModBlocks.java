@@ -1,7 +1,6 @@
 package rndm_access.assorteddiscoveries.core;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -185,11 +184,11 @@ public final class ModBlocks {
             properties -> new DropExperienceBlock(UniformInt.of(2, 5), properties),
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_QUARTZ_ORE), true);
     public static final DeferredBlock<Block> SMOKY_QUARTZ_BLOCK = registerSimpleBlock("smoky_quartz_block",
-            ModBlocks::makeSmokyQuartzSettings, true);
+            ModBlocks::makeSmokyQuartzSettings);
     public static final DeferredBlock<Block> CHISELED_SMOKY_QUARTZ_BLOCK = registerSimpleBlock("chiseled_smoky_quartz_block",
-            ModBlocks::makeSmokyQuartzSettings, true);
+            ModBlocks::makeSmokyQuartzSettings);
     public static final DeferredBlock<Block> SMOKY_QUARTZ_BRICKS = registerSimpleBlock("smoky_quartz_bricks",
-            ModBlocks::makeSmokyQuartzSettings, true);
+            ModBlocks::makeSmokyQuartzSettings);
     public static final DeferredBlock<Block> SMOKY_QUARTZ_BRICK_STAIRS = registerStairs("smoky_quartz_brick_stairs",
             ModBlocks::makeSmokyQuartzSettings, SMOKY_QUARTZ_BRICKS);
     public static final DeferredBlock<Block> SMOKY_QUARTZ_BRICK_SLAB = registerSlab("smoky_quartz_brick_slab",
@@ -205,7 +204,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> SMOKY_QUARTZ_WALL = registerWall("smoky_quartz_wall",
             ModBlocks::makeSmokyQuartzSettings);
     public static final DeferredBlock<Block> SMOOTH_SMOKY_QUARTZ = registerSimpleBlock("smooth_smoky_quartz",
-            ModBlocks::makeSmokyQuartzSettings, true);
+            ModBlocks::makeSmokyQuartzSettings);
     public static final DeferredBlock<Block> SMOOTH_SMOKY_QUARTZ_STAIRS
             = registerStairs("smooth_smoky_quartz_stairs",
             ModBlocks::makeSmokyQuartzSettings, SMOOTH_SMOKY_QUARTZ);
@@ -306,7 +305,7 @@ public final class ModBlocks {
                     .requiresCorrectToolForDrops().strength(5.0F)
                     .sound(SoundType.METAL).noOcclusion(), true);
     public static final DeferredBlock<Block> SNOW_BRICKS = registerSimpleBlock("snow_bricks",
-            ModBlocks::makeSnowBrickSettings, true);
+            ModBlocks::makeSnowBrickSettings);
     public static final DeferredBlock<Block> SNOW_BRICK_STAIRS = registerStairs("snow_brick_stairs",
             ModBlocks::makeSnowBrickSettings, SNOW_BRICKS);
     public static final DeferredBlock<Block> SNOW_BRICK_SLAB = registerSlab("snow_brick_slab",
@@ -314,7 +313,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> SNOW_BRICK_WALL = registerWall("snow_brick_wall",
             ModBlocks::makeSnowBrickSettings);
     public static final DeferredBlock<Block> PACKED_SNOW = registerSimpleBlock("packed_snow",
-            ModBlocks::makePackedSnowSettings, true);
+            ModBlocks::makePackedSnowSettings);
     public static final DeferredBlock<Block> PACKED_SNOW_STAIRS = registerStairs("packed_snow_stairs",
             ModBlocks::makePackedSnowSettings, PACKED_SNOW);
     public static final DeferredBlock<Block> PACKED_SNOW_SLAB = registerSlab("packed_snow_slab",
@@ -446,7 +445,7 @@ public final class ModBlocks {
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH).lightLevel((state) -> 8),
             false);
     public static final DeferredBlock<Block> BAUXITE
-            = registerSimpleBlock("bauxite", ModBlocks::makeBauxiteSettings, true);
+            = registerSimpleBlock("bauxite", ModBlocks::makeBauxiteSettings);
     public static final DeferredBlock<Block> BAUXITE_SLAB
             = registerSlab("bauxite_slab", ModBlocks::makeBauxiteSettings);
     public static final DeferredBlock<Block> BAUXITE_STAIRS
@@ -454,7 +453,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> BAUXITE_WALL
             = registerWall("bauxite_wall", ModBlocks::makeBauxiteSettings);
     public static final DeferredBlock<Block> BAUXITE_BRICKS = registerSimpleBlock("bauxite_bricks",
-            ModBlocks::makeBauxiteBricksSettings, true);
+            ModBlocks::makeBauxiteBricksSettings);
     public static final DeferredBlock<Block> BAUXITE_BRICK_STAIRS = registerStairs("bauxite_brick_stairs",
             ModBlocks::makeBauxiteBricksSettings, BAUXITE_BRICKS);
     public static final DeferredBlock<Block> BAUXITE_BRICK_SLAB
@@ -462,7 +461,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> BAUXITE_BRICK_WALL
             = registerWall("bauxite_brick_wall", ModBlocks::makeBauxiteBricksSettings);
     public static final DeferredBlock<Block> MOSSY_BAUXITE_BRICKS = registerSimpleBlock("mossy_bauxite_bricks",
-            ModBlocks::makeBauxiteBricksSettings, true);
+            ModBlocks::makeBauxiteBricksSettings);
     public static final DeferredBlock<Block> MOSSY_BAUXITE_BRICK_STAIRS
             = registerStairs("mossy_bauxite_brick_stairs",
             ModBlocks::makeBauxiteBricksSettings, MOSSY_BAUXITE_BRICKS);
@@ -472,7 +471,7 @@ public final class ModBlocks {
             = registerWall("mossy_bauxite_brick_wall", ModBlocks::makeBauxiteBricksSettings);
     public static final DeferredBlock<Block> CRACKED_BAUXITE_BRICKS
             = registerSimpleBlock("cracked_bauxite_bricks",
-            ModBlocks::makeBauxiteBricksSettings, true);
+            ModBlocks::makeBauxiteBricksSettings);
     public static final DeferredBlock<Block> CRACKED_BAUXITE_BRICK_STAIRS
             = registerStairs("cracked_bauxite_brick_stairs",
             ModBlocks::makeBauxiteBricksSettings, CRACKED_BAUXITE_BRICKS);
@@ -482,7 +481,7 @@ public final class ModBlocks {
             = registerWall("cracked_bauxite_brick_wall", ModBlocks::makeBauxiteBricksSettings);
     public static final DeferredBlock<Block> TWISTED_NETHER_BRICKS
             = registerSimpleBlock("twisted_nether_bricks",
-            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS), true);
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS));
     public static final DeferredBlock<Block> TWISTED_NETHER_BRICK_STAIRS
             = registerStairs("twisted_nether_brick_stairs",
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS), TWISTED_NETHER_BRICKS);
@@ -494,7 +493,7 @@ public final class ModBlocks {
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS));
     public static final DeferredBlock<Block> TWISTED_NETHERRACK
             = registerSimpleBlock("twisted_netherrack",
-            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK), true);
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK));
     public static final DeferredBlock<Block> TWISTED_NETHERRACK_STAIRS
             = registerStairs("twisted_netherrack_stairs",
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK), TWISTED_NETHERRACK);
@@ -506,7 +505,7 @@ public final class ModBlocks {
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK));
     public static final DeferredBlock<Block> WEEPING_NETHER_BRICKS
             = registerSimpleBlock("weeping_nether_bricks",
-            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS), true);
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS));
     public static final DeferredBlock<Block> WEEPING_NETHER_BRICK_STAIRS
             = registerStairs("weeping_nether_brick_stairs",
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS), WEEPING_NETHER_BRICKS);
@@ -518,7 +517,7 @@ public final class ModBlocks {
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS));
     public static final DeferredBlock<Block> WEEPING_NETHERRACK
             = registerSimpleBlock("weeping_netherrack",
-            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK), true);
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK));
     public static final DeferredBlock<Block> WEEPING_NETHERRACK_STAIRS
             = registerStairs("weeping_netherrack_stairs",
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK), WEEPING_NETHERRACK);
@@ -616,7 +615,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> BLACK_CANDLE_RED_VELVET_CAKE
             = registerRedVelvetCandleCake("black_candle_red_velvet_cake", () -> Blocks.BLACK_CANDLE);
     public static final DeferredBlock<Block> STONE_TILES
-            = registerSimpleBlock("stone_tiles", ModBlocks::makeStoneTileSettings, true);
+            = registerSimpleBlock("stone_tiles", ModBlocks::makeStoneTileSettings);
     public static final DeferredBlock<Block> STONE_TILE_SLAB
             = registerSlab("stone_tile_slab", ModBlocks::makeStoneTileSettings);
     public static final DeferredBlock<Block> STONE_TILE_STAIRS
@@ -624,7 +623,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> STONE_TILE_WALL
             = registerWall("stone_tile_wall", ModBlocks::makeStoneTileSettings);
     public static final DeferredBlock<Block> MOSSY_STONE_TILES
-            = registerSimpleBlock("mossy_stone_tiles", ModBlocks::makeStoneTileSettings, true);
+            = registerSimpleBlock("mossy_stone_tiles", ModBlocks::makeStoneTileSettings);
     public static final DeferredBlock<Block> MOSSY_STONE_TILE_SLAB
             = registerSlab("mossy_stone_tile_slab", ModBlocks::makeStoneTileSettings);
     public static final DeferredBlock<Block> MOSSY_STONE_TILE_STAIRS
@@ -632,7 +631,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> MOSSY_STONE_TILE_WALL
             = registerWall("mossy_stone_tile_wall", ModBlocks::makeStoneTileSettings);
     public static final DeferredBlock<Block> CRACKED_STONE_TILES
-            = registerSimpleBlock("cracked_stone_tiles", ModBlocks::makeStoneTileSettings, true);
+            = registerSimpleBlock("cracked_stone_tiles", ModBlocks::makeStoneTileSettings);
     public static final DeferredBlock<Block> CRACKED_STONE_TILE_SLAB
             = registerSlab("cracked_stone_tile_slab", ModBlocks::makeStoneTileSettings);
     public static final DeferredBlock<Block> CRACKED_STONE_TILE_STAIRS
@@ -642,7 +641,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> SWEET_BERRY_PIE = registerPie("sweet_berry_pie");
     public static final DeferredBlock<Block> BLUEBERRY_PIE = registerPie("blueberry_pie");
     public static final DeferredBlock<Block> BLACKSTONE_TILES
-            = registerSimpleBlock("blackstone_tiles", ModBlocks::makeBlackstoneTileSettings, true);
+            = registerSimpleBlock("blackstone_tiles", ModBlocks::makeBlackstoneTileSettings);
     public static final DeferredBlock<Block> BLACKSTONE_TILE_STAIRS
             = registerStairs("blackstone_tile_stairs", ModBlocks::makeBlackstoneTileSettings, BLACKSTONE_TILES);
     public static final DeferredBlock<Block> BLACKSTONE_TILE_SLAB
@@ -651,7 +650,7 @@ public final class ModBlocks {
             = registerWall("blackstone_tile_wall", ModBlocks::makeBlackstoneTileSettings);
     public static final DeferredBlock<Block> TWISTED_BLACKSTONE_TILES
             = registerSimpleBlock("twisted_blackstone_tiles",
-            ModBlocks::makeBlackstoneTileSettings, true);
+            ModBlocks::makeBlackstoneTileSettings);
     public static final DeferredBlock<Block> TWISTED_BLACKSTONE_TILE_STAIRS
             = registerStairs("twisted_blackstone_tile_stairs",
             ModBlocks::makeBlackstoneTileSettings, TWISTED_BLACKSTONE_TILES);
@@ -660,7 +659,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> TWISTED_BLACKSTONE_TILE_WALL
             = registerWall("twisted_blackstone_tile_wall", ModBlocks::makeBlackstoneTileSettings);
     public static final DeferredBlock<Block> WEEPING_BLACKSTONE_TILES
-            = registerSimpleBlock("weeping_blackstone_tiles", ModBlocks::makeBlackstoneTileSettings, true);
+            = registerSimpleBlock("weeping_blackstone_tiles", ModBlocks::makeBlackstoneTileSettings);
     public static final DeferredBlock<Block> WEEPING_BLACKSTONE_TILE_STAIRS
             = registerStairs("weeping_blackstone_tile_stairs",
             ModBlocks::makeBlackstoneTileSettings, WEEPING_BLACKSTONE_TILES);
@@ -670,7 +669,7 @@ public final class ModBlocks {
             = registerWall("weeping_blackstone_tile_wall", ModBlocks::makeBlackstoneTileSettings);
     public static final DeferredBlock<Block> TWISTED_POLISHED_BLACKSTONE_BRICKS
             = registerSimpleBlock("twisted_polished_blackstone_bricks",
-            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS), true);
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS));
     public static final DeferredBlock<Block> TWISTED_POLISHED_BLACKSTONE_BRICK_STAIRS
             = registerStairs("twisted_polished_blackstone_brick_stairs",
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS),
@@ -683,7 +682,7 @@ public final class ModBlocks {
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS));
     public static final DeferredBlock<Block> WEEPING_POLISHED_BLACKSTONE_BRICKS
             = registerSimpleBlock("weeping_polished_blackstone_bricks",
-            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS), true);
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS));
     public static final DeferredBlock<Block> WEEPING_POLISHED_BLACKSTONE_BRICK_STAIRS
             = registerStairs("weeping_polished_blackstone_brick_stairs",
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS),
@@ -696,7 +695,7 @@ public final class ModBlocks {
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS));
     public static final DeferredBlock<Block> TWISTED_BLACKSTONE
             = registerSimpleBlock("twisted_blackstone",
-            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE), true);
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE));
     public static final DeferredBlock<Block> TWISTED_BLACKSTONE_STAIRS
             = registerStairs("twisted_blackstone_stairs",
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE), () -> Blocks.BLACKSTONE);
@@ -706,7 +705,7 @@ public final class ModBlocks {
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE));
     public static final DeferredBlock<Block> WEEPING_BLACKSTONE
             = registerSimpleBlock("weeping_blackstone",
-            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE), true);
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE));
     public static final DeferredBlock<Block> WEEPING_BLACKSTONE_STAIRS
             = registerStairs("weeping_blackstone_stairs",
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE), WEEPING_BLACKSTONE);
@@ -715,7 +714,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> WEEPING_BLACKSTONE_WALL = registerWall("weeping_blackstone_wall",
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE));
     public static final DeferredBlock<Block> QUARTZ_TILES
-            = registerSimpleBlock("quartz_tiles", ModBlocks::makeQuartzTileSettings, true);
+            = registerSimpleBlock("quartz_tiles", ModBlocks::makeQuartzTileSettings);
     public static final DeferredBlock<Block> QUARTZ_TILE_STAIRS = registerStairs("quartz_tile_stairs",
             ModBlocks::makeQuartzTileSettings, QUARTZ_TILES);
     public static final DeferredBlock<Block> QUARTZ_TILE_SLAB
@@ -723,7 +722,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> QUARTZ_TILE_WALL
             = registerWall("quartz_tile_wall", ModBlocks::makeQuartzTileSettings);
     public static final DeferredBlock<Block> CALCITE_BRICKS
-            = registerSimpleBlock("calcite_bricks", ModBlocks::makeCalciteSettings, true);
+            = registerSimpleBlock("calcite_bricks", ModBlocks::makeCalciteSettings);
     public static final DeferredBlock<Block> CALCITE_BRICK_STAIRS = registerStairs("calcite_brick_stairs",
             ModBlocks::makeCalciteSettings, CALCITE_BRICKS);
     public static final DeferredBlock<Block> CALCITE_BRICK_SLAB = registerSlab("calcite_brick_slab",
@@ -731,7 +730,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> CALCITE_BRICK_WALL = registerWall("calcite_brick_wall",
             ModBlocks::makeCalciteSettings);
     public static final DeferredBlock<Block> MOSSY_CALCITE_BRICKS
-            = registerSimpleBlock("mossy_calcite_bricks", ModBlocks::makeCalciteSettings, true);
+            = registerSimpleBlock("mossy_calcite_bricks", ModBlocks::makeCalciteSettings);
     public static final DeferredBlock<Block> MOSSY_CALCITE_BRICK_STAIRS
             = registerStairs("mossy_calcite_brick_stairs", ModBlocks::makeCalciteSettings, MOSSY_CALCITE_BRICKS);
     public static final DeferredBlock<Block> MOSSY_CALCITE_BRICK_SLAB
@@ -739,7 +738,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> MOSSY_CALCITE_BRICK_WALL
             = registerWall("mossy_calcite_brick_wall", ModBlocks::makeCalciteSettings);
     public static final DeferredBlock<Block> CRACKED_CALCITE_BRICKS
-            = registerSimpleBlock("cracked_calcite_bricks", ModBlocks::makeCalciteSettings, true);
+            = registerSimpleBlock("cracked_calcite_bricks", ModBlocks::makeCalciteSettings);
     public static final DeferredBlock<Block> CRACKED_CALCITE_BRICK_STAIRS
             = registerStairs("cracked_calcite_brick_stairs",
             ModBlocks::makeCalciteSettings, CRACKED_CALCITE_BRICKS);
@@ -751,7 +750,7 @@ public final class ModBlocks {
             = register("chiseled_calcite_bricks", RotatedPillarBlock::new,
             ModBlocks::makeCalciteSettings, true);
     public static final DeferredBlock<Block> DRIPSTONE_BRICKS
-            = registerSimpleBlock("dripstone_bricks", ModBlocks::makeDripstoneSettings, true);
+            = registerSimpleBlock("dripstone_bricks", ModBlocks::makeDripstoneSettings);
     public static final DeferredBlock<Block> DRIPSTONE_BRICK_STAIRS
             = registerStairs("dripstone_brick_stairs", ModBlocks::makeDripstoneSettings, DRIPSTONE_BRICKS);
     public static final DeferredBlock<Block> DRIPSTONE_BRICK_SLAB
@@ -759,7 +758,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> DRIPSTONE_BRICK_WALL
             = registerWall("dripstone_brick_wall", ModBlocks::makeDripstoneSettings);
     public static final DeferredBlock<Block> MOSSY_DRIPSTONE_BRICKS
-            = registerSimpleBlock("mossy_dripstone_bricks", ModBlocks::makeDripstoneSettings, true);
+            = registerSimpleBlock("mossy_dripstone_bricks", ModBlocks::makeDripstoneSettings);
     public static final DeferredBlock<Block> MOSSY_DRIPSTONE_BRICK_STAIRS
             = registerStairs("mossy_dripstone_brick_stairs",
             ModBlocks::makeDripstoneSettings, MOSSY_DRIPSTONE_BRICKS);
@@ -769,7 +768,7 @@ public final class ModBlocks {
             = registerWall("mossy_dripstone_brick_wall", ModBlocks::makeDripstoneSettings);
     public static final DeferredBlock<Block> CRACKED_DRIPSTONE_BRICKS
             = registerSimpleBlock("cracked_dripstone_bricks",
-            ModBlocks::makeDripstoneSettings, true);
+            ModBlocks::makeDripstoneSettings);
     public static final DeferredBlock<Block> CRACKED_DRIPSTONE_BRICK_STAIRS
             = registerStairs("cracked_dripstone_brick_stairs",
             ModBlocks::makeDripstoneSettings, CRACKED_DRIPSTONE_BRICKS);
@@ -779,7 +778,7 @@ public final class ModBlocks {
             = registerWall("cracked_dripstone_brick_wall", ModBlocks::makeDripstoneSettings);
     public static final DeferredBlock<Block> CHISELED_DRIPSTONE_BRICKS
             = registerSimpleBlock("chiseled_dripstone_bricks",
-            ModBlocks::makeDripstoneSettings, true);
+            ModBlocks::makeDripstoneSettings);
     public static final DeferredBlock<Block> BLOOD_KELP
             = register("blood_kelp", BloodKelpBlock::new,
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.KELP)
@@ -790,7 +789,7 @@ public final class ModBlocks {
                     .lightLevel(getLuminanceFromState()), false);
     public static final DeferredBlock<Block> DRIED_BLOOD_KELP_BLOCK
             = registerSimpleBlock("dried_blood_kelp_block",
-            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.DRIED_KELP_BLOCK), true);
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.DRIED_KELP_BLOCK));
     public static final DeferredBlock<Block> BLOOD_KELP_LANTERN
             = register("blood_kelp_lantern", RotatedPillarBlock::new,
             () -> BlockBehaviour.Properties.of().mapColor(MapColor.SAND).strength(0.3F)
@@ -810,7 +809,7 @@ public final class ModBlocks {
                     .randomTicks().noCollision().sound(SoundType.NETHER_SPROUTS).pushReaction(PushReaction.DESTROY)
                     .lightLevel((state) -> 5), false);
     public static final DeferredBlock<Block> POLISHED_DRIPSTONE
-            = registerSimpleBlock("polished_dripstone", ModBlocks::makeDripstoneSettings, true);
+            = registerSimpleBlock("polished_dripstone", ModBlocks::makeDripstoneSettings);
     public static final DeferredBlock<Block> POLISHED_DRIPSTONE_STAIRS
             = registerStairs("polished_dripstone_stairs",
             ModBlocks::makeDripstoneSettings, POLISHED_DRIPSTONE);
@@ -819,7 +818,7 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> POLISHED_DRIPSTONE_WALL
             = registerWall("polished_dripstone_wall", ModBlocks::makeDripstoneSettings);
     public static final DeferredBlock<Block> POLISHED_CALCITE
-            = registerSimpleBlock("polished_calcite", ModBlocks::makeCalciteSettings, true);
+            = registerSimpleBlock("polished_calcite", ModBlocks::makeCalciteSettings);
     public static final DeferredBlock<Block> POLISHED_CALCITE_STAIRS
             = registerStairs("polished_calcite_stairs", ModBlocks::makeCalciteSettings, POLISHED_CALCITE);
     public static final DeferredBlock<Block> POLISHED_CALCITE_SLAB
@@ -858,75 +857,45 @@ public final class ModBlocks {
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.PODZOL));
     public static final DeferredBlock<Block> MYCELIUM_SLAB = registerSnowySlab("mycelium_slab",
             () -> BlockBehaviour.Properties.ofFullCopy(Blocks.MYCELIUM));
-
-
-
-
-    public static final ResourceKey<Block> DIRT_PATH_SLAB_KEY = makeRegistryKey("dirt_path_slab");
-    public static final Block DIRT_PATH_SLAB
-            = register(new DirtPathSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT_PATH)
-                    .setId(DIRT_PATH_SLAB_KEY)),
-            DIRT_PATH_SLAB_KEY, true);
-
-
-
-    public static final ResourceKey<Block> DIRT_SLAB_KEY = makeRegistryKey("dirt_slab");
-    public static final Block DIRT_SLAB
-            = register(new DirtSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT)
-                    .setId(DIRT_SLAB_KEY)),
-            DIRT_SLAB_KEY, true);
-    public static final ResourceKey<Block> COARSE_DIRT_SLAB_KEY = makeRegistryKey("coarse_dirt_slab");
-    public static final Block COARSE_DIRT_SLAB = registerSlab(COARSE_DIRT_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.COARSE_DIRT).setId(COARSE_DIRT_SLAB_KEY));
-    public static final ResourceKey<Block> ROOTED_DIRT_SLAB_KEY = makeRegistryKey("rooted_dirt_slab");
-    public static final Block ROOTED_DIRT_SLAB = registerSlab(ROOTED_DIRT_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.ROOTED_DIRT).setId(ROOTED_DIRT_SLAB_KEY));
-    public static final ResourceKey<Block> WILD_GREEN_ONIONS_KEY = makeRegistryKey("wild_green_onions");
-    public static final Block WILD_GREEN_ONIONS
-            = register(new WildGreenOnionsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT)
-            .noCollision().randomTicks().instabreak().sound(SoundType.CROP)
-            .pushReaction(PushReaction.DESTROY).setId(WILD_GREEN_ONIONS_KEY)),
-            WILD_GREEN_ONIONS_KEY, true);
-    public static final ResourceKey<Block> CREAKING_PLUSHIE_KEY = makeRegistryKey("creaking_plushie");
-    public static final Block CREAKING_PLUSHIE
-            = register(new CreakingPlushieBlock(makePlushieSettings(CREAKING_PLUSHIE_KEY)),
-            CREAKING_PLUSHIE_KEY, true);
-    public static final ResourceKey<Block> QUARTZ_BRICK_STAIRS_KEY = makeRegistryKey("quartz_brick_stairs");
-    public static final Block QUARTZ_BRICK_STAIRS = registerStairs(QUARTZ_BRICK_STAIRS_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BRICKS).setId(QUARTZ_BRICK_STAIRS_KEY),
-            Blocks.QUARTZ_BRICKS);
-    public static final ResourceKey<Block> QUARTZ_BRICK_SLAB_KEY = makeRegistryKey("quartz_brick_slab");
-    public static final Block QUARTZ_BRICK_SLAB = registerSlab(QUARTZ_BRICK_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BRICKS).setId(QUARTZ_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> QUARTZ_BRICK_WALL_KEY = makeRegistryKey("quartz_brick_wall");
-    public static final Block QUARTZ_BRICK_WALL = registerWall(QUARTZ_BRICK_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BRICKS).setId(QUARTZ_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> SNIFFER_PLUSHIE_KEY = makeRegistryKey("sniffer_plushie");
-    public static final Block SNIFFER_PLUSHIE
-            = register(new SnifferPlushieBlock(makePlushieSettings(SNIFFER_PLUSHIE_KEY)),
-            SNIFFER_PLUSHIE_KEY, true);
-    public static final ResourceKey<Block> STRIPPED_PALE_OAK_WALL_KEY = makeRegistryKey("stripped_pale_oak_wall");
-    public static final Block STRIPPED_PALE_OAK_WALL = registerWall(STRIPPED_PALE_OAK_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.PALE_OAK_PLANKS).setId(STRIPPED_PALE_OAK_WALL_KEY));
-    public static final ResourceKey<Block> PALE_OAK_WALL_KEY = makeRegistryKey("pale_oak_wall");
-    public static final Block PALE_OAK_WALL = registerWall(PALE_OAK_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.PALE_OAK_PLANKS).setId(PALE_OAK_WALL_KEY));
-    public static final ResourceKey<Block> BAMBOO_ROPE_LADDER_KEY = makeRegistryKey("bamboo_rope_ladder");
-    public static final Block BAMBOO_ROPE_LADDER = registerRopeLadder(BAMBOO_ROPE_LADDER_KEY);
-    public static final ResourceKey<Block> STRIPPED_BAMBOO_WALL_KEY = makeRegistryKey("stripped_bamboo_wall");
-    public static final Block STRIPPED_BAMBOO_WALL = registerWall(STRIPPED_BAMBOO_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).setId(STRIPPED_BAMBOO_WALL_KEY));
-    public static final ResourceKey<Block> BAMBOO_WALL_KEY = makeRegistryKey("bamboo_wall");
-    public static final Block BAMBOO_WALL = registerWall(BAMBOO_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).setId(BAMBOO_WALL_KEY));
-    public static final ResourceKey<Block> BLACK_WOLF_PLUSHIE_KEY = makeRegistryKey("black_wolf_plushie");
-    public static final Block BLACK_WOLF_PLUSHIE = registerWolfPlushie(BLACK_WOLF_PLUSHIE_KEY);
-    public static final ResourceKey<Block> ASHEN_WOLF_PLUSHIE_KEY = makeRegistryKey("ashen_wolf_plushie");
-    public static final Block ASHEN_WOLF_PLUSHIE = registerWolfPlushie(ASHEN_WOLF_PLUSHIE_KEY);
-    public static final ResourceKey<Block> CHESTNUT_WOLF_PLUSHIE_KEY = makeRegistryKey("chestnut_wolf_plushie");
-    public static final Block CHESTNUT_WOLF_PLUSHIE = registerWolfPlushie(CHESTNUT_WOLF_PLUSHIE_KEY);
-    public static final ResourceKey<Block> RUSTY_WOLF_PLUSHIE_KEY = makeRegistryKey("rusty_wolf_plushie");
-    public static final Block RUSTY_WOLF_PLUSHIE = registerWolfPlushie(RUSTY_WOLF_PLUSHIE_KEY);
+    public static final DeferredBlock<Block> DIRT_PATH_SLAB
+            = register("dirt_path_slab", DirtPathSlabBlock::new,
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT_PATH), true);
+    public static final DeferredBlock<Block> DIRT_SLAB
+            = register("dirt_slab", DirtSlabBlock::new,
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT), true);
+    public static final DeferredBlock<Block> COARSE_DIRT_SLAB = registerSlab("coarse_dirt_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.COARSE_DIRT));
+    public static final DeferredBlock<Block> ROOTED_DIRT_SLAB = registerSlab("rooted_dirt_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.ROOTED_DIRT));
+    public static final DeferredBlock<Block> WILD_GREEN_ONIONS
+            = register("wild_green_onions", WildGreenOnionsBlock::new,
+            () -> BlockBehaviour.Properties.of().mapColor(MapColor.PLANT)
+                    .noCollision().randomTicks().instabreak().sound(SoundType.CROP)
+                    .pushReaction(PushReaction.DESTROY), true);
+    public static final DeferredBlock<Block> CREAKING_PLUSHIE
+            = register("creaking_plushie", CreakingPlushieBlock::new,
+            ModBlocks::makePlushieSettings, true);
+    public static final DeferredBlock<Block> QUARTZ_BRICK_STAIRS = registerStairs("quartz_brick_stairs",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BRICKS), () -> Blocks.QUARTZ_BRICKS);
+    public static final DeferredBlock<Block> QUARTZ_BRICK_SLAB = registerSlab("quartz_brick_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BRICKS));
+    public static final DeferredBlock<Block> QUARTZ_BRICK_WALL = registerWall("quartz_brick_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BRICKS));
+    public static final DeferredBlock<Block> SNIFFER_PLUSHIE = register("sniffer_plushie",
+            SnifferPlushieBlock::new, ModBlocks::makePlushieSettings, true);
+    public static final DeferredBlock<Block> STRIPPED_PALE_OAK_WALL = registerWall("stripped_pale_oak_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.PALE_OAK_PLANKS));
+    public static final DeferredBlock<Block> PALE_OAK_WALL = registerWall("pale_oak_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.PALE_OAK_PLANKS));
+    public static final DeferredBlock<Block> BAMBOO_ROPE_LADDER = registerRopeLadder("bamboo_rope_ladder");
+    public static final DeferredBlock<Block> STRIPPED_BAMBOO_WALL = registerWall("stripped_bamboo_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS));
+    public static final DeferredBlock<Block> BAMBOO_WALL = registerWall("bamboo_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS));
+    public static final DeferredBlock<Block> BLACK_WOLF_PLUSHIE = registerWolfPlushie("black_wolf_plushie");
+    public static final DeferredBlock<Block> ASHEN_WOLF_PLUSHIE = registerWolfPlushie("ashen_wolf_plushie");
+    public static final DeferredBlock<Block> CHESTNUT_WOLF_PLUSHIE = registerWolfPlushie("chestnut_wolf_plushie");
+    public static final DeferredBlock<Block> RUSTY_WOLF_PLUSHIE = registerWolfPlushie("rusty_wolf_plushie");
 
     private static ResourceKey<Block> makeRegistryKey(String name) {
         return ResourceKey.create(Registries.BLOCK, AssortedDiscoveries.makeModId(name));
@@ -948,8 +917,8 @@ public final class ModBlocks {
         return deferredBlock;
     }
 
-    private static DeferredBlock<Block> registerSimpleBlock(String name, Supplier<BlockBehaviour.Properties> properties, boolean shouldRegisterItem) {
-        return register(name, Block::new, properties, shouldRegisterItem);
+    private static DeferredBlock<Block> registerSimpleBlock(String name, Supplier<BlockBehaviour.Properties> properties) {
+        return register(name, Block::new, properties, true);
     }
 
     private static DeferredBlock<Block> registerHorsePlushie(String name) {
@@ -1083,11 +1052,11 @@ public final class ModBlocks {
     }
 
     private static DeferredBlock<Block> registerChocolateCandleCake(String name, Supplier<Block> candle) {
-        return registerCandleCake(name, () -> ModBlocks.CHOCOLATE_CAKE, candle);
+        return registerCandleCake(name, ModBlocks.CHOCOLATE_CAKE, candle);
     }
 
     private static DeferredBlock<Block> registerRedVelvetCandleCake(String name, Supplier<Block> candle) {
-        return registerCandleCake(name, () -> ModBlocks.RED_VELVET_CAKE, candle);
+        return registerCandleCake(name, ModBlocks.RED_VELVET_CAKE, candle);
     }
 
     private static DeferredBlock<Block> registerCandleCake(String name, Supplier<Block> cake, Supplier<Block> candle) {
