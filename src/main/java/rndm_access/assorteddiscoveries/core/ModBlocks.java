@@ -617,47 +617,32 @@ public final class ModBlocks {
             = registerRedVelvetCandleCake("black_candle_red_velvet_cake", () -> Blocks.BLACK_CANDLE);
     public static final DeferredBlock<Block> STONE_TILES
             = registerSimpleBlock("stone_tiles", ModBlocks::makeStoneTileSettings, true);
+    public static final DeferredBlock<Block> STONE_TILE_SLAB
+            = registerSlab("stone_tile_slab", ModBlocks::makeStoneTileSettings);
+    public static final DeferredBlock<Block> STONE_TILE_STAIRS
+            = registerStairs("stone_tile_stairs", ModBlocks::makeStoneTileSettings, STONE_TILES);
+    public static final DeferredBlock<Block> STONE_TILE_WALL
+            = registerWall("stone_tile_wall", ModBlocks::makeStoneTileSettings);
+    public static final DeferredBlock<Block> MOSSY_STONE_TILES
+            = registerSimpleBlock("mossy_stone_tiles", ModBlocks::makeStoneTileSettings, true);
+    public static final DeferredBlock<Block> MOSSY_STONE_TILE_SLAB
+            = registerSlab("mossy_stone_tile_slab", ModBlocks::makeStoneTileSettings);
+    public static final DeferredBlock<Block> MOSSY_STONE_TILE_STAIRS
+            = registerStairs("mossy_stone_tile_stairs", ModBlocks::makeStoneTileSettings, MOSSY_STONE_TILES);
+    public static final DeferredBlock<Block> MOSSY_STONE_TILE_WALL
+            = registerWall("mossy_stone_tile_wall", ModBlocks::makeStoneTileSettings);
+    public static final DeferredBlock<Block> CRACKED_STONE_TILES
+            = registerSimpleBlock("cracked_stone_tiles", ModBlocks::makeStoneTileSettings, true);
+    public static final DeferredBlock<Block> CRACKED_STONE_TILE_SLAB
+            = registerSlab("cracked_stone_tile_slab", ModBlocks::makeStoneTileSettings);
+    public static final DeferredBlock<Block> CRACKED_STONE_TILE_STAIRS
+            = registerStairs("cracked_stone_tile_stairs", ModBlocks::makeStoneTileSettings, CRACKED_STONE_TILES);
+    public static final DeferredBlock<Block> CRACKED_STONE_TILE_WALL
+            = registerWall("cracked_stone_tile_wall", ModBlocks::makeStoneTileSettings);
 
 
 
-    public static final ResourceKey<Block> STONE_TILE_SLAB_KEY = makeRegistryKey("stone_tile_slab");
-    public static final Block STONE_TILE_SLAB
-            = registerSlab(STONE_TILE_SLAB_KEY, makeStoneTileSettings(STONE_TILE_SLAB_KEY));
-    public static final ResourceKey<Block> STONE_TILE_STAIRS_KEY = makeRegistryKey("stone_tile_stairs");
-    public static final Block STONE_TILE_STAIRS
-            = registerStairs(STONE_TILE_STAIRS_KEY, makeStoneTileSettings(STONE_TILE_STAIRS_KEY), STONE_TILES);
-    public static final ResourceKey<Block> STONE_TILE_WALL_KEY = makeRegistryKey("stone_tile_wall");
-    public static final Block STONE_TILE_WALL
-            = registerWall(STONE_TILE_WALL_KEY, makeStoneTileSettings(STONE_TILE_WALL_KEY));
-    public static final ResourceKey<Block> MOSSY_STONE_TILES_KEY = makeRegistryKey("mossy_stone_tiles");
-    public static final Block MOSSY_STONE_TILES = register(new Block(makeStoneTileSettings(MOSSY_STONE_TILES_KEY)),
-            MOSSY_STONE_TILES_KEY, true);
-    public static final ResourceKey<Block> MOSSY_STONE_TILE_SLAB_KEY = makeRegistryKey("mossy_stone_tile_slab");
-    public static final Block MOSSY_STONE_TILE_SLAB
-            = registerSlab(MOSSY_STONE_TILE_SLAB_KEY, makeStoneTileSettings(MOSSY_STONE_TILE_SLAB_KEY));
-    public static final ResourceKey<Block> MOSSY_STONE_TILE_STAIRS_KEY = makeRegistryKey("mossy_stone_tile_stairs");
-    public static final Block MOSSY_STONE_TILE_STAIRS
-            = registerStairs(MOSSY_STONE_TILE_STAIRS_KEY,
-            makeStoneTileSettings(MOSSY_STONE_TILE_STAIRS_KEY), MOSSY_STONE_TILES);
-    public static final ResourceKey<Block> MOSSY_STONE_TILE_WALL_KEY = makeRegistryKey("mossy_stone_tile_wall");
-    public static final Block MOSSY_STONE_TILE_WALL
-            = registerWall(MOSSY_STONE_TILE_WALL_KEY, makeStoneTileSettings(MOSSY_STONE_TILE_WALL_KEY));
-    public static final ResourceKey<Block> CRACKED_STONE_TILES_KEY = makeRegistryKey("cracked_stone_tiles");
-    public static final Block CRACKED_STONE_TILES = register(new Block(makeStoneTileSettings(CRACKED_STONE_TILES_KEY)),
-            CRACKED_STONE_TILES_KEY, true);
-    public static final ResourceKey<Block> CRACKED_STONE_TILE_SLAB_KEY
-            = makeRegistryKey("cracked_stone_tile_slab");
-    public static final Block CRACKED_STONE_TILE_SLAB
-            = registerSlab(CRACKED_STONE_TILE_SLAB_KEY, makeStoneTileSettings(CRACKED_STONE_TILE_SLAB_KEY));
-    public static final ResourceKey<Block> CRACKED_STONE_TILE_STAIRS_KEY
-            = makeRegistryKey("cracked_stone_tile_stairs");
-    public static final Block CRACKED_STONE_TILE_STAIRS
-            = registerStairs(CRACKED_STONE_TILE_STAIRS_KEY,
-            makeStoneTileSettings(CRACKED_STONE_TILE_STAIRS_KEY), CRACKED_STONE_TILES);
-    public static final ResourceKey<Block> CRACKED_STONE_TILE_WALL_KEY
-            = makeRegistryKey("cracked_stone_tile_wall");
-    public static final Block CRACKED_STONE_TILE_WALL
-            = registerWall(CRACKED_STONE_TILE_WALL_KEY, makeStoneTileSettings(CRACKED_STONE_TILE_WALL_KEY));
+
     public static final ResourceKey<Block> SWEET_BERRY_PIE_KEY = makeRegistryKey("sweet_berry_pie");
     public static final Block SWEET_BERRY_PIE = registerPie(SWEET_BERRY_PIE_KEY);
     public static final ResourceKey<Block> BLUEBERRY_PIE_KEY = makeRegistryKey("blueberry_pie");

@@ -126,11 +126,9 @@ public class Config {
     public static final String ENABLE_CRIMSON_FORAGE_MIX = "enable_crimson_forage_mix";
     public static final String ENABLE_WARPED_FORAGE_MIX = "enable_warped_forage_mix";
 
-    private static final ModConfigSpec MOD_SPEC = BUILDER.build();
+    public static final ModConfigSpec MOD_SPEC = BUILDER.build();
 
     public static void register(ModContainer modContainer) {
         modContainer.registerConfig(ModConfig.Type.SERVER, MOD_SPEC);
     }
-
-
 }
