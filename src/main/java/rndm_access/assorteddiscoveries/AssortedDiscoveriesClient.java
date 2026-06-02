@@ -51,7 +51,7 @@ public class AssortedDiscoveriesClient {
 
     @SubscribeEvent
     private static void registerBlockColors(RegisterColorHandlersEvent.BlockTintSources event) {
-        event.register(List.of(BlockTintSources.grassBlock()), ModBlocks.ENDERMAN_PLUSHIE.get(), ModBlocks.GRASS_SLAB);
+        event.register(List.of(BlockTintSources.grassBlock()), ModBlocks.ENDERMAN_PLUSHIE.get(), ModBlocks.GRASS_SLAB.get());
 
         event.register(List.of(new BlockTintSource() {
             @Override

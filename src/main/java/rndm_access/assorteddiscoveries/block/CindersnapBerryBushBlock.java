@@ -46,7 +46,7 @@ public class CindersnapBerryBushBlock extends AbstractBerryBushBlock {
 
     @Override
     protected Item berryItem() {
-        return ModItems.CINDERSNAP_BERRIES;
+        return ModItems.CINDERSNAP_BERRIES.get();
     }
 
     @Override

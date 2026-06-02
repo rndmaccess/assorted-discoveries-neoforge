@@ -5,10 +5,16 @@ import net.minecraft.world.item.context.UseOnContext;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
+import rndm_access.assorteddiscoveries.AssortedDiscoveries;
 import rndm_access.assorteddiscoveries.block.SnowySlabBlock;
 import rndm_access.assorteddiscoveries.core.ModBlocks;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
+import java.util.function.Supplier;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -23,7 +29,9 @@ import net.minecraft.world.level.block.state.BlockState;
 @Mixin(ShovelItem.class)
 public abstract class ShovelItemMixin {
     @Unique
-    private static final HashSet<Block> DIRT_SLAB_LIST;
+    private static final List<Supplier<Block>> WRAPPED_DIRT_SLABS;
+    @Unique
+    private static final HashSet<Block> DIRT_SLABS;
 
     @ModifyReturnValue(method = "useOn", at = @At("RETURN"))
     private InteractionResult useOn(InteractionResult original, UseOnContext context) {
@@ -33,7 +41,7 @@ public abstract class ShovelItemMixin {
         BlockState state = world.getBlockState(pos);
         Block block = state.getBlock();
 
-        if(DIRT_SLAB_LIST.contains(block) && block instanceof SlabBlock) {
+        if(containsSlab(block) && block instanceof SlabBlock) {
             if(state.hasProperty(SnowySlabBlock.SNOWY) && state.getValue(SnowySlabBlock.SNOWY).equals(true)) {
                 return InteractionResult.FAIL;
             }
@@ -47,13 +55,25 @@ public abstract class ShovelItemMixin {
         return original;
     }
 
+    @Unique
+    private static boolean containsSlab(Block block) {
+        if (DIRT_SLABS.isEmpty()) {
+            // Unwrap the slab blocks here to ensure that they are registered!
+            for (Supplier<Block> slab : WRAPPED_DIRT_SLABS) {
+                DIRT_SLABS.add(slab.get());
+            }
+        }
+        return DIRT_SLABS.contains(block);
+    }
+
     static {
-        DIRT_SLAB_LIST = new HashSet<>();
-        DIRT_SLAB_LIST.add(ModBlocks.GRASS_SLAB);
-        DIRT_SLAB_LIST.add(ModBlocks.PODZOL_SLAB);
-        DIRT_SLAB_LIST.add(ModBlocks.COARSE_DIRT_SLAB);
-        DIRT_SLAB_LIST.add(ModBlocks.DIRT_SLAB);
-        DIRT_SLAB_LIST.add(ModBlocks.MYCELIUM_SLAB);
-        DIRT_SLAB_LIST.add(ModBlocks.ROOTED_DIRT_SLAB);
+        DIRT_SLABS = new HashSet<>();
+        WRAPPED_DIRT_SLABS = new ArrayList<>();
+        WRAPPED_DIRT_SLABS.add(ModBlocks.GRASS_SLAB);
+        WRAPPED_DIRT_SLABS.add(ModBlocks.PODZOL_SLAB);
+        WRAPPED_DIRT_SLABS.add(ModBlocks.COARSE_DIRT_SLAB);
+        WRAPPED_DIRT_SLABS.add(ModBlocks.DIRT_SLAB);
+        WRAPPED_DIRT_SLABS.add(ModBlocks.MYCELIUM_SLAB);
+        WRAPPED_DIRT_SLABS.add(ModBlocks.ROOTED_DIRT_SLAB);
     }
 }

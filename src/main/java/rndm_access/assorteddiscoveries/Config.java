@@ -14,14 +14,22 @@ public class Config {
 
     public static final ModConfigSpec.BooleanValue ENABLE_DYED_CAMPFIRES = BUILDER
             .define("enable_dyed_campfires", true);
+    public static final ModConfigSpec.BooleanValue ENABLE_DYED_LANTERNS = BUILDER
+            .define("enable_dyed_lanterns", true);
+    public static final ModConfigSpec.BooleanValue ENABLE_DYED_TORCHES = BUILDER
+            .define("enable_dyed_torches", true);
+    public static final ModConfigSpec.BooleanValue ENABLE_ALLAY_PLUSHIE = BUILDER
+            .define("enable_allay_plushie", true);
+    public static final ModConfigSpec.BooleanValue ENABLE_BAT_PLUSHIE = BUILDER
+            .define("enable_bat_plushie", true);
+    public static final ModConfigSpec.BooleanValue ENABLE_CAMEL_PLUSHIE = BUILDER
+            .define("enable_camel_plushie", true);
+    public static final ModConfigSpec.BooleanValue ENABLE_CAT_PLUSHIES = BUILDER
+            .define("enable_cat_plushies", true);
+    public static final ModConfigSpec.BooleanValue ENABLE_CHICKEN_PLUSHIES = BUILDER
+            .define("enable_chicken_plushies", true);
 
-    public static final String ENABLE_DYED_LANTERNS = "enable_dyed_lanterns";
-    public static final String ENABLE_DYED_TORCHES = "enable_dyed_torches";
-    public static final String ENABLE_ALLAY_PLUSHIE = "enable_allay_plushie";
-    public static final String ENABLE_BAT_PLUSHIE = "enable_bat_plushie";
-    public static final String ENABLE_CAMEL_PLUSHIE = "enable_camel_plushie";
-    public static final String ENABLE_CAT_PLUSHIES = "enable_cat_plushies";
-    public static final String ENABLE_CHICKEN_PLUSHIES = "enable_chicken_plushies";
+
     public static final String ENABLE_COW_PLUSHIES = "enable_cow_plushies";
     public static final String ENABLE_HORSE_PLUSHIES = "enable_horse_plushies";
     public static final String ENABLE_MOOSHROOM_PLUSHIES = "enable_mooshroom_plushies";

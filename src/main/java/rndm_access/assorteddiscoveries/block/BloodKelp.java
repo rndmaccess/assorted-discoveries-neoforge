@@ -25,7 +25,7 @@ public interface BloodKelp {
         RandomSource random = RandomSource.create();
 
         if (state.getValue(LIT)) {
-            player.addItem(new ItemStack(ModItems.BLOOD_KELP_SEED_CLUSTER,
+            player.addItem(new ItemStack(ModItems.BLOOD_KELP_SEED_CLUSTER.get(),
                     random.nextInt(3) + 1));
             world.setBlockAndUpdate(pos, state.setValue(LIT, false));
             return InteractionResult.SUCCESS;
@@ -40,7 +40,7 @@ public interface BloodKelp {
         double z = pos.getZ() + (random.nextDouble() / 2.0);
 
         if (state.getValue(LIT)) {
-            world.addParticle(ModParticleTypes.BLOOD_KELP_SPORE, x, y, z, 0.0D,
+            world.addParticle(ModParticleTypes.BLOOD_KELP_SPORE.get(), x, y, z, 0.0D,
                     0.0D, 0.0D);
         }
     }

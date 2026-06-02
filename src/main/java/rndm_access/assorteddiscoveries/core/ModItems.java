@@ -100,27 +100,21 @@ public final class ModItems {
             () -> new Item.Properties().food(ModFoodComponents.FRIED_EGG).stacksTo(16));
     public static final DeferredItem<Item> BLOOD_KELP_SEED_CLUSTER
             = registerBlockItem("blood_kelp_seed_cluster", ModBlocks.BLOOD_KELP);
+    public static final DeferredItem<Item> BLOOD_KELP
+            = ITEMS.registerSimpleItem("blood_kelp", Item.Properties::new);
+    public static final DeferredItem<Item> DRIED_BLOOD_KELP = ITEMS.registerSimpleItem("dried_blood_kelp",
+            () -> new Item.Properties().food(Foods.DRIED_KELP));
+    public static final DeferredItem<Item> HOGLIN_STEW = ITEMS.registerSimpleItem("hoglin_stew",
+            () -> new Item.Properties().food(ModFoodComponents.HOGLIN_STEW)
+                    .stacksTo(1).usingConvertsTo(Items.BOWL));
+    public static final DeferredItem<Item> CINDERSNAP_BERRIES = registerBlockItem("cindersnap_berries",
+            ModBlocks.CINDERSNAP_BERRY_BUSH, () -> new Item.Properties().food(ModFoodComponents.NETHER_BERRIES));
+    public static final DeferredItem<Item> FROSTBITE_BERRIES = registerBlockItem("frostbite_berries",
+            ModBlocks.FROSTBITE_BERRY_BUSH, () -> new Item.Properties().food(ModFoodComponents.NETHER_BERRIES));
 
 
 
-    public static final ResourceKey<Item> BLOOD_KELP_KEY = makeRegistryKey("blood_kelp");
-    public static final Item BLOOD_KELP = register(new Item(new Item.Properties()
-            .setId(BLOOD_KELP_KEY)), BLOOD_KELP_KEY);
-    public static final ResourceKey<Item> DRIED_BLOOD_KELP_KEY = makeRegistryKey("dried_blood_kelp");
-    public static final Item DRIED_BLOOD_KELP = register(new Item(new Item.Properties()
-            .food(Foods.DRIED_KELP).setId(DRIED_BLOOD_KELP_KEY)), DRIED_BLOOD_KELP_KEY);
-    public static final ResourceKey<Item> HOGLIN_STEW_KEY = makeRegistryKey("hoglin_stew");
-    public static final Item HOGLIN_STEW = register(new Item(new Item.Properties()
-            .food(ModFoodComponents.HOGLIN_STEW).stacksTo(1).usingConvertsTo(Items.BOWL)
-            .setId(HOGLIN_STEW_KEY)), HOGLIN_STEW_KEY);
-    public static final ResourceKey<Item> CINDERSNAP_BERRIES_KEY = makeRegistryKey("cindersnap_berries");
-    public static final Item CINDERSNAP_BERRIES = registerBlockItem(CINDERSNAP_BERRIES_KEY,
-            ModBlocks.CINDERSNAP_BERRY_BUSH, new Item.Properties().food(ModFoodComponents.NETHER_BERRIES)
-                    .setId(CINDERSNAP_BERRIES_KEY));
-    public static final ResourceKey<Item> FROSTBITE_BERRIES_KEY = makeRegistryKey("frostbite_berries");
-    public static final Item FROSTBITE_BERRIES = registerBlockItem(FROSTBITE_BERRIES_KEY,
-            ModBlocks.FROSTBITE_BERRY_BUSH, new Item.Properties().food(ModFoodComponents.NETHER_BERRIES)
-                    .setId(FROSTBITE_BERRIES_KEY));
+
     public static final ResourceKey<Item> CINDERSNAP_BERRY_JUICE_KEY = makeRegistryKey("cindersnap_berry_juice");
     public static final Item CINDERSNAP_BERRY_JUICE = register(new Item(new Item.Properties()
                 .food(ModFoodComponents.JUICE, ModConsumableComponents.NETHER_FOOD).stacksTo(16)

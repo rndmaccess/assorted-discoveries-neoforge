@@ -1,5 +1,6 @@
 package rndm_access.assorteddiscoveries.conditions;
 
+import com.electronwill.nightconfig.core.UnmodifiableConfig;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -25,11 +26,13 @@ public record ConfigEntryEnabledResourceCondition(String configKey) implements I
 
     @Override
     public boolean test(@NonNull IContext context) {
-        if (!Config.MOD_SPEC.getSpec().contains(configKey)) {
+        UnmodifiableConfig values = Config.MOD_SPEC.getValues();
+
+        if (!values.contains(configKey)) {
             AssortedDiscoveries.LOGGER.error("{} is not a known config entry!", this.configKey);
             return false; // Don't load the resource if we encounter an unknown config key!
         }
-        return Config.MOD_SPEC.getSpec().get(configKey);
+        return values.get(configKey);
     }
 
     @Override

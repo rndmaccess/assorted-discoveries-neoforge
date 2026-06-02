@@ -42,7 +42,7 @@ public class BloodKelpPlantBlock extends GrowingPlantBodyBlock implements Liquid
 
     @Override
     protected GrowingPlantHeadBlock getHeadBlock() {
-        return (GrowingPlantHeadBlock) ModBlocks.BLOOD_KELP;
+        return (GrowingPlantHeadBlock) ModBlocks.BLOOD_KELP.get();
     }
 
     public BlockState getPlantState(RandomSource random) {

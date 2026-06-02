@@ -639,375 +639,237 @@ public final class ModBlocks {
             = registerStairs("cracked_stone_tile_stairs", ModBlocks::makeStoneTileSettings, CRACKED_STONE_TILES);
     public static final DeferredBlock<Block> CRACKED_STONE_TILE_WALL
             = registerWall("cracked_stone_tile_wall", ModBlocks::makeStoneTileSettings);
-
-
-
-
-    public static final ResourceKey<Block> SWEET_BERRY_PIE_KEY = makeRegistryKey("sweet_berry_pie");
-    public static final Block SWEET_BERRY_PIE = registerPie(SWEET_BERRY_PIE_KEY);
-    public static final ResourceKey<Block> BLUEBERRY_PIE_KEY = makeRegistryKey("blueberry_pie");
-    public static final Block BLUEBERRY_PIE = registerPie(BLUEBERRY_PIE_KEY);
-    public static final ResourceKey<Block> BLACKSTONE_TILES_KEY = makeRegistryKey("blackstone_tiles");
-    public static final Block BLACKSTONE_TILES
-            = register(new Block(makeBlackstoneTileSettings(BLACKSTONE_TILES_KEY)),
-            BLACKSTONE_TILES_KEY, true);
-    public static final ResourceKey<Block> BLACKSTONE_TILE_STAIRS_KEY = makeRegistryKey("blackstone_tile_stairs");
-    public static final Block BLACKSTONE_TILE_STAIRS
-            = registerStairs(BLACKSTONE_TILE_STAIRS_KEY,
-            makeBlackstoneTileSettings(BLACKSTONE_TILE_STAIRS_KEY), BLACKSTONE_TILES);
-    public static final ResourceKey<Block> BLACKSTONE_TILE_SLAB_KEY = makeRegistryKey("blackstone_tile_slab");
-    public static final Block BLACKSTONE_TILE_SLAB
-            = registerSlab(BLACKSTONE_TILE_SLAB_KEY, makeBlackstoneTileSettings(BLACKSTONE_TILE_SLAB_KEY));
-    public static final ResourceKey<Block> BLACKSTONE_TILE_WALL_KEY = makeRegistryKey("blackstone_tile_wall");
-    public static final Block BLACKSTONE_TILE_WALL
-            = registerWall(BLACKSTONE_TILE_WALL_KEY, makeBlackstoneTileSettings(BLACKSTONE_TILE_WALL_KEY));
-    public static final ResourceKey<Block> TWISTED_BLACKSTONE_TILES_KEY = makeRegistryKey("twisted_blackstone_tiles");
-    public static final Block TWISTED_BLACKSTONE_TILES
-            = register(new Block(makeBlackstoneTileSettings(TWISTED_BLACKSTONE_TILES_KEY)),
-            TWISTED_BLACKSTONE_TILES_KEY, true);
-    public static final ResourceKey<Block> TWISTED_BLACKSTONE_TILE_STAIRS_KEY
-            = makeRegistryKey("twisted_blackstone_tile_stairs");
-    public static final Block TWISTED_BLACKSTONE_TILE_STAIRS
-            = registerStairs(TWISTED_BLACKSTONE_TILE_STAIRS_KEY,
-            makeBlackstoneTileSettings(TWISTED_BLACKSTONE_TILE_STAIRS_KEY), TWISTED_BLACKSTONE_TILES);
-    public static final ResourceKey<Block> TWISTED_BLACKSTONE_TILE_SLAB_KEY
-            = makeRegistryKey("twisted_blackstone_tile_slab");
-    public static final Block TWISTED_BLACKSTONE_TILE_SLAB
-            = registerSlab(TWISTED_BLACKSTONE_TILE_SLAB_KEY,
-            makeBlackstoneTileSettings(TWISTED_BLACKSTONE_TILE_SLAB_KEY));
-    public static final ResourceKey<Block> TWISTED_BLACKSTONE_TILE_WALL_KEY
-            = makeRegistryKey("twisted_blackstone_tile_wall");
-    public static final Block TWISTED_BLACKSTONE_TILE_WALL
-            = registerWall(TWISTED_BLACKSTONE_TILE_WALL_KEY,
-            makeBlackstoneTileSettings(TWISTED_BLACKSTONE_TILE_WALL_KEY));
-    public static final ResourceKey<Block> WEEPING_BLACKSTONE_TILES_KEY
-            = makeRegistryKey("weeping_blackstone_tiles");
-    public static final Block WEEPING_BLACKSTONE_TILES
-            = register(new Block(makeBlackstoneTileSettings(WEEPING_BLACKSTONE_TILES_KEY)),
-            WEEPING_BLACKSTONE_TILES_KEY, true);
-    public static final ResourceKey<Block> WEEPING_BLACKSTONE_TILE_STAIRS_KEY
-            = makeRegistryKey("weeping_blackstone_tile_stairs");
-    public static final Block WEEPING_BLACKSTONE_TILE_STAIRS = registerStairs(WEEPING_BLACKSTONE_TILE_STAIRS_KEY,
-            makeBlackstoneTileSettings(WEEPING_BLACKSTONE_TILE_STAIRS_KEY), WEEPING_BLACKSTONE_TILES);
-    public static final ResourceKey<Block> WEEPING_BLACKSTONE_TILE_SLAB_KEY
-            = makeRegistryKey("weeping_blackstone_tile_slab");
-    public static final Block WEEPING_BLACKSTONE_TILE_SLAB
-            = registerSlab(WEEPING_BLACKSTONE_TILE_SLAB_KEY,
-            makeBlackstoneTileSettings(WEEPING_BLACKSTONE_TILE_SLAB_KEY));
-    public static final ResourceKey<Block> WEEPING_BLACKSTONE_TILE_WALL_KEY
-            = makeRegistryKey("weeping_blackstone_tile_wall");
-    public static final Block WEEPING_BLACKSTONE_TILE_WALL
-            = registerWall(WEEPING_BLACKSTONE_TILE_WALL_KEY,
-            makeBlackstoneTileSettings(WEEPING_BLACKSTONE_TILE_WALL_KEY));
-    public static final ResourceKey<Block> TWISTED_POLISHED_BLACKSTONE_BRICKS_KEY
-            = makeRegistryKey("twisted_polished_blackstone_bricks");
-    public static final Block TWISTED_POLISHED_BLACKSTONE_BRICKS
-            = register(new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
-                    .setId(TWISTED_POLISHED_BLACKSTONE_BRICKS_KEY)),
-            TWISTED_POLISHED_BLACKSTONE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> TWISTED_POLISHED_BLACKSTONE_BRICK_STAIRS_KEY
-            = makeRegistryKey("twisted_polished_blackstone_brick_stairs");
-    public static final Block TWISTED_POLISHED_BLACKSTONE_BRICK_STAIRS
-            = registerStairs(TWISTED_POLISHED_BLACKSTONE_BRICK_STAIRS_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
-                    .setId(TWISTED_POLISHED_BLACKSTONE_BRICK_STAIRS_KEY),
-            Blocks.POLISHED_BLACKSTONE_BRICKS);
-    public static final ResourceKey<Block> TWISTED_POLISHED_BLACKSTONE_BRICK_SLAB_KEY
-            = makeRegistryKey("twisted_polished_blackstone_brick_slab");
-    public static final Block TWISTED_POLISHED_BLACKSTONE_BRICK_SLAB
-            = registerSlab(TWISTED_POLISHED_BLACKSTONE_BRICK_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
-                    .setId(TWISTED_POLISHED_BLACKSTONE_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> TWISTED_POLISHED_BLACKSTONE_BRICK_WALL_KEY
-            = makeRegistryKey("twisted_polished_blackstone_brick_wall");
-    public static final Block TWISTED_POLISHED_BLACKSTONE_BRICK_WALL
-            = registerWall(TWISTED_POLISHED_BLACKSTONE_BRICK_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
-                    .setId(TWISTED_POLISHED_BLACKSTONE_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> WEEPING_POLISHED_BLACKSTONE_BRICKS_KEY
-            = makeRegistryKey("weeping_polished_blackstone_bricks");
-    public static final Block WEEPING_POLISHED_BLACKSTONE_BRICKS
-            = register(new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
-                    .setId(WEEPING_POLISHED_BLACKSTONE_BRICKS_KEY)),
-            WEEPING_POLISHED_BLACKSTONE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> WEEPING_POLISHED_BLACKSTONE_BRICK_STAIRS_KEY
-            = makeRegistryKey("weeping_polished_blackstone_brick_stairs");
-    public static final Block WEEPING_POLISHED_BLACKSTONE_BRICK_STAIRS
-            = registerStairs(WEEPING_POLISHED_BLACKSTONE_BRICK_STAIRS_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
-                    .setId(WEEPING_POLISHED_BLACKSTONE_BRICK_STAIRS_KEY),
+    public static final DeferredBlock<Block> SWEET_BERRY_PIE = registerPie("sweet_berry_pie");
+    public static final DeferredBlock<Block> BLUEBERRY_PIE = registerPie("blueberry_pie");
+    public static final DeferredBlock<Block> BLACKSTONE_TILES
+            = registerSimpleBlock("blackstone_tiles", ModBlocks::makeBlackstoneTileSettings, true);
+    public static final DeferredBlock<Block> BLACKSTONE_TILE_STAIRS
+            = registerStairs("blackstone_tile_stairs", ModBlocks::makeBlackstoneTileSettings, BLACKSTONE_TILES);
+    public static final DeferredBlock<Block> BLACKSTONE_TILE_SLAB
+            = registerSlab("blackstone_tile_slab", ModBlocks::makeBlackstoneTileSettings);
+    public static final DeferredBlock<Block> BLACKSTONE_TILE_WALL
+            = registerWall("blackstone_tile_wall", ModBlocks::makeBlackstoneTileSettings);
+    public static final DeferredBlock<Block> TWISTED_BLACKSTONE_TILES
+            = registerSimpleBlock("twisted_blackstone_tiles",
+            ModBlocks::makeBlackstoneTileSettings, true);
+    public static final DeferredBlock<Block> TWISTED_BLACKSTONE_TILE_STAIRS
+            = registerStairs("twisted_blackstone_tile_stairs",
+            ModBlocks::makeBlackstoneTileSettings, TWISTED_BLACKSTONE_TILES);
+    public static final DeferredBlock<Block> TWISTED_BLACKSTONE_TILE_SLAB
+            = registerSlab("twisted_blackstone_tile_slab", ModBlocks::makeBlackstoneTileSettings);
+    public static final DeferredBlock<Block> TWISTED_BLACKSTONE_TILE_WALL
+            = registerWall("twisted_blackstone_tile_wall", ModBlocks::makeBlackstoneTileSettings);
+    public static final DeferredBlock<Block> WEEPING_BLACKSTONE_TILES
+            = registerSimpleBlock("weeping_blackstone_tiles", ModBlocks::makeBlackstoneTileSettings, true);
+    public static final DeferredBlock<Block> WEEPING_BLACKSTONE_TILE_STAIRS
+            = registerStairs("weeping_blackstone_tile_stairs",
+            ModBlocks::makeBlackstoneTileSettings, WEEPING_BLACKSTONE_TILES);
+    public static final DeferredBlock<Block> WEEPING_BLACKSTONE_TILE_SLAB
+            = registerSlab("weeping_blackstone_tile_slab", ModBlocks::makeBlackstoneTileSettings);
+    public static final DeferredBlock<Block> WEEPING_BLACKSTONE_TILE_WALL
+            = registerWall("weeping_blackstone_tile_wall", ModBlocks::makeBlackstoneTileSettings);
+    public static final DeferredBlock<Block> TWISTED_POLISHED_BLACKSTONE_BRICKS
+            = registerSimpleBlock("twisted_polished_blackstone_bricks",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS), true);
+    public static final DeferredBlock<Block> TWISTED_POLISHED_BLACKSTONE_BRICK_STAIRS
+            = registerStairs("twisted_polished_blackstone_brick_stairs",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS),
+            () -> Blocks.POLISHED_BLACKSTONE_BRICKS);
+    public static final DeferredBlock<Block> TWISTED_POLISHED_BLACKSTONE_BRICK_SLAB
+            = registerSlab("twisted_polished_blackstone_brick_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS));
+    public static final DeferredBlock<Block> TWISTED_POLISHED_BLACKSTONE_BRICK_WALL
+            = registerWall("twisted_polished_blackstone_brick_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS));
+    public static final DeferredBlock<Block> WEEPING_POLISHED_BLACKSTONE_BRICKS
+            = registerSimpleBlock("weeping_polished_blackstone_bricks",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS), true);
+    public static final DeferredBlock<Block> WEEPING_POLISHED_BLACKSTONE_BRICK_STAIRS
+            = registerStairs("weeping_polished_blackstone_brick_stairs",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS),
             WEEPING_POLISHED_BLACKSTONE_BRICKS);
-    public static final ResourceKey<Block> WEEPING_POLISHED_BLACKSTONE_BRICK_SLAB_KEY
-            = makeRegistryKey("weeping_polished_blackstone_brick_slab");
-    public static final Block WEEPING_POLISHED_BLACKSTONE_BRICK_SLAB
-            = registerSlab(WEEPING_POLISHED_BLACKSTONE_BRICK_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
-                    .setId(WEEPING_POLISHED_BLACKSTONE_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> WEEPING_POLISHED_BLACKSTONE_BRICK_WALL_KEY
-            = makeRegistryKey("weeping_polished_blackstone_brick_wall");
-    public static final Block WEEPING_POLISHED_BLACKSTONE_BRICK_WALL
-            = registerWall(WEEPING_POLISHED_BLACKSTONE_BRICK_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)
-                    .setId(WEEPING_POLISHED_BLACKSTONE_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> TWISTED_BLACKSTONE_KEY = makeRegistryKey("twisted_blackstone");
-    public static final Block TWISTED_BLACKSTONE
-            = register(new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE).setId(TWISTED_BLACKSTONE_KEY)),
-            TWISTED_BLACKSTONE_KEY, true);
-    public static final ResourceKey<Block> TWISTED_BLACKSTONE_STAIRS_KEY
-            = makeRegistryKey("twisted_blackstone_stairs");
-    public static final Block TWISTED_BLACKSTONE_STAIRS
-            = registerStairs(TWISTED_BLACKSTONE_STAIRS_KEY, BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE)
-            .setId(TWISTED_BLACKSTONE_STAIRS_KEY), Blocks.BLACKSTONE);
-    public static final ResourceKey<Block> TWISTED_BLACKSTONE_SLAB_KEY
-            = makeRegistryKey("twisted_blackstone_slab");
-    public static final Block TWISTED_BLACKSTONE_SLAB = registerSlab(TWISTED_BLACKSTONE_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE).setId(TWISTED_BLACKSTONE_SLAB_KEY));
-    public static final ResourceKey<Block> TWISTED_BLACKSTONE_WALL_KEY
-            = makeRegistryKey("twisted_blackstone_wall");
-    public static final Block TWISTED_BLACKSTONE_WALL = registerWall(TWISTED_BLACKSTONE_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE).setId(TWISTED_BLACKSTONE_WALL_KEY));
-    public static final ResourceKey<Block> WEEPING_BLACKSTONE_KEY = makeRegistryKey("weeping_blackstone");
-    public static final Block WEEPING_BLACKSTONE = register(new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE)
-            .setId(WEEPING_BLACKSTONE_KEY)), WEEPING_BLACKSTONE_KEY, true);
-    public static final ResourceKey<Block> WEEPING_BLACKSTONE_STAIRS_KEY
-            = makeRegistryKey("weeping_blackstone_stairs");
-    public static final Block WEEPING_BLACKSTONE_STAIRS
-            = registerStairs(WEEPING_BLACKSTONE_STAIRS_KEY, BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE)
-                        .setId(WEEPING_BLACKSTONE_STAIRS_KEY), WEEPING_BLACKSTONE);
-    public static final ResourceKey<Block> WEEPING_BLACKSTONE_SLAB_KEY
-            = makeRegistryKey("weeping_blackstone_slab");
-    public static final Block WEEPING_BLACKSTONE_SLAB = registerSlab(WEEPING_BLACKSTONE_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE).setId(WEEPING_BLACKSTONE_SLAB_KEY));
-    public static final ResourceKey<Block> WEEPING_BLACKSTONE_WALL_KEY
-            = makeRegistryKey("weeping_blackstone_wall");
-    public static final Block WEEPING_BLACKSTONE_WALL = registerWall(WEEPING_BLACKSTONE_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE).setId(WEEPING_BLACKSTONE_WALL_KEY));
-    public static final ResourceKey<Block> QUARTZ_TILES_KEY = makeRegistryKey("quartz_tiles");
-    public static final Block QUARTZ_TILES = register(new Block(makeQuartzTileSettings(QUARTZ_TILES_KEY)),
-            QUARTZ_TILES_KEY, true);
-    public static final ResourceKey<Block> QUARTZ_TILE_STAIRS_KEY = makeRegistryKey("quartz_tile_stairs");
-    public static final Block QUARTZ_TILE_STAIRS = registerStairs(QUARTZ_TILE_STAIRS_KEY,
-            makeQuartzTileSettings(QUARTZ_TILE_STAIRS_KEY), QUARTZ_TILES);
-    public static final ResourceKey<Block> QUARTZ_TILE_SLAB_KEY = makeRegistryKey("quartz_tile_slab");
-    public static final Block QUARTZ_TILE_SLAB
-            = registerSlab(QUARTZ_TILE_SLAB_KEY, makeQuartzTileSettings(QUARTZ_TILE_SLAB_KEY));
-    public static final ResourceKey<Block> QUARTZ_TILE_WALL_KEY = makeRegistryKey("quartz_tile_wall");
-    public static final Block QUARTZ_TILE_WALL
-            = registerWall(QUARTZ_TILE_WALL_KEY, makeQuartzTileSettings(QUARTZ_TILE_WALL_KEY));
-    public static final ResourceKey<Block> CALCITE_BRICKS_KEY = makeRegistryKey("calcite_bricks");
-    public static final Block CALCITE_BRICKS = register(new Block(makeCalciteSettings(CALCITE_BRICKS_KEY)),
-            CALCITE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> CALCITE_BRICK_STAIRS_KEY = makeRegistryKey("calcite_brick_stairs");
-    public static final Block CALCITE_BRICK_STAIRS = registerStairs(CALCITE_BRICK_STAIRS_KEY,
-            makeCalciteSettings(CALCITE_BRICK_STAIRS_KEY), CALCITE_BRICKS);
-    public static final ResourceKey<Block> CALCITE_BRICK_SLAB_KEY = makeRegistryKey("calcite_brick_slab");
-    public static final Block CALCITE_BRICK_SLAB = registerSlab(CALCITE_BRICK_SLAB_KEY,
-            makeCalciteSettings(CALCITE_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> CALCITE_BRICK_WALL_KEY = makeRegistryKey("calcite_brick_wall");
-    public static final Block CALCITE_BRICK_WALL = registerWall(CALCITE_BRICK_WALL_KEY,
-            makeCalciteSettings(CALCITE_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> MOSSY_CALCITE_BRICKS_KEY = makeRegistryKey("mossy_calcite_bricks");
-    public static final Block MOSSY_CALCITE_BRICKS
-            = register(new Block(makeCalciteSettings(MOSSY_CALCITE_BRICKS_KEY)),
-            MOSSY_CALCITE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> MOSSY_CALCITE_BRICK_STAIRS_KEY
-            = makeRegistryKey("mossy_calcite_brick_stairs");
-    public static final Block MOSSY_CALCITE_BRICK_STAIRS = registerStairs(MOSSY_CALCITE_BRICK_STAIRS_KEY,
-            makeCalciteSettings(MOSSY_CALCITE_BRICK_STAIRS_KEY), MOSSY_CALCITE_BRICKS);
-    public static final ResourceKey<Block> MOSSY_CALCITE_BRICK_SLAB_KEY
-            = makeRegistryKey("mossy_calcite_brick_slab");
-    public static final Block MOSSY_CALCITE_BRICK_SLAB
-            = registerSlab(MOSSY_CALCITE_BRICK_SLAB_KEY, makeCalciteSettings(MOSSY_CALCITE_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> MOSSY_CALCITE_BRICK_WALL_KEY
-            = makeRegistryKey("mossy_calcite_brick_wall");
-    public static final Block MOSSY_CALCITE_BRICK_WALL = registerWall(MOSSY_CALCITE_BRICK_WALL_KEY,
-            makeCalciteSettings(MOSSY_CALCITE_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> CRACKED_CALCITE_BRICKS_KEY
-            = makeRegistryKey("cracked_calcite_bricks");
-    public static final Block CRACKED_CALCITE_BRICKS
-            = register(new Block(makeCalciteSettings(CRACKED_CALCITE_BRICKS_KEY)),
-            CRACKED_CALCITE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> CRACKED_CALCITE_BRICK_STAIRS_KEY
-            = makeRegistryKey("cracked_calcite_brick_stairs");
-    public static final Block CRACKED_CALCITE_BRICK_STAIRS = registerStairs(CRACKED_CALCITE_BRICK_STAIRS_KEY,
-            makeCalciteSettings(CRACKED_CALCITE_BRICK_STAIRS_KEY), CRACKED_CALCITE_BRICKS);
-    public static final ResourceKey<Block> CRACKED_CALCITE_BRICK_SLAB_KEY
-            = makeRegistryKey("cracked_calcite_brick_slab");
-    public static final Block CRACKED_CALCITE_BRICK_SLAB = registerSlab(CRACKED_CALCITE_BRICK_SLAB_KEY,
-            makeCalciteSettings(CRACKED_CALCITE_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> CRACKED_CALCITE_BRICK_WALL_KEY
-            = makeRegistryKey("cracked_calcite_brick_wall");
-    public static final Block CRACKED_CALCITE_BRICK_WALL = registerWall(CRACKED_CALCITE_BRICK_WALL_KEY,
-            makeCalciteSettings(CRACKED_CALCITE_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> CHISELED_CALCITE_BRICKS_KEY
-            = makeRegistryKey("chiseled_calcite_bricks");
-    public static final Block CHISELED_CALCITE_BRICKS
-            = register(new RotatedPillarBlock(makeCalciteSettings(CHISELED_CALCITE_BRICKS_KEY)),
-            CHISELED_CALCITE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> DRIPSTONE_BRICKS_KEY = makeRegistryKey("dripstone_bricks");
-    public static final Block DRIPSTONE_BRICKS = register(new Block(makeDripstoneSettings(DRIPSTONE_BRICKS_KEY)),
-            DRIPSTONE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> DRIPSTONE_BRICK_STAIRS_KEY = makeRegistryKey("dripstone_brick_stairs");
-    public static final Block DRIPSTONE_BRICK_STAIRS = registerStairs(DRIPSTONE_BRICK_STAIRS_KEY,
-            makeDripstoneSettings(DRIPSTONE_BRICK_STAIRS_KEY), DRIPSTONE_BRICKS);
-    public static final ResourceKey<Block> DRIPSTONE_BRICK_SLAB_KEY = makeRegistryKey("dripstone_brick_slab");
-    public static final Block DRIPSTONE_BRICK_SLAB = registerSlab(DRIPSTONE_BRICK_SLAB_KEY,
-            makeDripstoneSettings(DRIPSTONE_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> DRIPSTONE_BRICK_WALL_KEY = makeRegistryKey("dripstone_brick_wall");
-    public static final Block DRIPSTONE_BRICK_WALL = registerWall(DRIPSTONE_BRICK_WALL_KEY,
-            makeDripstoneSettings(DRIPSTONE_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> MOSSY_DRIPSTONE_BRICKS_KEY = makeRegistryKey("mossy_dripstone_bricks");
-    public static final Block MOSSY_DRIPSTONE_BRICKS
-            = register(new Block(makeDripstoneSettings(MOSSY_DRIPSTONE_BRICKS_KEY)),
-            MOSSY_DRIPSTONE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> MOSSY_DRIPSTONE_BRICK_STAIRS_KEY
-            = makeRegistryKey("mossy_dripstone_brick_stairs");
-    public static final Block MOSSY_DRIPSTONE_BRICK_STAIRS = registerStairs(MOSSY_DRIPSTONE_BRICK_STAIRS_KEY,
-            makeDripstoneSettings(MOSSY_DRIPSTONE_BRICK_STAIRS_KEY), MOSSY_DRIPSTONE_BRICKS);
-    public static final ResourceKey<Block> MOSSY_DRIPSTONE_BRICK_SLAB_KEY
-            = makeRegistryKey("mossy_dripstone_brick_slab");
-    public static final Block MOSSY_DRIPSTONE_BRICK_SLAB = registerSlab(MOSSY_DRIPSTONE_BRICK_SLAB_KEY,
-            makeDripstoneSettings(MOSSY_DRIPSTONE_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> MOSSY_DRIPSTONE_BRICK_WALL_KEY
-            = makeRegistryKey("mossy_dripstone_brick_wall");
-    public static final Block MOSSY_DRIPSTONE_BRICK_WALL = registerWall(MOSSY_DRIPSTONE_BRICK_WALL_KEY,
-            makeDripstoneSettings(MOSSY_DRIPSTONE_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> CRACKED_DRIPSTONE_BRICKS_KEY
-            = makeRegistryKey("cracked_dripstone_bricks");
-    public static final Block CRACKED_DRIPSTONE_BRICKS
-            = register(new Block(makeDripstoneSettings(CRACKED_DRIPSTONE_BRICKS_KEY)),
-            CRACKED_DRIPSTONE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> CRACKED_DRIPSTONE_BRICK_STAIRS_KEY
-            = makeRegistryKey("cracked_dripstone_brick_stairs");
-    public static final Block CRACKED_DRIPSTONE_BRICK_STAIRS = registerStairs(CRACKED_DRIPSTONE_BRICK_STAIRS_KEY,
-            makeDripstoneSettings(CRACKED_DRIPSTONE_BRICK_STAIRS_KEY), CRACKED_DRIPSTONE_BRICKS);
-    public static final ResourceKey<Block> CRACKED_DRIPSTONE_BRICK_SLAB_KEY
-            = makeRegistryKey("cracked_dripstone_brick_slab");
-    public static final Block CRACKED_DRIPSTONE_BRICK_SLAB = registerSlab(CRACKED_DRIPSTONE_BRICK_SLAB_KEY,
-            makeDripstoneSettings(CRACKED_DRIPSTONE_BRICK_SLAB_KEY));
-    public static final ResourceKey<Block> CRACKED_DRIPSTONE_BRICK_WALL_KEY
-            = makeRegistryKey("cracked_dripstone_brick_wall");
-    public static final Block CRACKED_DRIPSTONE_BRICK_WALL = registerWall(CRACKED_DRIPSTONE_BRICK_WALL_KEY,
-            makeDripstoneSettings(CRACKED_DRIPSTONE_BRICK_WALL_KEY));
-    public static final ResourceKey<Block> CHISELED_DRIPSTONE_BRICKS_KEY
-            = makeRegistryKey("chiseled_dripstone_bricks");
-    public static final Block CHISELED_DRIPSTONE_BRICKS
-            = register(new Block(makeDripstoneSettings(CHISELED_DRIPSTONE_BRICKS_KEY)),
-            CHISELED_DRIPSTONE_BRICKS_KEY, true);
-    public static final ResourceKey<Block> BLOOD_KELP_KEY = makeRegistryKey("blood_kelp");
-    public static final Block BLOOD_KELP
-            = register(new BloodKelpBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.KELP)
-                    .lightLevel(getLuminanceFromState()).setId(BLOOD_KELP_KEY)),
-            BLOOD_KELP_KEY, false);
-    public static final ResourceKey<Block> BLOOD_KELP_PLANT_KEY = makeRegistryKey("blood_kelp_plant");
-    public static final Block BLOOD_KELP_PLANT
-            = register(new BloodKelpPlantBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.KELP_PLANT)
-                    .lightLevel(getLuminanceFromState()).setId(BLOOD_KELP_PLANT_KEY)),
-            BLOOD_KELP_PLANT_KEY, false);
-    public static final ResourceKey<Block> DRIED_BLOOD_KELP_BLOCK_KEY = makeRegistryKey("dried_blood_kelp_block");
-    public static final Block DRIED_BLOOD_KELP_BLOCK
-            = register(new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DRIED_KELP_BLOCK)
-                    .setId(DRIED_BLOOD_KELP_BLOCK_KEY)), DRIED_BLOOD_KELP_BLOCK_KEY, true);
-    public static final ResourceKey<Block> BLOOD_KELP_LANTERN_KEY = makeRegistryKey("blood_kelp_lantern");
-    public static final Block BLOOD_KELP_LANTERN
-            = register(new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).strength(0.3F)
-                    .sound(SoundType.GLASS).lightLevel((state) -> 15)
-                    .setId(BLOOD_KELP_LANTERN_KEY)),
-            BLOOD_KELP_LANTERN_KEY, true);
-    public static final ResourceKey<Block> BOG_BLOSSOM_KEY = makeRegistryKey("bog_blossom");
-    public static final Block BOG_BLOSSOM = register(new BogBlossomBlock(BlockBehaviour.Properties.of()
-            .mapColor(MapColor.PLANT).instabreak().noCollision().sound(SoundType.SPORE_BLOSSOM)
-            .pushReaction(PushReaction.DESTROY).lightLevel((state) -> 5).setId(BOG_BLOSSOM_KEY)),
-            BOG_BLOSSOM_KEY, true);
-    public static final ResourceKey<Block> CINDERSNAP_BERRY_BUSH_KEY = makeRegistryKey("cindersnap_berry_bush");
-    public static final Block CINDERSNAP_BERRY_BUSH
-            = register(new CindersnapBerryBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_HYPHAE)
-            .randomTicks().noCollision().sound(SoundType.NETHER_SPROUTS).pushReaction(PushReaction.DESTROY)
-            .lightLevel((state) -> 8).setId(CINDERSNAP_BERRY_BUSH_KEY)),
-            CINDERSNAP_BERRY_BUSH_KEY, false);
-    public static final ResourceKey<Block> FROSTBITE_BERRY_BUSH_KEY = makeRegistryKey("frostbite_berry_bush");
-    public static final Block FROSTBITE_BERRY_BUSH
-            = register(new FrostbiteBerryBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_CYAN)
-            .randomTicks().noCollision().sound(SoundType.NETHER_SPROUTS).pushReaction(PushReaction.DESTROY)
-            .lightLevel((state) -> 5).setId(FROSTBITE_BERRY_BUSH_KEY)),
-            FROSTBITE_BERRY_BUSH_KEY, false);
-    public static final ResourceKey<Block> POLISHED_DRIPSTONE_KEY = makeRegistryKey("polished_dripstone");
-    public static final Block POLISHED_DRIPSTONE
-            = register(new Block(makeDripstoneSettings(POLISHED_DRIPSTONE_KEY)),
-            POLISHED_DRIPSTONE_KEY, true);
-    public static final ResourceKey<Block> POLISHED_DRIPSTONE_STAIRS_KEY
-            = makeRegistryKey("polished_dripstone_stairs");
-    public static final Block POLISHED_DRIPSTONE_STAIRS = registerStairs(POLISHED_DRIPSTONE_STAIRS_KEY,
-            makeDripstoneSettings(POLISHED_DRIPSTONE_STAIRS_KEY), POLISHED_DRIPSTONE);
-    public static final ResourceKey<Block> POLISHED_DRIPSTONE_SLAB_KEY
-            = makeRegistryKey("polished_dripstone_slab");
-    public static final Block POLISHED_DRIPSTONE_SLAB
-            = registerSlab(POLISHED_DRIPSTONE_SLAB_KEY, makeDripstoneSettings(POLISHED_DRIPSTONE_SLAB_KEY));
-    public static final ResourceKey<Block> POLISHED_DRIPSTONE_WALL_KEY
-            = makeRegistryKey("polished_dripstone_wall");
-    public static final Block POLISHED_DRIPSTONE_WALL = registerWall(POLISHED_DRIPSTONE_WALL_KEY,
-            makeDripstoneSettings(POLISHED_DRIPSTONE_WALL_KEY));
-    public static final ResourceKey<Block> POLISHED_CALCITE_KEY = makeRegistryKey("polished_calcite");
-    public static final Block POLISHED_CALCITE = register(new Block(makeCalciteSettings(POLISHED_CALCITE_KEY)),
-            POLISHED_CALCITE_KEY, true);
-    public static final ResourceKey<Block> POLISHED_CALCITE_STAIRS_KEY
-            = makeRegistryKey("polished_calcite_stairs");
-    public static final Block POLISHED_CALCITE_STAIRS = registerStairs(POLISHED_CALCITE_STAIRS_KEY, 
-            makeCalciteSettings(POLISHED_CALCITE_STAIRS_KEY), POLISHED_CALCITE);
-    public static final ResourceKey<Block> POLISHED_CALCITE_SLAB_KEY = makeRegistryKey("polished_calcite_slab");
-    public static final Block POLISHED_CALCITE_SLAB = registerSlab(POLISHED_CALCITE_SLAB_KEY,
-            makeCalciteSettings(POLISHED_CALCITE_SLAB_KEY));
-    public static final ResourceKey<Block> POLISHED_CALCITE_WALL_KEY = makeRegistryKey("polished_calcite_wall");
-    public static final Block POLISHED_CALCITE_WALL = registerWall(POLISHED_CALCITE_WALL_KEY,
-            makeCalciteSettings(POLISHED_CALCITE_WALL_KEY));
-    public static final ResourceKey<Block> DRIPSTONE_STAIRS_KEY = makeRegistryKey("dripstone_stairs");
-    public static final Block DRIPSTONE_STAIRS = registerStairs(DRIPSTONE_STAIRS_KEY,
-            makeDripstoneSettings(DRIPSTONE_STAIRS_KEY), Blocks.DRIPSTONE_BLOCK);
-    public static final ResourceKey<Block> DRIPSTONE_SLAB_KEY = makeRegistryKey("dripstone_slab");
-    public static final Block DRIPSTONE_SLAB = registerSlab(DRIPSTONE_SLAB_KEY,
-            makeDripstoneSettings(DRIPSTONE_SLAB_KEY));
-    public static final ResourceKey<Block> DRIPSTONE_WALL_KEY = makeRegistryKey("dripstone_wall");
-    public static final Block DRIPSTONE_WALL = registerWall(DRIPSTONE_WALL_KEY,
-            makeDripstoneSettings(DRIPSTONE_WALL_KEY));
-    public static final ResourceKey<Block> CALCITE_STAIRS_KEY = makeRegistryKey("calcite_stairs");
-    public static final Block CALCITE_STAIRS = registerStairs(CALCITE_STAIRS_KEY,
-            makeCalciteSettings(CALCITE_STAIRS_KEY), Blocks.CALCITE);
-    public static final ResourceKey<Block> CALCITE_SLAB_KEY = makeRegistryKey("calcite_slab");
-    public static final Block CALCITE_SLAB = registerSlab(CALCITE_SLAB_KEY, makeCalciteSettings(CALCITE_SLAB_KEY));
-    public static final ResourceKey<Block> CALCITE_WALL_KEY = makeRegistryKey("calcite_wall");
-    public static final Block CALCITE_WALL = registerWall(CALCITE_WALL_KEY, makeCalciteSettings(CALCITE_WALL_KEY));
-    public static final ResourceKey<Block> BAMBOO_PLANTER_BOX_KEY = makeRegistryKey("bamboo_planter_box");
-    public static final Block BAMBOO_PLANTER_BOX = registerPlanterBox(BAMBOO_PLANTER_BOX_KEY,
+    public static final DeferredBlock<Block> WEEPING_POLISHED_BLACKSTONE_BRICK_SLAB
+            = registerSlab("weeping_polished_blackstone_brick_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS));
+    public static final DeferredBlock<Block> WEEPING_POLISHED_BLACKSTONE_BRICK_WALL
+            = registerWall("weeping_polished_blackstone_brick_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS));
+    public static final DeferredBlock<Block> TWISTED_BLACKSTONE
+            = registerSimpleBlock("twisted_blackstone",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE), true);
+    public static final DeferredBlock<Block> TWISTED_BLACKSTONE_STAIRS
+            = registerStairs("twisted_blackstone_stairs",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE), () -> Blocks.BLACKSTONE);
+    public static final DeferredBlock<Block> TWISTED_BLACKSTONE_SLAB = registerSlab("twisted_blackstone_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE));
+    public static final DeferredBlock<Block> TWISTED_BLACKSTONE_WALL = registerWall("twisted_blackstone_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE));
+    public static final DeferredBlock<Block> WEEPING_BLACKSTONE
+            = registerSimpleBlock("weeping_blackstone",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE), true);
+    public static final DeferredBlock<Block> WEEPING_BLACKSTONE_STAIRS
+            = registerStairs("weeping_blackstone_stairs",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE), WEEPING_BLACKSTONE);
+    public static final DeferredBlock<Block> WEEPING_BLACKSTONE_SLAB = registerSlab("weeping_blackstone_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE));
+    public static final DeferredBlock<Block> WEEPING_BLACKSTONE_WALL = registerWall("weeping_blackstone_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE));
+    public static final DeferredBlock<Block> QUARTZ_TILES
+            = registerSimpleBlock("quartz_tiles", ModBlocks::makeQuartzTileSettings, true);
+    public static final DeferredBlock<Block> QUARTZ_TILE_STAIRS = registerStairs("quartz_tile_stairs",
+            ModBlocks::makeQuartzTileSettings, QUARTZ_TILES);
+    public static final DeferredBlock<Block> QUARTZ_TILE_SLAB
+            = registerSlab("quartz_tile_slab", ModBlocks::makeQuartzTileSettings);
+    public static final DeferredBlock<Block> QUARTZ_TILE_WALL
+            = registerWall("quartz_tile_wall", ModBlocks::makeQuartzTileSettings);
+    public static final DeferredBlock<Block> CALCITE_BRICKS
+            = registerSimpleBlock("calcite_bricks", ModBlocks::makeCalciteSettings, true);
+    public static final DeferredBlock<Block> CALCITE_BRICK_STAIRS = registerStairs("calcite_brick_stairs",
+            ModBlocks::makeCalciteSettings, CALCITE_BRICKS);
+    public static final DeferredBlock<Block> CALCITE_BRICK_SLAB = registerSlab("calcite_brick_slab",
+            ModBlocks::makeCalciteSettings);
+    public static final DeferredBlock<Block> CALCITE_BRICK_WALL = registerWall("calcite_brick_wall",
+            ModBlocks::makeCalciteSettings);
+    public static final DeferredBlock<Block> MOSSY_CALCITE_BRICKS
+            = registerSimpleBlock("mossy_calcite_bricks", ModBlocks::makeCalciteSettings, true);
+    public static final DeferredBlock<Block> MOSSY_CALCITE_BRICK_STAIRS
+            = registerStairs("mossy_calcite_brick_stairs", ModBlocks::makeCalciteSettings, MOSSY_CALCITE_BRICKS);
+    public static final DeferredBlock<Block> MOSSY_CALCITE_BRICK_SLAB
+            = registerSlab("mossy_calcite_brick_slab", ModBlocks::makeCalciteSettings);
+    public static final DeferredBlock<Block> MOSSY_CALCITE_BRICK_WALL
+            = registerWall("mossy_calcite_brick_wall", ModBlocks::makeCalciteSettings);
+    public static final DeferredBlock<Block> CRACKED_CALCITE_BRICKS
+            = registerSimpleBlock("cracked_calcite_bricks", ModBlocks::makeCalciteSettings, true);
+    public static final DeferredBlock<Block> CRACKED_CALCITE_BRICK_STAIRS
+            = registerStairs("cracked_calcite_brick_stairs",
+            ModBlocks::makeCalciteSettings, CRACKED_CALCITE_BRICKS);
+    public static final DeferredBlock<Block> CRACKED_CALCITE_BRICK_SLAB
+            = registerSlab("cracked_calcite_brick_slab", ModBlocks::makeCalciteSettings);
+    public static final DeferredBlock<Block> CRACKED_CALCITE_BRICK_WALL
+            = registerWall("cracked_calcite_brick_wall", ModBlocks::makeCalciteSettings);
+    public static final DeferredBlock<Block> CHISELED_CALCITE_BRICKS
+            = register("chiseled_calcite_bricks", RotatedPillarBlock::new,
+            ModBlocks::makeCalciteSettings, true);
+    public static final DeferredBlock<Block> DRIPSTONE_BRICKS
+            = registerSimpleBlock("dripstone_bricks", ModBlocks::makeDripstoneSettings, true);
+    public static final DeferredBlock<Block> DRIPSTONE_BRICK_STAIRS
+            = registerStairs("dripstone_brick_stairs", ModBlocks::makeDripstoneSettings, DRIPSTONE_BRICKS);
+    public static final DeferredBlock<Block> DRIPSTONE_BRICK_SLAB
+            = registerSlab("dripstone_brick_slab", ModBlocks::makeDripstoneSettings);
+    public static final DeferredBlock<Block> DRIPSTONE_BRICK_WALL
+            = registerWall("dripstone_brick_wall", ModBlocks::makeDripstoneSettings);
+    public static final DeferredBlock<Block> MOSSY_DRIPSTONE_BRICKS
+            = registerSimpleBlock("mossy_dripstone_bricks", ModBlocks::makeDripstoneSettings, true);
+    public static final DeferredBlock<Block> MOSSY_DRIPSTONE_BRICK_STAIRS
+            = registerStairs("mossy_dripstone_brick_stairs",
+            ModBlocks::makeDripstoneSettings, MOSSY_DRIPSTONE_BRICKS);
+    public static final DeferredBlock<Block> MOSSY_DRIPSTONE_BRICK_SLAB
+            = registerSlab("mossy_dripstone_brick_slab", ModBlocks::makeDripstoneSettings);
+    public static final DeferredBlock<Block> MOSSY_DRIPSTONE_BRICK_WALL
+            = registerWall("mossy_dripstone_brick_wall", ModBlocks::makeDripstoneSettings);
+    public static final DeferredBlock<Block> CRACKED_DRIPSTONE_BRICKS
+            = registerSimpleBlock("cracked_dripstone_bricks",
+            ModBlocks::makeDripstoneSettings, true);
+    public static final DeferredBlock<Block> CRACKED_DRIPSTONE_BRICK_STAIRS
+            = registerStairs("cracked_dripstone_brick_stairs",
+            ModBlocks::makeDripstoneSettings, CRACKED_DRIPSTONE_BRICKS);
+    public static final DeferredBlock<Block> CRACKED_DRIPSTONE_BRICK_SLAB
+            = registerSlab("cracked_dripstone_brick_slab", ModBlocks::makeDripstoneSettings);
+    public static final DeferredBlock<Block> CRACKED_DRIPSTONE_BRICK_WALL
+            = registerWall("cracked_dripstone_brick_wall", ModBlocks::makeDripstoneSettings);
+    public static final DeferredBlock<Block> CHISELED_DRIPSTONE_BRICKS
+            = registerSimpleBlock("chiseled_dripstone_bricks",
+            ModBlocks::makeDripstoneSettings, true);
+    public static final DeferredBlock<Block> BLOOD_KELP
+            = register("blood_kelp", BloodKelpBlock::new,
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.KELP)
+                    .lightLevel(getLuminanceFromState()), false);
+    public static final DeferredBlock<Block> BLOOD_KELP_PLANT
+            = register("blood_kelp_plant", BloodKelpPlantBlock::new,
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.KELP_PLANT)
+                    .lightLevel(getLuminanceFromState()), false);
+    public static final DeferredBlock<Block> DRIED_BLOOD_KELP_BLOCK
+            = registerSimpleBlock("dried_blood_kelp_block",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.DRIED_KELP_BLOCK), true);
+    public static final DeferredBlock<Block> BLOOD_KELP_LANTERN
+            = register("blood_kelp_lantern", RotatedPillarBlock::new,
+            () -> BlockBehaviour.Properties.of().mapColor(MapColor.SAND).strength(0.3F)
+                    .sound(SoundType.GLASS).lightLevel((state) -> 15), true);
+    public static final DeferredBlock<Block> BOG_BLOSSOM = register("bog_blossom", BogBlossomBlock::new,
+            () -> BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).instabreak()
+                    .noCollision().sound(SoundType.SPORE_BLOSSOM).pushReaction(PushReaction.DESTROY)
+                    .lightLevel((state) -> 5), true);
+    public static final DeferredBlock<Block> CINDERSNAP_BERRY_BUSH
+            = register("cindersnap_berry_bush", CindersnapBerryBushBlock::new,
+            () -> BlockBehaviour.Properties.of().mapColor(MapColor.CRIMSON_HYPHAE)
+                    .randomTicks().noCollision().sound(SoundType.NETHER_SPROUTS).pushReaction(PushReaction.DESTROY)
+                    .lightLevel((state) -> 8), false);
+    public static final DeferredBlock<Block> FROSTBITE_BERRY_BUSH
+            = register("frostbite_berry_bush", FrostbiteBerryBushBlock::new,
+            () -> BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_CYAN)
+                    .randomTicks().noCollision().sound(SoundType.NETHER_SPROUTS).pushReaction(PushReaction.DESTROY)
+                    .lightLevel((state) -> 5), false);
+    public static final DeferredBlock<Block> POLISHED_DRIPSTONE
+            = registerSimpleBlock("polished_dripstone", ModBlocks::makeDripstoneSettings, true);
+    public static final DeferredBlock<Block> POLISHED_DRIPSTONE_STAIRS
+            = registerStairs("polished_dripstone_stairs",
+            ModBlocks::makeDripstoneSettings, POLISHED_DRIPSTONE);
+    public static final DeferredBlock<Block> POLISHED_DRIPSTONE_SLAB
+            = registerSlab("polished_dripstone_slab", ModBlocks::makeDripstoneSettings);
+    public static final DeferredBlock<Block> POLISHED_DRIPSTONE_WALL
+            = registerWall("polished_dripstone_wall", ModBlocks::makeDripstoneSettings);
+    public static final DeferredBlock<Block> POLISHED_CALCITE
+            = registerSimpleBlock("polished_calcite", ModBlocks::makeCalciteSettings, true);
+    public static final DeferredBlock<Block> POLISHED_CALCITE_STAIRS
+            = registerStairs("polished_calcite_stairs", ModBlocks::makeCalciteSettings, POLISHED_CALCITE);
+    public static final DeferredBlock<Block> POLISHED_CALCITE_SLAB
+            = registerSlab("polished_calcite_slab", ModBlocks::makeCalciteSettings);
+    public static final DeferredBlock<Block> POLISHED_CALCITE_WALL
+            = registerWall("polished_calcite_wall", ModBlocks::makeCalciteSettings);
+    public static final DeferredBlock<Block> DRIPSTONE_STAIRS
+            = registerStairs("dripstone_stairs", ModBlocks::makeDripstoneSettings,
+            () -> Blocks.DRIPSTONE_BLOCK);
+    public static final DeferredBlock<Block> DRIPSTONE_SLAB
+            = registerSlab("dripstone_slab", ModBlocks::makeDripstoneSettings);
+    public static final DeferredBlock<Block> DRIPSTONE_WALL
+            = registerWall("dripstone_wall", ModBlocks::makeDripstoneSettings);
+    public static final DeferredBlock<Block> CALCITE_STAIRS
+            = registerStairs("calcite_stairs", ModBlocks::makeCalciteSettings, () -> Blocks.CALCITE);
+    public static final DeferredBlock<Block> CALCITE_SLAB
+            = registerSlab("calcite_slab", ModBlocks::makeCalciteSettings);
+    public static final DeferredBlock<Block> CALCITE_WALL
+            = registerWall("calcite_wall", ModBlocks::makeCalciteSettings);
+    public static final DeferredBlock<Block> BAMBOO_PLANTER_BOX = registerPlanterBox("bamboo_planter_box",
             Blocks.BAMBOO_PLANKS.defaultMapColor(), SoundType.BAMBOO_WOOD);
-    public static final ResourceKey<Block> POTTED_CATTAIL_KEY = makeRegistryKey("potted_cattail");
-    public static final Block POTTED_CATTAIL = register(new FlowerPotBlock(ModBlocks.CATTAIL,
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_RED_MUSHROOM).setId(POTTED_CATTAIL_KEY)),
-            POTTED_CATTAIL_KEY, false);
-    public static final ResourceKey<Block> STONE_WALL_KEY = makeRegistryKey("stone_wall");
-    public static final Block STONE_WALL = registerWall(STONE_WALL_KEY, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-            .setId(STONE_WALL_KEY));
-    public static final ResourceKey<Block> QUARTZ_WALL_KEY = makeRegistryKey("quartz_wall");
-    public static final Block QUARTZ_WALL = registerWall(QUARTZ_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK).setId(QUARTZ_WALL_KEY));
-    public static final ResourceKey<Block> SMOOTH_QUARTZ_WALL_KEY = makeRegistryKey("smooth_quartz_wall");
-    public static final Block SMOOTH_QUARTZ_WALL = registerWall(SMOOTH_QUARTZ_WALL_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ).setId(SMOOTH_QUARTZ_WALL_KEY));
-    public static final ResourceKey<Block> GRASS_SLAB_KEY = makeRegistryKey("grass_slab");
-    public static final Block GRASS_SLAB
-            = register(new GrassSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK)
-                    .setId(GRASS_SLAB_KEY)),
-            GRASS_SLAB_KEY, true);
-    public static final ResourceKey<Block> PODZOL_SLAB_KEY = makeRegistryKey("podzol_slab");
-    public static final Block PODZOL_SLAB = registerSnowySlab(PODZOL_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.PODZOL).setId(PODZOL_SLAB_KEY));
-    public static final ResourceKey<Block> MYCELIUM_SLAB_KEY = makeRegistryKey("mycelium_slab");
-    public static final Block MYCELIUM_SLAB = registerSnowySlab(MYCELIUM_SLAB_KEY,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.MYCELIUM).setId(MYCELIUM_SLAB_KEY));
+    public static final DeferredBlock<Block> POTTED_CATTAIL = register("potted_cattail",
+            prop -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.CATTAIL, prop),
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_RED_MUSHROOM), false);
+    public static final DeferredBlock<Block> STONE_WALL
+            = registerWall("stone_wall", () -> BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
+    public static final DeferredBlock<Block> QUARTZ_WALL
+            = registerWall("quartz_wall", () -> BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK));
+    public static final DeferredBlock<Block> SMOOTH_QUARTZ_WALL
+            = registerWall("smooth_quartz_wall",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_QUARTZ));
+    public static final DeferredBlock<Block> GRASS_SLAB
+            = register("grass_slab", GrassSlabBlock::new,
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK), true);
+    public static final DeferredBlock<Block> PODZOL_SLAB = registerSnowySlab("podzol_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.PODZOL));
+    public static final DeferredBlock<Block> MYCELIUM_SLAB = registerSnowySlab("mycelium_slab",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.MYCELIUM));
+
+
+
+
     public static final ResourceKey<Block> DIRT_PATH_SLAB_KEY = makeRegistryKey("dirt_path_slab");
     public static final Block DIRT_PATH_SLAB
             = register(new DirtPathSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT_PATH)
                     .setId(DIRT_PATH_SLAB_KEY)),
             DIRT_PATH_SLAB_KEY, true);
+
+
+
     public static final ResourceKey<Block> DIRT_SLAB_KEY = makeRegistryKey("dirt_slab");
     public static final Block DIRT_SLAB
             = register(new DirtSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT)

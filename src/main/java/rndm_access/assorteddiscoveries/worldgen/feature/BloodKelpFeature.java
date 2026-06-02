@@ -32,8 +32,8 @@ public class BloodKelpFeature extends Feature<NoneFeatureConfiguration> {
     }
 
     private boolean placeBloodKelpStalk(WorldGenLevel world, RandomSource random, BlockPos.MutableBlockPos placePos) {
-        BloodKelpBlock stemBlock = (BloodKelpBlock) ModBlocks.BLOOD_KELP;
-        BloodKelpPlantBlock plantBlock = (BloodKelpPlantBlock) ModBlocks.BLOOD_KELP_PLANT;
+        BloodKelpBlock stemBlock = (BloodKelpBlock) ModBlocks.BLOOD_KELP.get();
+        BloodKelpPlantBlock plantBlock = (BloodKelpPlantBlock) ModBlocks.BLOOD_KELP_PLANT.get();
         int maxLength = 1 + random.nextInt(10);
         boolean canSustainPlant = stemBlock.defaultBlockState().canSurvive(world, placePos);
         boolean isInWater = world.getFluidState(placePos).is(Fluids.WATER);

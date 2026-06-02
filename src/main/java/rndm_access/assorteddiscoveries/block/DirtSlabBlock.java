@@ -56,12 +56,12 @@ public class DirtSlabBlock extends SlabBlock implements BonemealableBlock {
                 BlockState neighborState = world.getBlockState(neighborPos);
 
                 if (neighborState.is(CommonBlockTags.MYCELIUM)) {
-                    return ModBlocks.MYCELIUM_SLAB;
+                    return ModBlocks.MYCELIUM_SLAB.get();
                 } else if (neighborState.is(CommonBlockTags.PODZOL)) {
-                    return ModBlocks.PODZOL_SLAB;
+                    return ModBlocks.PODZOL_SLAB.get();
                 }
             }
         }
-        return ModBlocks.GRASS_SLAB;
+        return ModBlocks.GRASS_SLAB.get();
     }
 }

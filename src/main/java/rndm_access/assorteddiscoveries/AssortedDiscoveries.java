@@ -251,7 +251,7 @@ public class AssortedDiscoveries {
                     output.accept(ModBlocks.WITHER_PLUSHIE.asItem());
                 }
 
-                if (ModClientConfig.getBoolEntries().get(ModServerConfigKeys.ENABLE_ALLAY_PLUSHIE)) {
+                if (Config.ENABLE_ALLAY_PLUSHIE.get()) {
                     output.accept(ModBlocks.ALLAY_PLUSHIE.asItem());
                 }
 
@@ -339,7 +339,7 @@ public class AssortedDiscoveries {
                     output.accept(ModBlocks.IRON_LADDER.asItem());
                 }
 
-                if (ModClientConfig.getBoolEntries().get(ModServerConfigKeys.ENABLE_DYED_CAMPFIRES)) {
+                if (Config.ENABLE_DYED_CAMPFIRES.get()) {
                     output.accept(ModBlocks.WHITE_CAMPFIRE.asItem());
                     output.accept(ModBlocks.ORANGE_CAMPFIRE.asItem());
                     output.accept(ModBlocks.MAGENTA_CAMPFIRE.asItem());
@@ -358,7 +358,7 @@ public class AssortedDiscoveries {
                     output.accept(ModBlocks.BLACK_CAMPFIRE.asItem());
                 }
 
-                if (ModClientConfig.getBoolEntries().get(ModServerConfigKeys.ENABLE_DYED_LANTERNS)) {
+                if (Config.ENABLE_DYED_LANTERNS.get()) {
                     output.accept(ModBlocks.WHITE_LANTERN.asItem());
                     output.accept(ModBlocks.ORANGE_LANTERN.asItem());
                     output.accept(ModBlocks.MAGENTA_LANTERN.asItem());
@@ -377,7 +377,7 @@ public class AssortedDiscoveries {
                     output.accept(ModBlocks.BLACK_LANTERN.asItem());
                 }
 
-                if (ModClientConfig.getBoolEntries().get(ModServerConfigKeys.ENABLE_DYED_TORCHES)) {
+                if (Config.ENABLE_DYED_TORCHES.get()) {
                     output.accept(ModItems.WHITE_TORCH);
                     output.accept(ModItems.ORANGE_TORCH);
                     output.accept(ModItems.MAGENTA_TORCH);

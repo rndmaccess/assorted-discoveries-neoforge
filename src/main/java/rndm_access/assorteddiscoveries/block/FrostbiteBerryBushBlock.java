@@ -49,14 +49,14 @@ public class FrostbiteBerryBushBlock extends AbstractBerryBushBlock {
         double randNum = random.nextDouble();
 
         if(randNum < 0.2) {
-            world.addParticle(ModParticleTypes.SOUL_EMBER, x, y, z, 0.0D,
+            world.addParticle(ModParticleTypes.SOUL_EMBER.get(), x, y, z, 0.0D,
                     0.0D, 0.0D);
         }
     }
 
     @Override
     protected Item berryItem() {
-        return ModItems.FROSTBITE_BERRIES;
+        return ModItems.FROSTBITE_BERRIES.get();
     }
 
     @Override
