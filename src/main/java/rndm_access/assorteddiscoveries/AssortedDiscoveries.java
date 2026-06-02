@@ -795,8 +795,7 @@ public class AssortedDiscoveries {
         //AssortedDiscoveries.modifyLootTables();
 
         // World Generation Registries
-        ModFeatures.register();
-        //AssortedDiscoveries.addFeaturesToBiomes();
+        ModFeatures.register(modEventBus);
     }
 
     public static Identifier makeModId(String path) {

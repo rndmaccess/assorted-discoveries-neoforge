@@ -1,8 +1,6 @@
 package rndm_access.assorteddiscoveries.core;
 
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -122,10 +120,6 @@ public final class ModItems {
     public static final DeferredItem<Item> CRIMSON_FORAGE_MIX = ITEMS.registerSimpleItem("crimson_forage_mix",
             () -> new Item.Properties().food(ModFoodComponents.NETHER_FORAGE, ModConsumableComponents.NETHER_FOOD));
 
-    private static ResourceKey<Item> makeRegistryKey(String name) {
-        return ResourceKey.create(Registries.ITEM, AssortedDiscoveries.makeModId(name));
-    }
-
     private static DeferredItem<Item> register(String name, Function<Item.Properties, ? extends Item> item,
                                                Supplier<Item.Properties> itemProperties) {
         return ITEMS.registerItem(name, item, itemProperties);
@@ -134,20 +128,16 @@ public final class ModItems {
     private static DeferredItem<Item> registerTorchBlockItem(String name, Supplier<Block> standingBlock, Supplier<Block> wallBlock) {
         final Function<Item.Properties, StandingAndWallBlockItem> blockItem
                 = prop -> new StandingAndWallBlockItem(standingBlock.get(), wallBlock.get(), Direction.DOWN, prop);
-        //Item.BY_BLOCK.put(standingBlock, blockItem);
-        //Item.BY_BLOCK.put(wallBlock, blockItem);
         return register(name, blockItem, Item.Properties::new);
     }
 
     private static DeferredItem<Item> registerBlockItem(String name, Supplier<Block> block) {
         final Function<Item.Properties, BlockItem> blockItem = prop -> new BlockItem(block.get(), prop);
-        //Item.BY_BLOCK.put(block, blockItem);
         return register(name, blockItem, Item.Properties::new);
     }
 
     private static DeferredItem<Item> registerBlockItem(String name, Supplier<Block> block, Supplier<Item.Properties> properties) {
         final Function<Item.Properties, BlockItem> blockItem = prop -> new BlockItem(block.get(), prop);
-        //Item.BY_BLOCK.put(block, blockItem);
         return register(name, blockItem, properties);
     }
 

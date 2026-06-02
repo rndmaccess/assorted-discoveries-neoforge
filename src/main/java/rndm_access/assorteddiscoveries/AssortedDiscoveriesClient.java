@@ -13,6 +13,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
@@ -34,7 +35,7 @@ public class AssortedDiscoveriesClient {
     }
 
     @SubscribeEvent
-    public void onClientSetup() {
+    public static void onClientSetup(FMLClientSetupEvent event) {
         registerBlockEntityRenderers();
 
         /*

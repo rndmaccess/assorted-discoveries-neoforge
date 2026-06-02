@@ -897,10 +897,6 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> CHESTNUT_WOLF_PLUSHIE = registerWolfPlushie("chestnut_wolf_plushie");
     public static final DeferredBlock<Block> RUSTY_WOLF_PLUSHIE = registerWolfPlushie("rusty_wolf_plushie");
 
-    private static ResourceKey<Block> makeRegistryKey(String name) {
-        return ResourceKey.create(Registries.BLOCK, AssortedDiscoveries.makeModId(name));
-    }
-
     private static BlockPos postProcessSelf(final BlockState state, final BlockGetter blockGetter, final BlockPos blockPos) {
         return blockPos;
     }
