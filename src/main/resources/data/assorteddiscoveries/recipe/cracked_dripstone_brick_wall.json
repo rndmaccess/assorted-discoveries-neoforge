@@ -14,11 +14,11 @@
   },
   "neoforge:conditions": [
     {
-      "condition": "assorteddiscoveries:config_entry_enabled",
+      "type": "assorteddiscoveries:config_entry_enabled",
       "value": "enable_dripstone_bricks"
     },
     {
-      "condition": "assorteddiscoveries:config_entry_enabled",
+      "type": "assorteddiscoveries:config_entry_enabled",
       "value": "enable_cracked_dripstone_bricks"
     }
   ]

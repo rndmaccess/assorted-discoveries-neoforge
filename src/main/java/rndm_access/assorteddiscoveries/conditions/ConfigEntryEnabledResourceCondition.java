@@ -1,9 +1,9 @@
 package rndm_access.assorteddiscoveries.conditions;
 
-import com.electronwill.nightconfig.core.UnmodifiableConfig;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.common.conditions.ICondition;
 import org.jspecify.annotations.NonNull;
 import rndm_access.assorteddiscoveries.AssortedDiscoveries;
@@ -26,13 +26,17 @@ public record ConfigEntryEnabledResourceCondition(String configKey) implements I
 
     @Override
     public boolean test(@NonNull IContext context) {
-        UnmodifiableConfig values = Config.MOD_SPEC.getValues();
+        ModConfigSpec.BooleanValue value = Config.MOD_SPEC.getValues().get(this.configKey);
 
-        if (!values.contains(configKey)) {
+        if (!Config.MOD_SPEC.isLoaded()) {
+            return true;
+        }
+
+        if (value == null) {
             AssortedDiscoveries.LOGGER.error("{} is not a known config entry!", this.configKey);
             return false; // Don't load the resource if we encounter an unknown config key!
         }
-        return values.get(configKey);
+        return value.get();
     }
 
     @Override

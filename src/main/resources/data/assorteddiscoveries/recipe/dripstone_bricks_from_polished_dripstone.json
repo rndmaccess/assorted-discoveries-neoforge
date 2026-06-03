@@ -14,14 +14,14 @@
   },
   "neoforge:conditions": [
     {
-      "condition": "neoforge:and",
+      "type": "neoforge:and",
       "values": [
         {
-          "condition": "assorteddiscoveries:config_entry_enabled",
+          "type": "assorteddiscoveries:config_entry_enabled",
           "value": "enable_polished_dripstone"
         },
         {
-          "condition": "assorteddiscoveries:config_entry_enabled",
+          "type": "assorteddiscoveries:config_entry_enabled",
           "value": "enable_dripstone_bricks"
         }
       ]

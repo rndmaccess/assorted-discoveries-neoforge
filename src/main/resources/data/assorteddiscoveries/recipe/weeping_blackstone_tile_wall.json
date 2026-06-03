@@ -14,14 +14,14 @@
   },
   "neoforge:conditions": [
     {
-      "condition": "neoforge:and",
+      "type": "neoforge:and",
       "values": [
         {
-          "condition": "assorteddiscoveries:config_entry_enabled",
+          "type": "assorteddiscoveries:config_entry_enabled",
           "value": "enable_blackstone_tiles"
         },
         {
-          "condition": "assorteddiscoveries:config_entry_enabled",
+          "type": "assorteddiscoveries:config_entry_enabled",
           "value": "enable_weeping_blackstone_tiles"
         }
       ]

@@ -15,7 +15,7 @@
   },
   "neoforge:conditions": [
     {
-      "condition": "assorteddiscoveries:config_entry_enabled",
+      "type": "assorteddiscoveries:config_entry_enabled",
       "value": "enable_weeping_polished_blackstone_bricks"
     }
   ]

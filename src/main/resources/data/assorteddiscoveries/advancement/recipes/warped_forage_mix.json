@@ -31,14 +31,14 @@
   ],
   "neoforge:conditions": [
     {
-      "condition": "neoforge:and",
+      "type": "neoforge:and",
       "values": [
         {
-          "condition": "assorteddiscoveries:config_entry_enabled",
+          "type": "assorteddiscoveries:config_entry_enabled",
           "value": "enable_frostbite_berries"
         },
         {
-          "condition": "assorteddiscoveries:config_entry_enabled",
+          "type": "assorteddiscoveries:config_entry_enabled",
           "value": "enable_warped_forage_mix"
         }
       ]

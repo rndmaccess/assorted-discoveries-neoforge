@@ -31,14 +31,14 @@
   ],
   "neoforge:conditions": [
     {
-      "condition": "neoforge:and",
+      "type": "neoforge:and",
       "values": [
         {
-          "condition": "assorteddiscoveries:config_entry_enabled",
+          "type": "assorteddiscoveries:config_entry_enabled",
           "value": "enable_cindersnap_berries"
         },
         {
-          "condition": "assorteddiscoveries:config_entry_enabled",
+          "type": "assorteddiscoveries:config_entry_enabled",
           "value": "enable_crimson_forage_mix"
         }
       ]
