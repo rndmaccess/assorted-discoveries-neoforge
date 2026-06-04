@@ -28,10 +28,6 @@ public record ConfigEntryEnabledResourceCondition(String configKey) implements I
     public boolean test(@NonNull IContext context) {
         ModConfigSpec.BooleanValue value = Config.MOD_SPEC.getValues().get(this.configKey);
 
-        if (!Config.MOD_SPEC.isLoaded()) {
-            return true;
-        }
-
         if (value == null) {
             AssortedDiscoveries.LOGGER.error("{} is not a known config entry!", this.configKey);
             return false; // Don't load the resource if we encounter an unknown config key!
