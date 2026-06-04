@@ -11,7 +11,11 @@ public final class ModConsumableComponents {
             .onConsume(new ApplyStatusEffectsConsumeEffect(
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 2400, 0,
                             true, true))).build();
-    public static final Consumable NETHER_FOOD = Consumables.defaultDrink()
+    public static final Consumable NETHER_DRINK = Consumables.defaultDrink()
+            .onConsume(new ApplyStatusEffectsConsumeEffect(
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400,
+                            0, true, true))).build();
+    public static final Consumable NETHER_FOOD = Consumables.defaultFood()
             .onConsume(new ApplyStatusEffectsConsumeEffect(
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400,
                             0, true, true))).build();

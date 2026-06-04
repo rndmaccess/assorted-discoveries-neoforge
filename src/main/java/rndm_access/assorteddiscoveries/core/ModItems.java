@@ -109,16 +109,18 @@ public final class ModItems {
             ModBlocks.FROSTBITE_BERRY_BUSH, () -> new Item.Properties().food(ModFoodComponents.NETHER_BERRIES));
     public static final DeferredItem<Item> CINDERSNAP_BERRY_JUICE
             = ITEMS.registerSimpleItem("cindersnap_berry_juice", () -> new Item.Properties()
-            .food(ModFoodComponents.JUICE, ModConsumableComponents.NETHER_FOOD).stacksTo(16)
+            .food(ModFoodComponents.JUICE, ModConsumableComponents.NETHER_DRINK).stacksTo(16)
             .usingConvertsTo(Items.GLASS_BOTTLE));
     public static final DeferredItem<Item> FROSTBITE_BERRY_JUICE
             = ITEMS.registerSimpleItem("frostbite_berry_juice", () -> new Item.Properties()
-            .food(ModFoodComponents.JUICE, ModConsumableComponents.NETHER_FOOD).stacksTo(16)
+            .food(ModFoodComponents.JUICE, ModConsumableComponents.NETHER_DRINK).stacksTo(16)
             .usingConvertsTo(Items.GLASS_BOTTLE));
     public static final DeferredItem<Item> WARPED_FORAGE_MIX = ITEMS.registerSimpleItem("warped_forage_mix",
-            () -> new Item.Properties().food(ModFoodComponents.NETHER_FORAGE, ModConsumableComponents.NETHER_FOOD));
+            () -> new Item.Properties()
+                    .food(ModFoodComponents.NETHER_FORAGE, ModConsumableComponents.NETHER_FOOD).stacksTo(32));
     public static final DeferredItem<Item> CRIMSON_FORAGE_MIX = ITEMS.registerSimpleItem("crimson_forage_mix",
-            () -> new Item.Properties().food(ModFoodComponents.NETHER_FORAGE, ModConsumableComponents.NETHER_FOOD));
+            () -> new Item.Properties()
+                    .food(ModFoodComponents.NETHER_FORAGE, ModConsumableComponents.NETHER_FOOD).stacksTo(32));
 
     private static DeferredItem<Item> register(String name, Function<Item.Properties, ? extends Item> item,
                                                Supplier<Item.Properties> itemProperties) {
