@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table": "minecraft:blocks/spruce_leaves"
+    }
+  ],
+  "table": "assorteddiscoveries:subtables/spruce_cone_from_spruce_leaves"
+}
