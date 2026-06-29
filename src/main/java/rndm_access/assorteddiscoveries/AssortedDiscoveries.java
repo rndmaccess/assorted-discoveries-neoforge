@@ -937,38 +937,4 @@ public class AssortedDiscoveries {
         }
     }
     */
-
-    /*
-    TODO: Add a global loot modifier for this
-    private static void modifyLootTables() {
-        Optional<ResourceKey<@NotNull LootTable>> spruceLeavesLootTableId = Blocks.SPRUCE_LEAVES.getLootTable();
-
-        LootTableEvents.MODIFY.register((key, tableBuilder, source,
-                                         registries) -> {
-            if(source.isBuiltin() && spruceLeavesLootTableId.isPresent() && spruceLeavesLootTableId.get().equals(key)) {
-                modifySpruceLeavesLootTable(registries, tableBuilder);
-            }
-        });
-    }
-
-    private static void modifySpruceLeavesLootTable(HolderLookup.Provider registries, LootTable.Builder builder) {
-        ServerConfig config = ModServerConfig.getInstance();
-        BooleanConfigEntry configEntry = (BooleanConfigEntry) config.getEntry(ModServerConfigKeys.ENABLE_FORESTS_BOUNTY);
-
-        if (configEntry.getValue()) {
-            Optional<Holder.Reference<Enchantment>> fortune = registries.get(Enchantments.FORTUNE);
-            assert fortune.isPresent();
-            Holder<Enchantment> fortuneEnchant = Holder.direct(fortune.get().value());
-
-            LootPool.Builder poolBuilder = LootPool.lootPool()
-                    .setRolls(ConstantValue.exactly(1))
-                    .when(BonusLevelTableCondition.bonusLevelFlatChance(fortuneEnchant, 0.02F, 0.023F,
-                            0.025F, 0.035F, 0.1F))
-                    .add(LootItem.lootTableItem(ModItems.SPRUCE_CONE))
-                    .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)));
-
-            builder.withPool(poolBuilder);
-        }
-    }
-    */
 }
