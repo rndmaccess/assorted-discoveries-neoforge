@@ -795,7 +795,6 @@ public class AssortedDiscoveries {
         ModBlockEntityTypes.register(modEventBus);
         ModParticleTypes.register(modEventBus);
         ModSoundEvents.register(modEventBus);
-        //AssortedDiscoveries.modifyLootTables();
 
         // World Generation Registries
         ModFeatures.register(modEventBus);
@@ -807,7 +806,7 @@ public class AssortedDiscoveries {
         boolean isInRange = (Math.max(event.getDistance() - 4.0F, 0.0F)) == 0.0F;
 
         if (isRabbit && isInRange) {
-            event.setCanceled(true);
+            event.setCanceled(true); // Extend rabbit fall damage
         }
     }
 
