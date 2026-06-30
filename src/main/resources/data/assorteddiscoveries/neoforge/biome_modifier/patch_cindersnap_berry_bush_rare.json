@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#assorteddiscoveries:has_feature/patch_cindersnap_berry_bush",
+  "features": "assorteddiscoveries:patch_cindersnap_berry_bush_rare",
+  "step": "vegetal_decoration",
+  "neoforge:conditions": [
+    {
+      "type": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_cindersnap_berries"
+    }
+  ]
+}

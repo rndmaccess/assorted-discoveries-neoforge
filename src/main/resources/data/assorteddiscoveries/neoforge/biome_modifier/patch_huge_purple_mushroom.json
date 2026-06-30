@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#assorteddiscoveries:has_feature/patch_huge_purple_mushroom",
+  "features": "assorteddiscoveries:patch_huge_purple_mushroom",
+  "step": "vegetal_decoration",
+  "neoforge:conditions": [
+    {
+      "type": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_purple_mushrooms"
+    }
+  ]
+}

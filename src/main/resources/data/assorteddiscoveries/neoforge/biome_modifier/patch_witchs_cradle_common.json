@@ -1,12 +1,12 @@
 {
   "type": "neoforge:add_features",
-  "biomes": "#assorteddiscoveries:has_feature/patch_cattail_swamp",
-  "features": "assorteddiscoveries:patch_cattail_swamp",
+  "biomes": "#assorteddiscoveries:has_feature/patch_witchs_cradle",
+  "features": "assorteddiscoveries:patch_witchs_cradle_common",
   "step": "vegetal_decoration",
   "neoforge:conditions": [
     {
       "type": "assorteddiscoveries:config_entry_enabled",
-      "value": "enable_cattails"
+      "value": "enable_witchs_cradle"
     }
   ]
 }

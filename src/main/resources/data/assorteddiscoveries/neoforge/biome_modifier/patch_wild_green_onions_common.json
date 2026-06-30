@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#assorteddiscoveries:has_feature/patch_wild_green_onions",
+  "features": "assorteddiscoveries:patch_wild_green_onions_common",
+  "step": "vegetal_decoration",
+  "neoforge:conditions": [
+    {
+      "type": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_green_onions"
+    }
+  ]
+}

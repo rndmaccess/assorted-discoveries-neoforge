@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#assorteddiscoveries:has_feature/ore_smoky_quartz",
+  "features": "assorteddiscoveries:ore_smoky_quartz",
+  "step": "underground_ores",
+  "neoforge:conditions": [
+    {
+      "type": "assorteddiscoveries:config_entry_enabled",
+      "value": "enable_smoky_quartz_blocks"
+    }
+  ]
+}
