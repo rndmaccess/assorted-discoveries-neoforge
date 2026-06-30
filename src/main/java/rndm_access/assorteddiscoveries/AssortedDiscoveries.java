@@ -4,12 +4,15 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.event.entity.living.LivingFallEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.jetbrains.annotations.NotNull;
@@ -796,6 +799,16 @@ public class AssortedDiscoveries {
 
         // World Generation Registries
         ModFeatures.register(modEventBus);
+    }
+
+    @SubscribeEvent
+    public static void livingEntityFallEvent(LivingFallEvent event) {
+        boolean isRabbit = event.getEntity().getType() == EntityType.RABBIT;
+        boolean isInRange = (Math.max(event.getDistance() - 4.0F, 0.0F)) == 0.0F;
+
+        if (isRabbit && isInRange) {
+            event.setCanceled(true);
+        }
     }
 
     public static Identifier makeModId(String path) {
