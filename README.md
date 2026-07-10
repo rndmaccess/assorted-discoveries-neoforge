@@ -1,25 +1,21 @@
+## Fabric Assorted Discoveries For Minecraft 26.1.x
 
-Installation information
-=======
+## License
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Assets for this project are licensed under All Rights Reserved. The code for this project 
+is licensed under the MIT license.
+This license can be found here: [LICENSE](LICENSE.md).
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+## Download Links
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+- Neoforge download coming soon!
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+## About
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+Experience Minecraft like never before with Assorted Discoveries! 
+Each adventure you take will reveal new blocks and items around every corner! 
+If, however, a feature does not suite your play style, you can easily disable it from the config menu!
+
+![An image of cattails, witch's cradles, bog blossoms, and blueberry bushes](./branding_1.png)
+
+![An image of colored campfires, the zombie, skeleton, enderman, and blaze plushies, rope ladders, and colored lanterns](./branding_2.png)
