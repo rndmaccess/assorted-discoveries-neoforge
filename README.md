@@ -1,4 +1,4 @@
-## Fabric Assorted Discoveries For Minecraft 26.1.x
+## Neoforge Assorted Discoveries For Minecraft 26.1.x
 
 ## License
 
